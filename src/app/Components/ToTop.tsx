@@ -37,8 +37,8 @@ const ToTop = () => {
       className={`${
         isVisible
           ? "visible transition-opacity delay-100 opacity-100  ease-in-out hover:scale-105"
-          : " invisible transition-opacity delay-100 opacity-0  ease-in-out"
-      } fixed bottom-5 right-5 shadow-lg rounded-full `}
+          : " invisible transition-opacity delay-200 opacity-0  ease-in-out scale-0"
+      } fixed z-50 bottom-5 right-5 shadow-lg rounded-full `}
     >
       <div className="bg-white border-2 border-red-500 shadow-lg rounded-full p-2">
         <FaArrowUp className="text-2xl text-red-500 " />
