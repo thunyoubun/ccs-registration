@@ -22,7 +22,7 @@ const Navbar = () => {
         <div className="  ">
           <ul className="flex gap-8">
             <li className="hover:scale-105 hover:font-semibold transition ease-out delay-50">
-              <a href="#">Keynote speakers</a>
+              <button >Keynote speakers</button>
             </li>
             <li className="hover:scale-105 hover:font-semibold transition ease-out delay-50">
               <a href="#">Programme</a>
