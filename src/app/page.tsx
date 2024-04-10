@@ -22,7 +22,7 @@ export default function Home() {
 
             <div className=" bg-white rounded-3xl w-fit py-1 px-2">
               <h1>
-                26 - 27 October at Le Meridien Chiang Mai, Chiang Mai, Thailand
+                6 - 7 June at Novotel Bangkok Future Park Rangsit, Bangkok, Thailand
               </h1>
             </div>
 
