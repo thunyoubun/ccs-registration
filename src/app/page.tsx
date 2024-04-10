@@ -1,13 +1,15 @@
 import React from "react";
 
 import Navbar from "./Components/Navbar";
+import ToTop from "./Components/ToTop";
 
 export default function Home() {
   return (
     <div>
-      <div className="h-screen">
+      <div className="h-screen relative">
         <Navbar />
-        <div className=" h-2/3 bg-gradient-to-r from-red-700 to-blue-800  flex justify-center items-center">
+        <ToTop />
+        <div className=" mt-16 h-2/3 bg-gradient-to-r from-red-700 to-blue-800  flex justify-center items-center">
           <div className=" flex flex-col gap-7 justify-center items-center">
             <div className=" mx-20  text-center  ">
               <h1 className=" text-white font-bold  text-5xl">
