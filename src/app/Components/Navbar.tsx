@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
   //if navbar is not fixed, change background color to bg-white/50
@@ -51,7 +52,7 @@ const Navbar = () => {
               <a href="#">Programme</a>
             </li>
             <li className="hover:scale-105 hover:font-semibold transition ease-out delay-50">
-              <a href="#">Registration</a>
+              <Link href="/registration">Registration</Link>
             </li>
           </ul>
         </div>
