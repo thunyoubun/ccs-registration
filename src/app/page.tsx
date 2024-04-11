@@ -29,7 +29,7 @@ export default function Home() {
               </h1>
             </div>
 
-            <button className=" bg-white rounded-3xl w-fit py-1 px-2 shadow-lg transition ease-in-out delay-150 hover:scale-105 ">
+            <button className=" bg-white rounded-3xl w-fit py-1 px-2 shadow-lg transition ease-in-out delay-150 hover:scale-105 " >
               <h1>
                 6 - 7 June at Novotel Bangkok Future Park Rangsit, Bangkok,
                 Thailand
