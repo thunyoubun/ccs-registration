@@ -12,7 +12,7 @@ export interface PeopleCardType {
 
 const PeopleCard = ({ name, srcImage }: PeopleCardType) => {
   return (
-    <div className={`h-full bg-transparent/30 p-4 rounded-lg z-0 `}>
+    <div className={`h-full bg-transparent/30 p-4 rounded-lg z-0  shadow-lg`}>
       <div className="flex flex-col justify-center items-center gap-4">
         <div className=" bg-red-600 border-4 border-red-600 rounded-full mt-4 shadow-lg  overflow-hidden">
           <Image
