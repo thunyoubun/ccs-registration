@@ -12,14 +12,14 @@ import Footer from "./Components/Footer";
 export default function Home() {
   return (
     <div>
-      <div className="h-screen relative">
+      <div className="relative">
         <Navbar />
         <ToTop />
         <div
           id="home"
-          className=" mt-16 h-2/3 bg-gradient-to-r from-red-700 to-blue-800  flex justify-center items-center"
+          className=" md:mt-16 mt-28  bg-gradient-to-r from-red-700 to-blue-800  flex justify-center items-center"
         >
-          <div className=" flex flex-col gap-7 justify-center items-center">
+          <div className=" m-20 flex flex-col gap-7 justify-center items-center">
             <div className=" mx-20  text-center  ">
               <h1 className=" text-white font-bold  text-5xl">
                 The 16th International Conference
@@ -42,6 +42,7 @@ export default function Home() {
             </button>
           </div>
         </div>
+
         <div
           id="aboutEvent"
           className=" bg-white flex justify-center items-centers"

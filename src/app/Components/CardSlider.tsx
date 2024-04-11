@@ -10,7 +10,7 @@ const CardSlider = () => {
   const [data, setData] = useState<PeopleCardType[]>([]);
   const [animation, setAnimation] = useState("animate-fade-left" as string);
 
-  const cardPerSlide = 3;
+  let cardPerSlide = 3;
 
   const authData = [
     { name: "a", srcImage: "/images/profile/natthanan.jpg" },

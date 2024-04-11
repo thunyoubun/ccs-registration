@@ -2,8 +2,8 @@ import React from "react";
 import { FaPhone } from "react-icons/fa6";
 const Footer = () => {
   return (
-    <div className="bg-white h-44 flex justify-center">
-      <div className="m-10 flex flex-col gap-4 items-center justify-center">
+    <div className="bg-white h-fit flex justify-center items-center">
+      <div className="m-10 p-4 flex flex-col gap-4 items-center justify-center">
         <div className="flex gap-2">
           <div className=" bg-red-600 w-16 h-16"></div>
           <div className="w-fit flex flex-col">

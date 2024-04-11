@@ -39,7 +39,7 @@ const Navbar = () => {
           : " transition-opacity opacity-0 ease-in-out delay-300 "
       } `}
     >
-      <div className="px-6 flex justify-between items-center">
+      <div className=" px-6 flex justify-between items-center">
         {/* Add your logo here */}
         <Link href="/">
           <div className="flex gap-2">
@@ -54,7 +54,7 @@ const Navbar = () => {
           </div>
         </Link>
 
-        <div className="  ">
+        <div className="hidden md:flex ">
           <ul className="flex gap-8">
             <li className="hover:scale-105 hover:font-semibold transition ease-out delay-50">
               <button onClick={() => ScrollToSection("keynote-speakers")}>
