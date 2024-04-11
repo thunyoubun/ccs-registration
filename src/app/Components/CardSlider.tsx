@@ -1,58 +1,75 @@
 import React, { useEffect, useState } from "react";
 import PeopleCard from "./PeopleCard";
+import { PeopleCardType } from "./PeopleCard";
+
+import { IoIosArrowDropleftCircle } from "react-icons/io";
+import { IoIosArrowDroprightCircle } from "react-icons/io";
 
 const CardSlider = () => {
   const [activeImage, setActiveImage] = useState(0);
+  const [data, setData] = useState<PeopleCardType[]>([]);
+  const [animation, setAnimation] = useState("animate-fade-left" as string);
 
-  const images = [
-    { id: 1, src: "/images/profile/natthanan.jpg" },
-    { id: 2, src: "/images/profile/natthanan.jpg" },
-    { id: 3, src: "/images/profile/natthanan.jpg" },
-    { id: 4, src: "/images/profile/natthanan.jpg" },
+  const cardPerSlide = 3;
+
+  const authData = [
+    { name: "a", srcImage: "/images/profile/natthanan.jpg" },
+    { name: "b", srcImage: "/images/profile/natthanan.jpg" },
+    { name: "c", srcImage: "/images/profile/natthanan.jpg" },
+    { name: "d", srcImage: "/images/profile/natthanan.jpg" },
+    { name: "e", srcImage: "/images/profile/natthanan.jpg" },
+    { name: "f", srcImage: "/images/profile/natthanan.jpg" },
   ];
 
-  const clickNext = () => {
-    activeImage === images.length - 1
-      ? setActiveImage(0)
-      : setActiveImage(activeImage + 1);
-  };
-  const clickPrev = () => {
-    activeImage === 0
-      ? setActiveImage(images.length - 1)
-      : setActiveImage(activeImage - 1);
+  const showCard = (index: number) => {
+    setData(authData.slice(index, index + cardPerSlide));
   };
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      clickNext();
-    }, 5000);
-    return () => {
-      clearTimeout(timer);
-    };
+    showCard(activeImage);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeImage]);
+
+  const clickNext = () => {
+    activeImage === authData.length - cardPerSlide
+      ? setActiveImage(0)
+      : setActiveImage(activeImage + cardPerSlide);
+    setTimeout(() => {
+      setAnimation("animate-fade-right");
+    }, 100);
+    setAnimation("");
+  };
+  const clickPrev = () => {
+    activeImage === 0
+      ? setActiveImage(authData.length - cardPerSlide)
+      : setActiveImage(activeImage - cardPerSlide);
+
+    setTimeout(() => {
+      setAnimation("animate-fade-left");
+    }, 100);
+    setAnimation("");
+  };
+
   return (
     <div>
-      <div className="flex gap-4 justify-center items-center">
-        <button
-          onClick={clickPrev}
-          className="bg-red-600 text-white p-2 rounded-lg"
-        >
-          Prev
+      <div className="flex gap-4 justify-center items-center z-0">
+        <button onClick={clickPrev} className="text-black/50 hover:text-black ">
+          <IoIosArrowDropleftCircle size={50} />
         </button>
-        <div className="  rounded-lg">
-          <PeopleCard />
+        <div className={` flex gap-4`}>
+          {/*show card just 3 in row */}
+          {data.map((auth, index) => (
+            <div key={index} className={` ${animation}`}>
+              <PeopleCard
+                name={auth.name}
+                srcImage={auth.srcImage}
+              ></PeopleCard>
+            </div>
+          ))}
         </div>
-        <div className="  rounded-lg">
-          <PeopleCard />
-        </div>
-        <div className="  rounded-lg">
-          <PeopleCard />
-        </div>
-        <button
-          onClick={clickNext}
-          className="bg-red-600 text-white p-2 rounded-lg"
-        >
-          Next
+
+        <button onClick={clickNext} className="text-black/50 hover:text-black ">
+          <IoIosArrowDroprightCircle size={50} />
         </button>
       </div>
     </div>

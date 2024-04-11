@@ -1,13 +1,22 @@
 import React from "react";
 import Image from "next/image";
+import { Inter } from "next/font/google";
 
-const PeopleCard = () => {
+export interface PeopleCardType {
+  name: string;
+  srcImage: string;
+  /* bio: string;
+  topic: string;
+  abstract: string; */
+}
+
+const PeopleCard = ({ name, srcImage }: PeopleCardType) => {
   return (
-    <div className="h-full bg-transparent/30 p-4 rounded-lg">
+    <div className={`h-full bg-transparent/30 p-4 rounded-lg z-0 `}>
       <div className="flex flex-col justify-center items-center gap-4">
         <div className=" bg-red-600 border-4 border-red-600 rounded-full mt-4 shadow-lg  overflow-hidden">
           <Image
-            src={"/images/profile/natthanan.jpg"}
+            src={srcImage}
             width={160}
             height={160}
             alt=""
@@ -15,7 +24,7 @@ const PeopleCard = () => {
           ></Image>
         </div>
         <div className="text-white text-center flex flex-col gap-2 ">
-          <h1 className=" text-xl">D.Eng. Assoc. Prof. Natthanan Promsuk, </h1>
+          <h1 className=" text-xl">D.Eng. Assoc. Prof. {name}, </h1>
           <h1 className="  text-white/50">
             Computer Engineering Department, Faculty of Engineering, Chiang Mai
             University, Thailand

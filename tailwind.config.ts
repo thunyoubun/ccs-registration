@@ -8,6 +8,30 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      animation: {
+        "text-fade-in": "text-fade-in 1s ease-in-out forwards",
+        "text-fade-out": "text-fade-out 1s ease-in-out forwards",
+        "fade-left": "fade-left 0.5s ease-in-out forwards",
+        "fade-right": "fade-right 0.5s ease-in-out forwards",
+      },
+      keyframes: {
+        "text-fade-in": {
+          "0%": { opacity: "0", transform: "translateY(10px)" },
+          "100%": { opacity: "100%", transform: "translateY(0px)" },
+        },
+        "text-fade-out": {
+          "0%": { opacity: "1", transform: "translateY(0px)" },
+          "100%": { opacity: "0", transform: "translateY(10px)" },
+        },
+        "fade-left": {
+          "0%": { opacity: "0", transform: "translateX(-10px)" },
+          "100%": { opacity: "1", transform: "translateX(0px)" },
+        },
+        "fade-right": {
+          "0%": { opacity: "0", transform: "translateX(10px)" },
+          "100%": { opacity: "1", transform: "translateX(0px)" },
+        },
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

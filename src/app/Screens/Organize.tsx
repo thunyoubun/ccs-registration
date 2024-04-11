@@ -20,10 +20,10 @@ export default function Organize() {
             />
             <h1 className="text-red-500 text-xl font-semibold">
               Co-Organized{" "}
-              <h2 className=" text-black text-base font-normal">
-                Chiang Mai University
-              </h2>
             </h1>
+            <h2 className=" text-black text-base font-normal">
+              Chiang Mai University
+            </h2>
           </div>
           <div className=" w-1/2 flex flex-col gap-4 text-center items-center">
             <Image
@@ -34,10 +34,10 @@ export default function Organize() {
             />
             <h1 className="text-red-500 text-xl font-semibold">
               Co-Organized{" "}
-              <h2 className=" text-black text-base font-normal">
-                Chiang Mai University
-              </h2>
             </h1>
+            <h2 className=" text-black text-base font-normal">
+              Chiang Mai University
+            </h2>
           </div>
         </div>
       </div>
