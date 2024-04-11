@@ -1,7 +1,13 @@
 import React from "react";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 import Navbar from "./Components/Navbar";
 import ToTop from "./Components/ToTop";
+import Schedule from "./Screens/Schedule";
+import Keynote from "./Screens/Keynote";
+import Organize from "./Screens/Organize";
+import Direction from "./Screens/Direction";
+import Footer from "./Components/Footer";
 
 export default function Home() {
   return (
@@ -9,7 +15,10 @@ export default function Home() {
       <div className="h-screen relative">
         <Navbar />
         <ToTop />
-        <div className=" mt-16 h-2/3 bg-gradient-to-r from-red-700 to-blue-800  flex justify-center items-center">
+        <div
+          id="home"
+          className=" mt-16 h-2/3 bg-gradient-to-r from-red-700 to-blue-800  flex justify-center items-center"
+        >
           <div className=" flex flex-col gap-7 justify-center items-center">
             <div className=" mx-20  text-center  ">
               <h1 className=" text-white font-bold  text-5xl">
@@ -20,24 +29,29 @@ export default function Home() {
               </h1>
             </div>
 
-            <div className=" bg-white rounded-3xl w-fit py-1 px-2">
+            <button className=" bg-white rounded-3xl w-fit py-1 px-2 shadow-lg transition ease-in-out delay-150 hover:scale-105 ">
               <h1>
-                6 - 7 June at Novotel Bangkok Future Park Rangsit, Bangkok, Thailand
+                6 - 7 June at Novotel Bangkok Future Park Rangsit, Bangkok,
+                Thailand
+                <FaArrowRightLong className="mx-2 inline" />
               </h1>
-            </div>
+            </button>
 
-            <button className="mt-6 bg-transparent border-2 border-white rounded-lg p-2 text-white hover:scale-105 transition ease-in-out delay-150 ">
+            <button className="mt-6 bg-transparent shadow-xl border-2 border-white rounded-lg p-2 text-white hover:scale-105 transition ease-in-out delay-150 ">
               <h1>Full Schedule and Programme</h1>
             </button>
           </div>
         </div>
-        <div className=" bg-white flex justify-center items-centers">
+        <div
+          id="aboutEvent"
+          className=" bg-white flex justify-center items-centers"
+        >
           <div className="m-20 ">
             <div className=" flex flex-col gap-4">
-              <h1 className=" text-red-500 font-semibold text-xl text-center">
+              <h1 className=" text-red-500 font-semibold text-3xl text-center">
                 About Event
               </h1>
-              <h1 className=" font-bold text-3xl text-center">
+              <h1 className=" font-bold text-2xl text-center">
                 The Annual Conference for New Research, Innovative Ideas, and
                 Technologies
               </h1>
@@ -53,6 +67,12 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        <Schedule />
+        <Keynote />
+        <Organize />
+        <Direction />
+        <Footer />
       </div>
     </div>
   );
