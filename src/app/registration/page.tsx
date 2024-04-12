@@ -3,6 +3,7 @@ import { useState } from "react"
 import Navbar from "../Components/Navbar"
 import RegistrationForm, { IRegistrationForm } from "../Components/RegistrationForm"
 import TextInput from "../Components/TextInput"
+import CardSponsor from "../Components/CardSponsor"
 
 function RegistrationPage() {
     const { handleSubmit, register, formState: { isSubmitting } } = RegistrationForm()
@@ -36,9 +37,9 @@ function RegistrationPage() {
                         </div>
                         <div className="mt-6 ml-8 mr-8 mb-4">
                             {!secondDate ?
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15485.547317181567!2d100.6167955!3d13.9950625!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30de1168e62e2101%3A0x9da7a57659ec3960!2z4LmC4LiZ4LmC4Lin4LmA4LiX4LilIOC4geC4o-C4uOC4h-C5gOC4l-C4niDguJ_guLTguKfguYDguIjguK3guKPguYzguJ7guLLguKPguYzguIQg4Lij4Lix4LiH4Liq4Li04LiV!5e0!3m2!1sth!2sth!4v1712834003533!5m2!1sth!2sth" width="600" height="450" loading="lazy" ></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15485.547317181567!2d100.6167955!3d13.9950625!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30de1168e62e2101%3A0x9da7a57659ec3960!2z4LmC4LiZ4LmC4Lin4LmA4LiX4LilIOC4geC4o-C4uOC4h-C5gOC4l-C4niDguJ_guLTguKfguYDguIjguK3guKPguYzguJ7guLLguKPguYzguIQg4Lij4Lix4LiH4Liq4Li04LiV!5e0!3m2!1sth!2sth!4v1712834003533!5m2!1sth!2sth" width="500" height="350" loading="lazy" ></iframe>
                                 :
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15107.094760451677!2d98.9546953!3d18.8082363!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da3a68355ea91f%3A0xd393197b614f8352!2z4Lih4Lir4Liy4Lin4Li04LiX4Lii4Liy4Lil4Lix4Lii4LmA4LiK4Li14Lii4LiH4LmD4Lir4Lih4LmI!5e0!3m2!1sth!2sth!4v1712834180863!5m2!1sth!2sth" width="600" height="450" loading="lazy" ></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15107.094760451677!2d98.9546953!3d18.8082363!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da3a68355ea91f%3A0xd393197b614f8352!2z4Lih4Lir4Liy4Lin4Li04LiX4Lii4Liy4Lil4Lix4Lii4LmA4LiK4Li14Lii4LiH4LmD4Lir4Lih4LmI!5e0!3m2!1sth!2sth!4v1712834180863!5m2!1sth!2sth" width="500" height="350" loading="lazy" ></iframe>
                             }
                         </div>
                         <div className="text-center">
@@ -109,13 +110,20 @@ function RegistrationPage() {
                     </div>
                 </div>
                 {/* Footer */}
-                <div className="">
+                <div className="p-2">
                     <div>
                         <label htmlFor="" className="font-semibold">Our sponsor:</label>
                     </div>
                     <div>
-                        <div className="">
-
+                        <div className="grid grid-cols-4 items-center">
+                            <CardSponsor path={"/images/sponsors/1200px-Seal_of_the_Minister_of_Foreign_Affair_of_Thailand.svg.png"} nameCompany1={"Ministry of Foreign Affairs Kingdom of Thailand"} nameCompany2={""} />
+                            <CardSponsor path={"/images/sponsors/Seal_of_the_Ministry_of_Energy_of_Thailand.svg.png"} nameCompany1={"Department of Mineral Fuels MINISTRY OF ENERGY"} nameCompany2={""} />
+                            <CardSponsor path={"/images/sponsors/สอทnew.png"} nameCompany1={"Royal Thai Embassy, Copenhagen, Denmark"} nameCompany2={"สถานเอกอัครราชทูต ณ โคเปนเฮเกน"} />
+                            <CardSponsor path={"/images/sponsors/images.png"} nameCompany1={"Royal Thai Embassy, Oslo"} nameCompany2={"สถานเอกอัครราชทูต ณ กรุงออสโล"} />
+                            <CardSponsor path={"/images/sponsors/images (1).png"} nameCompany1={"กระทรวงอุดมศึกษา วิทยาศาสตร์ วิจัยและนวัตกรรม"} nameCompany2={"Ministry of Higher Education, Science, Research and Innovation"} />
+                            <CardSponsor path={"/images/sponsors/TSRI_Logo_300x363.png"} nameCompany1={"สำนักงานคณะกรรมการส่งเสริมวิทยาศาสตร์ วิจัยและนวัตกรรม"} nameCompany2={"Thailand Science Research and Innovation"} />
+                            <CardSponsor path={"/images/sponsors/PMU-b-logo.png"} nameCompany1={"หน่วยบริหารและจัดการทุนด้านการพัฒนากำลังคนและทุนด้านการพัฒนาสถาบันอุดมศึกษาการวิจัยและการสร้างนวัตกรรม"} nameCompany2={""} />
+                            <CardSponsor path={"/images/sponsors/pmcu-logo.png"} nameCompany1={"หน่วยบริหารและจัดการทุนด้านการเพิ่มความสามารถในการแข่งขันของประเทศ"} nameCompany2={""} />
                         </div>
                     </div>
                 </div>
