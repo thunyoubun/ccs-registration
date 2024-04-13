@@ -62,7 +62,7 @@ const Navbar = () => {
               </button>
             </li>
             <li className="hover:scale-105 hover:font-semibold transition ease-out delay-50">
-              <a href="#">Programme</a>
+              <Link href="/programme">Programme</Link>
             </li>
             <li className="hover:scale-105 hover:font-semibold transition ease-out delay-50">
               <Link href="/registration">Registration</Link>
