@@ -45,10 +45,11 @@ const Navbar = () => {
           <div className="flex gap-2">
             <div className=" bg-red-600 w-16 h-16"></div>
             <div className="w-fit flex flex-col">
-              <h1 className=" font-semibold text-5xl ">ICITEE 2024</h1>
+              <h1 className=" font-semibold text-5xl ">ICCSS 2024</h1>
               <h2 className=" font-medium text-xs tracking-tighter">
-                International Conference on Information Technology and
-                Electrical Engineering
+                {/* International Conference on Information Technology and
+                Electrical Engineering */}
+                International CCS Symposium: A ‘Supercritical’ Research Toward Industrial Solution
               </h2>
             </div>
           </div>
