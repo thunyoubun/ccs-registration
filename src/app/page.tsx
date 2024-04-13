@@ -8,6 +8,7 @@ import Keynote from "./Screens/Keynote";
 import Organize from "./Screens/Organize";
 import Direction from "./Screens/Direction";
 import Footer from "./Components/Footer";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -22,23 +23,27 @@ export default function Home() {
           <div className=" m-20 flex flex-col gap-7 justify-center items-center">
             <div className=" mx-20  text-center  ">
               <h1 className=" text-white font-bold  text-5xl">
-                The 16th International Conference
+                {/* The 16th International Conference */}
+                International CCS Symposium:
               </h1>
               <h1 className=" mt-6 text-white font-bold text-5xl">
-                on Information Technology and Electrical Engineering
+                {/* on Information Technology and Electrical Engineering */}
+                A ‘Supercritical’ Research Toward Industrial Solution
               </h1>
             </div>
 
             <button className=" bg-white rounded-3xl w-fit py-1 px-2 shadow-lg transition ease-in-out delay-150 hover:scale-105 " >
+              <Link href="https://maps.app.goo.gl/t6Jprs7dpvjMb8dh9">
               <h1>
                 6 - 7 June at Novotel Bangkok Future Park Rangsit, Bangkok,
                 Thailand
                 <FaArrowRightLong className="mx-2 inline" />
               </h1>
+              </Link>
             </button>
 
             <button className="mt-6 bg-transparent shadow-xl border-2 border-white rounded-lg p-2 text-white hover:scale-105 transition ease-in-out delay-150 ">
-              <h1>Full Schedule and Programme</h1>
+              <Link href="/programme"><h1>Full Schedule and Programme</h1></Link>
             </button>
           </div>
         </div>
