@@ -41,7 +41,7 @@ export default function Schedule() {
               <thead className="">
                 <tr className=" border-b-2">
                   <th className="w-1/3 text-center text-2xl">Time</th>
-                  <th className="w-1/3 text-center text-2xl">Grand Ballroom</th>
+                  <th className="w-1/3 text-center text-2xl">Agenda</th>
                   <th className="w-1/3 text-center text-2xl">
                     Expedition Room
                   </th>
