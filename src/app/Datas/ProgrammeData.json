@@ -1,0 +1,157 @@
+{
+    "programme-schedule":[
+        {
+            "time": "08.30 - 09.00",
+            "topic": "Registration and welcome refreshment",
+            "description":[],
+            "speakers": [],
+            "bgColor": false
+        },
+        {
+            "time": "09.00 - 09.30",
+            "topic": "Opening ceremony",
+            "description": [ 
+                "Welcome remark by Director General of Department of European Affairs(TBC)", 
+                "Opening remark by Representative of PMU-B Director (TBC)" 
+            ],
+            "speakers": [],
+            "bgColor": false
+        },
+        {
+            "time": "09.30 - 09.45",
+            "topic": "Carbon Neutrality Research and Innovation",
+            "description": [],
+            "speakers": [
+                "Assoc. Prof. Dr. Winita Punyodom, RUN and CMU (TBC)"
+            ],
+            "bgColor": false
+        },
+        {
+            "time": "09.45 - 10.15",
+            "topic": "Science, Research, and Innovation Toward Net-Zero via CCUS",
+            "description": [],
+            "speakers": [
+                "Dr. Pongvipa Lohsomboon, TSRI and PMU-C"
+            ],
+            "bgColor": false
+        },
+        {
+            "time": "10.15 - 10.30",
+            "topic": "Introduction of Thailand CCUS Alliance (TCCA): Mission and Strategics (TBC)",
+            "description": [],
+            "speakers": [
+                "Dr. Kajornsak Faungnawakij, TCCA and NANOTEC (TBC)"
+            ],
+            "bgColor": false
+        },
+        {
+            "time": "10.30 - 10.45",
+            "topic": "Bending the Tree of CCS: Lowering the High-hanging Fruit",
+            "description": [],
+            "speakers": [
+                "Asst. Prof. Dr. Suparit Tangparitkul, Director of Chiang Mai Research Center for CCS (CMU)"
+            ],
+            "bgColor": false
+        },
+        {
+            "time": "10.45 - 11.00",
+            "topic": "Break",
+            "description": [],
+            "speakers": [],
+            "bgColor": true
+        },
+        {
+            "time": "11.00 - 11.30",
+            "topic": "Norway’s CCS: the State, Industries, and Academia Partnership",
+            "description": [],
+            "speakers": [
+                "Representative from Gassnova, Norway (TBC)"
+            ],
+            "bgColor": false
+        },
+        {
+            "time": "11.30 - 12.00",
+            "topic": "Greensand Project: CO2 Graveyard of Denmark",
+            "description": [],
+            "speakers": [
+                "Mr. Søren Poulsen, Project Director, Greensand Project, Denmark"
+            ],
+            "bgColor": false
+        },
+        {
+            "time": "12.00 - 13.00",
+            "topic": "Lunch Break",
+            "description": [],
+            "speakers": [],
+            "bgColor": true
+        },
+        {
+            "time": "13.00 - 13.30",
+            "topic": "Carbon Credit Methodology & Financial Incentive for CCS",
+            "description": [],
+            "speakers": [
+                "Assoc. Prof. Wongkot Wongsapai, CMU, Thailand (TBC)"
+            ],
+            "bgColor": false
+        },
+        {
+            "time": "13.30 - 14.30",
+            "topic": "CCS Industry’s Landscape and Its Ecosystem: Opportunities and Challenges",
+            "description": [],
+            "speakers": [
+                "Mr. Søren Poulsen, Project Director, Greensand Project, Denmark",
+                "Representative from Gassnova, Norway",
+                "Assoc. Prof. Wongkot Wongsapai, CMU, Thailand (TBC)",
+                "Mr.Surachai Vangrattanachai CCUs Director, SCG CGS",
+                "Representative from PTT (TBC)",
+                "Representative from EGAT (TBC)",
+                "Dr. Apiradee Suwannathong, Department of Mineral Fuels (DMF), Thailand",
+                "Asst. Prof. Dr. Suparit Tangparitkul"
+            ],
+            "bgColor": false
+        },
+        {
+            "time": "14.30 - 14.45",
+            "topic": "Break",
+            "description": [],
+            "speakers": [],
+            "bgColor": true
+        },
+        {
+            "time": "14.45 - 15.15",
+            "topic": "CO2 Storage in Saline Aquifers - Experiences from the North Sea",
+            "description": [],
+            "speakers": [
+                "Prof. Philip Ringrose, NTNU and Equinor, Norway"
+            ],
+            "bgColor": false
+        },
+        {
+            "time": "15.15 - 16.15",
+            "topic": "Toward Tomorrow's Challenges: What are Next for CCS?",
+            "description": [],
+            "speakers": [
+                "Prof. Nicolas von Solms, Technical University of Denmark (DTU), Denmark",
+                "Representative from NTNU, Norway",
+                "Representative from KIGAM, Korea (TBC)",
+                "Representative from BRIN, Indonesia (TBC)",
+                "Asst. Prof. Dr. Natthanan Promsuk"
+            ],
+            "bgColor": false
+        },
+        {
+            "time": "16.15 - 16.30",
+            "topic": "Closing Remark",
+            "description": [],
+            "speakers": [],
+            "bgColor": false
+        },
+        {
+            "time": "18.00 - 20.00",
+            "topic": "Networking Session & Exclusive Dinner",
+            "description": [],
+            "speakers": [],
+            "bgColor": true
+        }
+    ]
+}
