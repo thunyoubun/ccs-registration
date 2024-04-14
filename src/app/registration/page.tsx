@@ -6,44 +6,45 @@ import RegistrationMap from "../Components/RegistrationMap"
 import { useCountDown } from "../Functionalitys/useCountDown"
 
 function RegistrationPage() {
-    const [ day, hour, minute, second ] = useCountDown(new Date("2024-06-06"))
+    const [day, hour, minute, second] = useCountDown(new Date("2024-06-06"))
 
     return (
         <header>
-            <div className="h-screen relative">
+            <div className="relative">
                 <Navbar />
-                <div className="mt-24 p-16 bg-gradient-to-r from-red-700 to-blue-800 flex justify-center">
-                    <div>
-                        <div className="p-4 bg-rose-700 rounded-t-lg text-white flex justify-center text-center gap-3">
-                            <h1 className="text-5xl font-medium content-center">TIME TO END</h1>
-                            <div>
-                                <h1 className="font-semibold text-6xl">{day}</h1>
-                                <h4 className="">day(s)</h4>
-                            </div>
-                            <div className="font-semibold text-6xl">:</div>
-                            <div>
-                                <h1 className="font-semibold text-6xl">{hour}</h1>
-                                <h4>hour(s)</h4>
-                            </div>
-                            <div className="font-semibold text-6xl">:</div>
-                            <div>
-                                <h1 className="font-semibold text-6xl">{minute}</h1>
-                                <h4>minute(s)</h4>
-                            </div>
-                            <div className="font-semibold text-6xl">:</div>
-                            <div>
-                                <h1 className="font-semibold text-6xl">{second}</h1>
-                                <h4>second(s)</h4>
+                <div className="mt-24 p-8 lg:p-16 bg-gradient-to-r from-red-700 to-blue-800 flex justify-center">
+                    <div className="">
+                        <div className="p-4 bg-rose-700 rounded-t-lg text-white text-center gap-3 lg:flex lg:justify-center">
+                            <div className="text-3xl font-medium content-center md:text-5xl">TIME TO END</div>
+                            <div className="flex text-center gap-3 justify-center">
+                                <div>
+                                    <h1 className="font-semibold text-4xl lg:text-6xl">{day}</h1>
+                                    <h4 className="">day(s)</h4>
+                                </div>
+                                <h1 className="font-semibold text-4xl lg:text-6xl">:</h1>
+                                <div>
+                                    <h1 className="font-semibold text-4xl lg:text-6xl">{hour}</h1>
+                                    <h4>hour(s)</h4>
+                                </div>
+                                <h1 className="font-semibold text-4xl lg:text-6xl">:</h1>
+                                <div>
+                                    <h1 className="font-semibold text-4xl lg:text-6xl">{minute}</h1>
+                                    <h4>minute(s)</h4>
+                                </div>
+                                <h1 className="font-semibold text-4xl lg:text-6xl">:</h1>
+                                <div>
+                                    <h1 className="font-semibold text-4xl lg:text-6xl">{second}</h1>
+                                    <h4>second(s)</h4>
+                                </div>
                             </div>
                         </div>
-                        <div className="flex">
+                        <div className="grid lg:flex">
                             {/* Google Map */}
                             <RegistrationMap />
                             {/* Registration Form */}
                             <RegistrationInput />
                         </div>
                     </div>
-
                 </div>
                 {/* Footer */}
                 <div className="p-2">
@@ -51,7 +52,7 @@ function RegistrationPage() {
                         <label htmlFor="" className="font-semibold">Our sponsor:</label>
                     </div>
                     <div>
-                        <div className="grid grid-cols-4 items-center">
+                        <div className="grid grid-cols-1 items-center sm:grid-cols-2 lg:grid-cols-4">
                             <CardSponsor path={"/images/sponsors/1200px-Seal_of_the_Minister_of_Foreign_Affair_of_Thailand.svg.png"} nameCompany1={"Ministry of Foreign Affairs Kingdom of Thailand"} nameCompany2={""} />
                             <CardSponsor path={"/images/sponsors/Seal_of_the_Ministry_of_Energy_of_Thailand.svg.png"} nameCompany1={"Department of Mineral Fuels MINISTRY OF ENERGY"} nameCompany2={""} />
                             <CardSponsor path={"/images/sponsors/สอทnew.png"} nameCompany1={"Royal Thai Embassy, Copenhagen, Denmark"} nameCompany2={"สถานเอกอัครราชทูต ณ โคเปนเฮเกน"} />
