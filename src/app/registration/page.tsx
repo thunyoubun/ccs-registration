@@ -3,10 +3,9 @@ import Navbar from "../Components/Navbar"
 import CardSponsor from "../Components/CardSponsor"
 import RegistrationInput from "../Components/RegistrationInput"
 import RegistrationMap from "../Components/RegistrationMap"
-import { useCountDown } from "../Functionalitys/useCountDown"
+import Countdown from "../Components/Countdown"
 
 function RegistrationPage() {
-    const [day, hour, minute, second] = useCountDown(new Date("2024-06-06"))
 
     return (
         <header>
@@ -14,30 +13,8 @@ function RegistrationPage() {
                 <Navbar />
                 <div className="mt-24 p-8 lg:p-16 bg-gradient-to-r from-red-700 to-blue-800 flex justify-center">
                     <div className="">
-                        <div className="p-4 bg-rose-700 rounded-t-lg text-white text-center gap-3 lg:flex lg:justify-center">
-                            <div className="text-3xl font-medium content-center md:text-5xl">TIME TO END</div>
-                            <div className="flex text-center gap-3 justify-center">
-                                <div>
-                                    <h1 className="font-semibold text-4xl lg:text-6xl">{day}</h1>
-                                    <h4 className="">day(s)</h4>
-                                </div>
-                                <h1 className="font-semibold text-4xl lg:text-6xl">:</h1>
-                                <div>
-                                    <h1 className="font-semibold text-4xl lg:text-6xl">{hour}</h1>
-                                    <h4>hour(s)</h4>
-                                </div>
-                                <h1 className="font-semibold text-4xl lg:text-6xl">:</h1>
-                                <div>
-                                    <h1 className="font-semibold text-4xl lg:text-6xl">{minute}</h1>
-                                    <h4>minute(s)</h4>
-                                </div>
-                                <h1 className="font-semibold text-4xl lg:text-6xl">:</h1>
-                                <div>
-                                    <h1 className="font-semibold text-4xl lg:text-6xl">{second}</h1>
-                                    <h4>second(s)</h4>
-                                </div>
-                            </div>
-                        </div>
+                        {/* Countdown */}
+                            <Countdown targetDate={new Date("2024-06-06")} />
                         <div className="grid lg:flex">
                             {/* Google Map */}
                             <RegistrationMap />
