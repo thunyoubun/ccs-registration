@@ -7,15 +7,29 @@ export interface IRegistrationForm{
     lastname: string,
     affiliation: string,
     email: string,
-    june06: string[],
-    june07: string[]
+    june06: {
+        morning: boolean,
+        afternoon: boolean
+    },
+    june07: {
+        morning: boolean,
+        afternoon: boolean
+    }
 }
 
 const validationRegistration = z.object({
     firstname: z.string().min(1, { message: 'Firstname is required.'} ),
     lastname: z.string().min(1, { message: 'Surename is required.'} ),
     affiliation: z.string().min(1, { message: 'Affiliation is required.' }),
-    email: z.string().min(1, { message: 'Email is required.'}).email()
+    email: z.string().min(1, { message: 'Email is required.'}).email(),
+    june06: z.object({
+        morning: z.boolean(),
+        afternoon: z.boolean()
+    }),
+    june07: z.object({
+        morning: z.boolean(),
+        afternoon: z.boolean()
+    })
 })
 
 function RegistrationForm(){
@@ -26,8 +40,14 @@ function RegistrationForm(){
             lastname: '',
             affiliation: '',
             email: '',
-            june06: [],
-            june07: []
+            june06: {
+                morning: true,
+                afternoon: true
+            },
+            june07: {
+                morning: true,
+                afternoon: true
+            }
         }
     })
     return form

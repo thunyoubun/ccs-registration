@@ -8,13 +8,13 @@ function RegistrationInput() {
         console.table(data)
     }
     return (
-        <div className="p-8 bg-white rounded-br-lg ">
-            <h1 className="font-medium text-5xl text-center">Registration</h1>
-            <form onSubmit={handleSubmit(onSubmit)} className="mt-5 grid grid-cols-1 gap-x-5 gap-y-5 sm:grid-cols-6">
-                <div className="sm:col-span-3">
+        <div className="p-2 bg-white w-full md:order-none md:rounded-b-lg lg:p-8">
+            <h1 className="font-medium text-3xl lg:text-5xl text-center">Registration</h1>
+            <form onSubmit={handleSubmit(onSubmit)} className="mt-5 grid grid-cols-1 gap-x-5 gap-y-5 lg:grid-cols-6">
+                <div className="col-span-full lg:col-span-3">
                     {TextInput(register, "First name", "firstname", "text")}
                 </div>
-                <div className="sm:col-span-3">
+                <div className="col-span-full lg:col-span-3">
                     {TextInput(register, "Last name", "lastname", "text")}
                 </div>
                 <div className="col-span-full">
@@ -30,13 +30,13 @@ function RegistrationInput() {
                             <label htmlFor="" className="font-medium">6 June 2024:</label>
                         </div>
                         <div className="flex items-center mb-4 col-span-2">
-                            <input className="w-4 h-4 border-rose-700 text-rose-700 focus:ring-blue-900" type="checkbox" value="" id="flexCheckDefault" />
+                            <input className="w-4 h-4 border-rose-700 text-rose-700 focus:ring-blue-900" type="checkbox" value=""{...register("june06.morning")} id="flexCheckDefault" />
                             <label className="ms-2" htmlFor="flexCheckDefault">
                                 morning
                             </label>
                         </div>
                         <div className="flex items-center mb-4">
-                            <input className="w-4 h-4 border-rose-700 text-rose-700 focus:ring-blue-900" type="checkbox" value="" />
+                            <input className="w-4 h-4 border-rose-700 text-rose-700 focus:ring-blue-900" type="checkbox" value="" {...register("june06.afternoon")} />
                             <label className="ms-2">
                                 afternoon
                             </label>
@@ -46,15 +46,15 @@ function RegistrationInput() {
                         <div className="col-span-2">
                             <label htmlFor="" className="font-medium">7 June 2024:</label>
                         </div>
-                        <div className="form-check">
-                            <input className="w-4 h-4 border-rose-700 text-rose-700 focus:ring-blue-900" type="checkbox" value="" id="flext" />
-                            <label className="ms-2" htmlFor="">
+                        <div className="flex items-center mb-4 col-span-2">
+                            <input className="w-4 h-4 border-rose-700 text-rose-700 focus:ring-blue-900" type="checkbox" value="" id="flexCheckDefault" {...register("june07.morning")} />
+                            <label className="ms-2" htmlFor="flexCheckDefault">
                                 morning
                             </label>
                         </div>
-                        <div className="form-check">
-                            <input className="w-4 h-4 border-rose-700 text-rose-700 focus:ring-blue-900" type="checkbox" value="" />
-                            <label className="ms-2" htmlFor="">
+                        <div className="flex items-center mb-4">
+                            <input className="w-4 h-4 border-rose-700 text-rose-700 focus:ring-blue-900" type="checkbox" value="" {...register("june07.afternoon")} />
+                            <label className="ms-2">
                                 afternoon
                             </label>
                         </div>
