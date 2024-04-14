@@ -60,7 +60,7 @@ function RegistrationInput() {
                         </div>
                     </div>
                 </div>
-                <button type="submit" className="p-2 bg-rose-700 col-span-full text-white font-semibold">Register</button>
+                <button type="submit" className="p-2 bg-rose-700 col-span-full text-white font-semibold" disabled={isSubmitting? true: false }>Register</button>
             </form>
         </div>
     )
