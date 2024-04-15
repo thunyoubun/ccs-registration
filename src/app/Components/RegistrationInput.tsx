@@ -1,3 +1,4 @@
+'use client'
 import RegistrationForm, { IRegistrationForm } from "./RegistrationForm"
 import TextInput from "./TextInput"
 
@@ -30,14 +31,14 @@ function RegistrationInput() {
                             <label htmlFor="" className="font-medium">6 June 2024:</label>
                         </div>
                         <div className="flex items-center mb-4 col-span-2">
-                            <input className="w-4 h-4 border-rose-700 text-rose-700 focus:ring-blue-900" type="checkbox" value=""{...register("june06.morning")} id="flexCheckDefault" />
-                            <label className="ms-2" htmlFor="flexCheckDefault">
+                            <input className="w-4 h-4 border-rose-700 text-rose-700 focus:ring-blue-900" type="checkbox" value=""{...register("june06.morning")} id="06morning" />
+                            <label className="ms-2" htmlFor="06morning">
                                 morning
                             </label>
                         </div>
                         <div className="flex items-center mb-4">
-                            <input className="w-4 h-4 border-rose-700 text-rose-700 focus:ring-blue-900" type="checkbox" value="" {...register("june06.afternoon")} />
-                            <label className="ms-2">
+                            <input className="w-4 h-4 border-rose-700 text-rose-700 focus:ring-blue-900" type="checkbox" value="" {...register("june06.afternoon")} id="06afternoon"/>
+                            <label className="ms-2" htmlFor="06afternoon">
                                 afternoon
                             </label>
                         </div>
@@ -47,14 +48,14 @@ function RegistrationInput() {
                             <label htmlFor="" className="font-medium">7 June 2024:</label>
                         </div>
                         <div className="flex items-center mb-4 col-span-2">
-                            <input className="w-4 h-4 border-rose-700 text-rose-700 focus:ring-blue-900" type="checkbox" value="" id="flexCheckDefault" {...register("june07.morning")} />
-                            <label className="ms-2" htmlFor="flexCheckDefault">
+                            <input className="w-4 h-4 border-rose-700 text-rose-700 focus:ring-blue-900" type="checkbox" value="" id="07morning" {...register("june07.morning")} />
+                            <label className="ms-2" htmlFor="07morning">
                                 morning
                             </label>
                         </div>
                         <div className="flex items-center mb-4">
-                            <input className="w-4 h-4 border-rose-700 text-rose-700 focus:ring-blue-900" type="checkbox" value="" {...register("june07.afternoon")} />
-                            <label className="ms-2">
+                            <input className="w-4 h-4 border-rose-700 text-rose-700 focus:ring-blue-900" type="checkbox" value="" id="07afternoon" {...register("june07.afternoon")} />
+                            <label className="ms-2" htmlFor="07afternoon">
                                 afternoon
                             </label>
                         </div>

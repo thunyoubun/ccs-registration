@@ -5,6 +5,9 @@
             "topic": "Registration and welcome refreshment",
             "description":[],
             "speakers": [],
+            "panelists": [],
+            "facilitators": [],
+            "group": "None",
             "bgColor": false
         },
         {
@@ -15,6 +18,9 @@
                 "Opening remark by Representative of PMU-B Director (TBC)" 
             ],
             "speakers": [],
+            "panelists": [],
+            "facilitators": [],
+            "group": "None",
             "bgColor": false
         },
         {
@@ -24,6 +30,9 @@
             "speakers": [
                 "Assoc. Prof. Dr. Winita Punyodom, RUN and CMU (TBC)"
             ],
+            "panelists": [],
+            "facilitators": [],
+            "group": "None",
             "bgColor": false
         },
         {
@@ -33,6 +42,9 @@
             "speakers": [
                 "Dr. Pongvipa Lohsomboon, TSRI and PMU-C"
             ],
+            "panelists": [],
+            "facilitators": [],
+            "group": "A] Technical & Research Session",
             "bgColor": false
         },
         {
@@ -42,6 +54,9 @@
             "speakers": [
                 "Dr. Kajornsak Faungnawakij, TCCA and NANOTEC (TBC)"
             ],
+            "panelists": [],
+            "facilitators": [],
+            "group": "A] Technical & Research Session",
             "bgColor": false
         },
         {
@@ -51,6 +66,9 @@
             "speakers": [
                 "Asst. Prof. Dr. Suparit Tangparitkul, Director of Chiang Mai Research Center for CCS (CMU)"
             ],
+            "panelists": [],
+            "facilitators": [],
+            "group": "A] Technical & Research Session",
             "bgColor": false
         },
         {
@@ -58,6 +76,9 @@
             "topic": "Break",
             "description": [],
             "speakers": [],
+            "panelists": [],
+            "facilitators": [],
+            "group": "None",
             "bgColor": true
         },
         {
@@ -67,6 +88,9 @@
             "speakers": [
                 "Representative from Gassnova, Norway (TBC)"
             ],
+            "panelists": [],
+            "facilitators": [],
+            "group": "A] Technical & Research Session",
             "bgColor": false
         },
         {
@@ -76,6 +100,9 @@
             "speakers": [
                 "Mr. Søren Poulsen, Project Director, Greensand Project, Denmark"
             ],
+            "panelists": [],
+            "facilitators": [],
+            "group": "A] Technical & Research Session",
             "bgColor": false
         },
         {
@@ -83,6 +110,9 @@
             "topic": "Lunch Break",
             "description": [],
             "speakers": [],
+            "panelists": [],
+            "facilitators": [],
+            "group": "None",
             "bgColor": true
         },
         {
@@ -92,22 +122,29 @@
             "speakers": [
                 "Assoc. Prof. Wongkot Wongsapai, CMU, Thailand (TBC)"
             ],
+            "panelists": [],
+            "facilitators": [],
+            "group": "B] Industrial Panel Discussion",
             "bgColor": false
         },
         {
             "time": "13.30 - 14.30",
             "topic": "CCS Industry’s Landscape and Its Ecosystem: Opportunities and Challenges",
             "description": [],
-            "speakers": [
+            "speakers": [],
+            "panelists": [
                 "Mr. Søren Poulsen, Project Director, Greensand Project, Denmark",
                 "Representative from Gassnova, Norway",
                 "Assoc. Prof. Wongkot Wongsapai, CMU, Thailand (TBC)",
                 "Mr.Surachai Vangrattanachai CCUs Director, SCG CGS",
                 "Representative from PTT (TBC)",
                 "Representative from EGAT (TBC)",
-                "Dr. Apiradee Suwannathong, Department of Mineral Fuels (DMF), Thailand",
+                "Dr. Apiradee Suwannathong, Department of Mineral Fuels (DMF), Thailand"
+            ],
+            "facilitators": [
                 "Asst. Prof. Dr. Suparit Tangparitkul"
             ],
+            "group": "B] Industrial Panel Discussion",
             "bgColor": false
         },
         {
@@ -115,6 +152,9 @@
             "topic": "Break",
             "description": [],
             "speakers": [],
+            "panelists": [],
+            "facilitators": [],
+            "group": "None",
             "bgColor": true
         },
         {
@@ -124,19 +164,26 @@
             "speakers": [
                 "Prof. Philip Ringrose, NTNU and Equinor, Norway"
             ],
+            "panelists": [],
+            "facilitators": [],
+            "group": "B] Industrial Panel Discussion",
             "bgColor": false
         },
         {
             "time": "15.15 - 16.15",
             "topic": "Toward Tomorrow's Challenges: What are Next for CCS?",
             "description": [],
-            "speakers": [
+            "speakers": [],
+            "panelists": [
                 "Prof. Nicolas von Solms, Technical University of Denmark (DTU), Denmark",
                 "Representative from NTNU, Norway",
                 "Representative from KIGAM, Korea (TBC)",
-                "Representative from BRIN, Indonesia (TBC)",
+                "Representative from BRIN, Indonesia (TBC)"
+            ],
+            "facilitators": [
                 "Asst. Prof. Dr. Natthanan Promsuk"
             ],
+            "group": "C] Technical & Research Panel Discussion",
             "bgColor": false
         },
         {
@@ -144,6 +191,9 @@
             "topic": "Closing Remark",
             "description": [],
             "speakers": [],
+            "panelists": [],
+            "facilitators": [],
+            "group": "None",
             "bgColor": false
         },
         {
@@ -151,6 +201,9 @@
             "topic": "Networking Session & Exclusive Dinner",
             "description": [],
             "speakers": [],
+            "panelists": [],
+            "facilitators": [],
+            "group": "None",
             "bgColor": true
         }
     ]
