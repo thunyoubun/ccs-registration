@@ -1,3 +1,4 @@
+'use client'
 import RegistrationForm, { IRegistrationForm } from "./RegistrationForm"
 import TextInput from "./TextInput"
 
