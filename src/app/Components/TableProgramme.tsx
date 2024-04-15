@@ -13,7 +13,7 @@ function RowData() {
                 <td>
                     <h3 className="font-medium text-lg ">{schedule.topic}</h3>
                 </td>
-                <td>{schedule.group}</td>
+                <td>{schedule.group != "None"? schedule.group: ''}</td>
                 <td className="flex justify-center content-center">
                     <button className="content-center">
                         <MdOutlineExpandLess />
