@@ -34,11 +34,11 @@ export default function Home() {
 
             <button className=" bg-white rounded-3xl w-fit py-1 px-2 shadow-lg transition ease-in-out delay-150 hover:scale-105 " >
               <Link href="https://maps.app.goo.gl/t6Jprs7dpvjMb8dh9">
-              <h1>
-                6 - 7 June at Novotel Bangkok Future Park Rangsit, Bangkok,
-                Thailand
-                <FaArrowRightLong className="mx-2 inline" />
-              </h1>
+                <h1>
+                  6 - 7 June at Novotel Bangkok Future Park Rangsit, Bangkok,
+                  Thailand
+                  <FaArrowRightLong className="mx-2 inline" />
+                </h1>
               </Link>
             </button>
 
@@ -62,13 +62,17 @@ export default function Home() {
                 Technologies
               </h1>
               <p className=" text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
-                doloremque harum. Neque, aut eius quos dolore quam molestiae ea
-                dolorum fugit dolor obcaecati vitae repellendus consequuntur
-                molestias eos enim reiciendis sit eum voluptatibus debitis
-                aliquam repellat inventore dolorem! Porro, ipsa quo
-                necessitatibus voluptates fugit pariatur accusamus consectetur
-                deserunt deleniti rem!
+                Thailand has pledged for carbon neutrality and net zero emissions since COP 26, while the Program Management Units (PMUs) continue to fund research projects from fundamentals to industrial implementation.
+                 Conducted in 2023, Thailand&apos;s Carbon Capture Utilization and Storage (CCUS) technology roadmap has emphasized key technologies to be achieved at specific times and determined quantities of CO2 to be captured, utilized, and stored permanently. 
+                 With industry-involved implementation, the industries in Thailand&apos;s CO2 ecosystem have proposed that there should be a single consortium for CCUS at large, which would help investors or technology users to engage with key technology developers or researchers in academia more efficiently and effectively, as in other leading nations.
+              </p>
+              <p className=" text-center">
+                In 2023, a few collaborative events and visits at the international scale deployed by Thai entities have been observed. 
+                Key events include: (i) Denmark and Norway Trip, where academia, industries, and regulators have joined to visit key CCUS research groups and sites; and (ii) Korea Networking, with both sides visiting to collaborate on deeper technology transfer in CCS.
+              </p>
+              <p className=" text-center">
+                Following those activities in the past year, the Thailand CCUS Alliance (TCCA) has been formulated as a notional CCUS consortium, with ongoing collaborations with foreign nations maturing. 
+                Thus, this international CCS symposium is to be held with the aim of being a networking session to kick off the TCCA and bridge the industry-academia gap to real-world implementations of CCS projects.
               </p>
             </div>
           </div>
