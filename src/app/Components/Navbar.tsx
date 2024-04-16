@@ -9,7 +9,7 @@ const Navbar = () => {
   //if navbar is not fixed, change background color to bg-white/50
   const [bgColor, setBgColor] = useState("bg-white");
 
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(true);
 
   useEffect(() => {
     let lastScrollTop = 0;
@@ -34,9 +34,7 @@ const Navbar = () => {
   return (
     <div
       className={` bg-white p-4 w-full fixed top-0 z-50 ${
-        scrolled
-          ? " block transition-opacity opacity-100 ease-in-out delay-0 "
-          : " transition-opacity opacity-0 ease-in-out delay-300 "
+        scrolled ? " block " : " hidden"
       } `}
     >
       <div className=" px-6 flex justify-between items-center">

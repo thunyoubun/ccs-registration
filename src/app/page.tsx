@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 
@@ -8,6 +9,8 @@ import Keynote from "./Screens/Keynote";
 import Organize from "./Screens/Organize";
 import Direction from "./Screens/Direction";
 import Footer from "./Components/Footer";
+
+import { ScrollToSection } from "./Functionalitys/ScrollTo";
 
 export default function Home() {
   return (
@@ -29,7 +32,10 @@ export default function Home() {
               </h1>
             </div>
 
-            <button className=" bg-white rounded-3xl w-fit py-1 px-2 shadow-lg transition ease-in-out delay-150 hover:scale-105 " >
+            <button
+              onClick={() => ScrollToSection("direction")}
+              className=" bg-white rounded-3xl w-fit py-1 px-2 shadow-lg transition ease-in-out delay-150 hover:scale-105 "
+            >
               <h1>
                 6 - 7 June at Novotel Bangkok Future Park Rangsit, Bangkok,
                 Thailand

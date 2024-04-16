@@ -1,9 +1,10 @@
 import React from "react";
-import { FaPhone } from "react-icons/fa6";
+import { MdOutlineLocalPhone } from "react-icons/md";
+
 const Footer = () => {
   return (
     <div className="bg-white h-fit flex justify-center items-center">
-      <div className="m-10 p-4 flex flex-col gap-4 items-center justify-center">
+      <div className="m-10 w-full  flex flex-col gap-4 items-center justify-center">
         <div className="flex gap-2">
           <div className=" bg-red-600 w-16 h-16"></div>
           <div className="w-fit flex flex-col">
@@ -22,7 +23,8 @@ const Footer = () => {
         </div>
         <div className=" text-center text-sm">
           <h1 className="flex justify-center">
-            <FaPhone size={25} className=" inline" /> (+66) 2-723-4900
+            <MdOutlineLocalPhone size={25} className=" inline" /> (+66)
+            2-723-4900
           </h1>
         </div>
       </div>
