@@ -158,6 +158,7 @@ export default function Direction() {
                     type="text"
                     placeholder="Enter Name"
                     className="p-2 border border-gray-300 rounded-md"
+                    {...register("name")}
                   />
                   <label htmlFor="" className="text-black font-semibold">
                     Email
@@ -170,6 +171,7 @@ export default function Direction() {
                     type="text"
                     placeholder="example@gmail.com"
                     className="p-2 border border-gray-300 rounded-md"
+                    {...register("email")}
                   />
                   <label htmlFor="" className="text-black font-semibold">
                     Subject
@@ -179,6 +181,7 @@ export default function Direction() {
                     type="text"
                     placeholder="Enter Subject"
                     className="p-2 border border-gray-300 rounded-md"
+                    {...register("subject")}
                   />
                   <label htmlFor="" className="text-black font-semibold">
                     Message
@@ -187,6 +190,7 @@ export default function Direction() {
                     {...register("message", { required: true })}
                     placeholder="Enter Message"
                     className="p-2 border border-gray-300 rounded-md"
+                    {...register("message")}
                   ></textarea>
                   <button
                     type="submit"

@@ -25,10 +25,12 @@ export default function Home() {
           <div className=" m-20 flex flex-col gap-7 justify-center items-center">
             <div className=" mx-20  text-center  ">
               <h1 className=" text-white font-bold  text-5xl">
-                The 16th International Conference
+                {/* The 16th International Conference */}
+                International CCS Symposium:
               </h1>
               <h1 className=" mt-6 text-white font-bold text-5xl">
-                on Information Technology and Electrical Engineering
+                {/* on Information Technology and Electrical Engineering */}
+                A ‘Supercritical’ Research Toward Industrial Solution
               </h1>
             </div>
 
@@ -44,7 +46,7 @@ export default function Home() {
             </button>
 
             <button className="mt-6 bg-transparent shadow-xl border-2 border-white rounded-lg p-2 text-white hover:scale-105 transition ease-in-out delay-150 ">
-              <h1>Full Schedule and Programme</h1>
+              <Link href="/programme"><h1>Full Schedule and Programme</h1></Link>
             </button>
           </div>
         </div>
@@ -63,13 +65,17 @@ export default function Home() {
                 Technologies
               </h1>
               <p className=" text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
-                doloremque harum. Neque, aut eius quos dolore quam molestiae ea
-                dolorum fugit dolor obcaecati vitae repellendus consequuntur
-                molestias eos enim reiciendis sit eum voluptatibus debitis
-                aliquam repellat inventore dolorem! Porro, ipsa quo
-                necessitatibus voluptates fugit pariatur accusamus consectetur
-                deserunt deleniti rem!
+                Thailand has pledged for carbon neutrality and net zero emissions since COP 26, while the Program Management Units (PMUs) continue to fund research projects from fundamentals to industrial implementation.
+                 Conducted in 2023, Thailand&apos;s Carbon Capture Utilization and Storage (CCUS) technology roadmap has emphasized key technologies to be achieved at specific times and determined quantities of CO2 to be captured, utilized, and stored permanently. 
+                 With industry-involved implementation, the industries in Thailand&apos;s CO2 ecosystem have proposed that there should be a single consortium for CCUS at large, which would help investors or technology users to engage with key technology developers or researchers in academia more efficiently and effectively, as in other leading nations.
+              </p>
+              <p className=" text-center">
+                In 2023, a few collaborative events and visits at the international scale deployed by Thai entities have been observed. 
+                Key events include: (i) Denmark and Norway Trip, where academia, industries, and regulators have joined to visit key CCUS research groups and sites; and (ii) Korea Networking, with both sides visiting to collaborate on deeper technology transfer in CCS.
+              </p>
+              <p className=" text-center">
+                Following those activities in the past year, the Thailand CCUS Alliance (TCCA) has been formulated as a notional CCUS consortium, with ongoing collaborations with foreign nations maturing. 
+                Thus, this international CCS symposium is to be held with the aim of being a networking session to kick off the TCCA and bridge the industry-academia gap to real-world implementations of CCS projects.
               </p>
             </div>
           </div>
