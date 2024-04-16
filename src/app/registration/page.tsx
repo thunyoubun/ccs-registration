@@ -16,7 +16,7 @@ function RegistrationPage() {
         <div className="mt-24 p-8 lg:p-16 bg-gradient-to-r from-red-700 to-blue-800 flex justify-center">
           <div className="">
             {/* Countdown */}
-            <Countdown targetDate={new Date("2024-06-06")} />
+            <Countdown targetDate={new Date("2024-04-26")} />
             <div className="grid lg:flex">
               {/* Google Map */}
               <RegistrationMap />
