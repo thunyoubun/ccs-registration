@@ -1,20 +1,17 @@
 import React from "react";
+import Image from "next/image";
 import { MdOutlineLocalPhone } from "react-icons/md";
 
 const Footer = () => {
   return (
     <div className="bg-white h-fit flex justify-center items-center">
       <div className="m-10 w-full  flex flex-col gap-4 items-center justify-center">
-        <div className="flex gap-2">
-          <div className=" bg-red-600 w-16 h-16"></div>
-          <div className="w-fit flex flex-col">
-            <h1 className=" font-semibold text-5xl ">ICITEE 2024</h1>
-            <h2 className=" font-medium text-xs tracking-tighter">
-              International Conference on Information Technology and Electrical
-              Engineering
-            </h2>
-          </div>
-        </div>
+        <Image
+          src="/images/css-logo-remove.jpg"
+          width={200}
+          height={200}
+          alt={"css-logo"}
+        />
         <div className=" text-center text-sm">
           <h1>
             15th International Conference on Information Technology and

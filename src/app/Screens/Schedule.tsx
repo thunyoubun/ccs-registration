@@ -8,7 +8,7 @@ function RowDataSimple({ data }: { data: IProgrammeData[] }) {
   return data.map((schedule) => (
     <tr
       className={`${
-        schedule.bgColor ? "bg-rose-700 text-white" : ""
+        schedule.bgColor ? "bg-red-600 text-white" : ""
       } text-center rounded-lg shadow-sm`}
       key={schedule.time}
     >
@@ -30,18 +30,18 @@ export default function Schedule() {
   };
 
   return (
-    <div className="h-screen bg-gray-100 pt-20 px-20 ">
-      <div className=" flex-1">
-        <div className="flex justify-center">
+    <div className="md:h-screen h-fit bg-gray-100  p-8 md:p-20 ">
+      <div className="  ">
+        <div className="flex align-middle justify-center">
           <h1 className=" text-3xl  font-semibold">Schedule</h1>
         </div>
 
-        <div className=" mt-8 bg-red-700 rounded-t-lg p-2 flex gap-4">
+        <div className=" mt-8 bg-red-600 rounded-t-lg p-2 flex gap-4">
           <div className="w-full flex gap-2">
             <button
               onClick={handleTab}
               className={` ${
-                activeTab ? "bg-white text-red-800 shadow-lg" : "text-black"
+                activeTab ? "bg-white text-red-700 shadow-lg" : "text-black"
               }  rounded-lg h-16 w-1/2 flex justify-center items-center text-center `}
             >
               <h1 className="  text-xl font-semibold">6 June</h1>
@@ -49,7 +49,7 @@ export default function Schedule() {
             <button
               onClick={handleTab}
               className={`${
-                !activeTab ? "bg-white text-red-800 shadow-lg" : "text-black"
+                !activeTab ? "bg-white text-red-700 shadow-lg" : "text-black"
               }  rounded-lg h-16 w-1/2 flex justify-center items-center text-center`}
             >
               <h1 className="  text-xl font-semibold">7 June</h1>
@@ -57,7 +57,7 @@ export default function Schedule() {
           </div>
         </div>
         <div className=" gap-4 bg-white shadow-lg  h-fit rounded-b-lg p-4 flex flex-col items-center  ">
-          <div className="w-full h-fit max-h-80 overflow-auto">
+          <div className="w-full h-fit max-h-96 md:max-h-80 overflow-auto">
             <table className="w-full table-auto ">
               <thead className="">
                 <tr className=" border-b-2">

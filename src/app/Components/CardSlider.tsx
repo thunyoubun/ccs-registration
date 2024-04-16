@@ -9,8 +9,7 @@ const CardSlider = () => {
   const [activeImage, setActiveImage] = useState(0);
   const [data, setData] = useState<PeopleCardType[]>([]);
   const [animation, setAnimation] = useState("animate-fade-left" as string);
-
-  let cardPerSlide = 3;
+  const [cardPerSlide, setCardPerSlide] = useState(3);
 
   const authData = [
     { name: "a", srcImage: "/images/profile/natthanan.jpg" },
@@ -21,14 +20,27 @@ const CardSlider = () => {
     { name: "f", srcImage: "/images/profile/natthanan.jpg" },
   ];
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const showCard = (index: number) => {
     setData(authData.slice(index, index + cardPerSlide));
   };
 
+  //if window rezie change card per slide
   useEffect(() => {
-    showCard(activeImage);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [activeImage]);
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setCardPerSlide(3);
+      } else {
+        setCardPerSlide(1);
+      }
+      showCard(activeImage);
+    };
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [activeImage, showCard]);
 
   const clickNext = () => {
     activeImage === authData.length - cardPerSlide

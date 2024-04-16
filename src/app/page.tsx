@@ -20,10 +20,10 @@ export default function Home() {
       <ToTop />
       <div
         id="home"
-        className=" md:mt-16 mt-28  bg-gradient-to-r from-red-700 to-blue-800  flex justify-center items-center"
+        className=" md:mt-20 mt-28  bg-gradient-to-r from-red-700 to-blue-800  flex justify-center items-center"
       >
-        <div className=" m-20 flex flex-col gap-7 justify-center items-center">
-          <div className=" mx-20  text-center  ">
+        <div className="md:m-20 m-8 flex flex-col gap-7 justify-center items-center">
+          <div className="mx-8 md:mx-20  text-center  ">
             <h1 className=" text-white font-bold  text-5xl">
               {/* The 16th International Conference */}
               International CCS Symposium:
@@ -45,11 +45,11 @@ export default function Home() {
             </h1>
           </button>
 
-          <button className="mt-6 bg-transparent shadow-xl border-2 border-white rounded-lg p-2 text-white hover:scale-105 transition ease-in-out delay-150 ">
-            <Link href="/programme">
+          <Link href="/programme">
+            <button className="mt-6 bg-transparent shadow-xl border-2 border-white rounded-lg p-2 text-white hover:scale-105 transition ease-in-out delay-150 ">
               <h1>Full Schedule and Programme</h1>
-            </Link>
-          </button>
+            </button>
+          </Link>
         </div>
       </div>
 
@@ -57,7 +57,7 @@ export default function Home() {
         id="aboutEvent"
         className=" bg-white flex justify-center items-centers"
       >
-        <div className="m-20 ">
+        <div className="m-8 md:m-20 ">
           <div className=" flex flex-col gap-4">
             <h1 className=" text-red-500 font-semibold text-3xl text-center">
               About Event
