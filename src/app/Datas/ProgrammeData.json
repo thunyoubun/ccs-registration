@@ -1,5 +1,5 @@
 {
-    "programme-schedule":[
+    "programmeSchedule06":[
         {
             "time": "08.30 - 09.00",
             "topic": "Registration and welcome refreshment",
@@ -205,6 +205,18 @@
             "facilitators": [],
             "group": "None",
             "bgColor": true
+        }
+    ],
+    "programmeSchedule07":[
+        {
+            "time": "08.30 - 09.00",
+            "topic": "Registration and welcome refreshment",
+            "description":[],
+            "speakers": [],
+            "panelists": [],
+            "facilitators": [],
+            "group": "None",
+            "bgColor": false
         }
     ]
 }

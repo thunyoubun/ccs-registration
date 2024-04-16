@@ -1,30 +1,30 @@
+import Link from "next/link";
 import Image from "next/image";
-import Link from "next/link"
 import { useEffect, useState } from "react";
 
-function NavbarProgramme(){
+function NavbarRegistration() {
     const [scrolled, setScrolled] = useState(false);
 
-  useEffect(() => {
-    let lastScrollTop = 0;
-    const handleScroll = () => {
-      const currentScrollTop =
-        window.screenY || document.documentElement.scrollTop;
-      if (currentScrollTop > lastScrollTop) {
-        setScrolled(false);
-      } else {
-        setScrolled(true);
-      }
-      lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
-    };
+    useEffect(() => {
+        let lastScrollTop = 0;
+        const handleScroll = () => {
+            const currentScrollTop =
+                window.screenY || document.documentElement.scrollTop;
+            if (currentScrollTop > lastScrollTop) {
+                setScrolled(false);
+            } else {
+                setScrolled(true);
+            }
+            lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
+        };
 
-    window.addEventListener("scroll", handleScroll);
+        window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-    return(
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+    return (
         <div
       className={` bg-white p-4 w-full fixed top-0 z-50 ${
         scrolled
@@ -43,7 +43,7 @@ function NavbarProgramme(){
         <div className="hidden md:flex ">
           <ul className="flex gap-8">
             <li className="hover:scale-105 hover:font-semibold transition ease-out delay-50">
-              <Link href="/registration">Registration</Link>
+              <Link href="/programme">Programme</Link>
             </li>
           </ul>
         </div>
@@ -52,4 +52,4 @@ function NavbarProgramme(){
     )
 }
 
-export default NavbarProgramme
+export default NavbarRegistration

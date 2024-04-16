@@ -1,16 +1,18 @@
 'use client'
-import Navbar from "../Components/Navbar"
 import CardSponsor from "../Components/CardSponsor"
 import RegistrationInput from "../Components/RegistrationInput"
 import RegistrationMap from "../Components/RegistrationMap"
 import Countdown from "../Components/Countdown"
+import NavbarRegistration from "../Components/NavbarRegistration"
+import ToTop from "../Components/ToTop"
 
 function RegistrationPage() {
 
     return (
         <header>
             <div className="relative">
-                <Navbar />
+                <NavbarRegistration />
+                <ToTop />
                 <div className="mt-24 p-8 lg:p-16 bg-gradient-to-r from-red-700 to-blue-800 flex justify-center">
                     <div className="">
                         {/* Countdown */}
