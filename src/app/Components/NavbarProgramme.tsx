@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link"
 import { useEffect, useState } from "react";
 
@@ -34,16 +35,8 @@ function NavbarProgramme(){
       <div className=" px-6 flex justify-between items-center">
         {/* Add your logo here */}
         <Link href="/">
-          <div className="flex gap-2">
-            <div className=" bg-red-600 w-16 h-16"></div>
-            <div className="w-fit flex flex-col">
-              <h1 className=" font-semibold text-5xl ">ICCSS 2024</h1>
-              <h2 className=" font-medium text-xs tracking-tighter">
-                {/* International Conference on Information Technology and
-                Electrical Engineering */}
-                International CCS Symposium: A ‘Supercritical’ Research Toward Industrial Solution
-              </h2>
-            </div>
+          <div className="flex">
+            <Image src={"/images/css-logo.jpg"} alt={"CSSU-logo"} width={128} height={128} />
           </div>
         </Link>
 
