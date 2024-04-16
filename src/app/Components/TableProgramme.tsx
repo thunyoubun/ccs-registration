@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import ScheduleData from "../Datas/ProgrammeData.json"
 
-interface IProgrammeData {
+export interface IProgrammeData {
         time: string;
         topic: string;
         description: string[];

@@ -4,9 +4,16 @@ import React, { useState } from "react";
 import { FaPhone } from "react-icons/fa6";
 import { GoLocation } from "react-icons/go";
 import { MdOutlineMail } from "react-icons/md";
+import { sendEmail } from "../Functionalitys/SendEmail";
+import ContactForm, { IContactForm } from "../Components/ContactForm";
 
 export default function Direction() {
   const [secondDate, setSecondDate] = useState<boolean>(false);
+  const {handleSubmit, register} = ContactForm()
+
+  function onSubmit(data:IContactForm){
+      sendEmail(data)
+  }
   return (
     <div className="flex flex-col h-fit bg-gradient-to-r from-red-700 to-blue-800 py-20 px-20">
       <div className="flex-1 ">
@@ -108,7 +115,7 @@ export default function Direction() {
               <div className="">
                 <h1 className=" text-3xl font-semibold">Contact Form</h1>
               </div>
-              <div>
+              <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="flex flex-col gap-4 mt-4">
                   <label htmlFor="" className="text-black font-semibold">
                     Name
@@ -117,6 +124,7 @@ export default function Direction() {
                     type="text"
                     placeholder="Enter Name"
                     className="p-2 border border-gray-300 rounded-md"
+                    {...register("name")}
                   />
                   <label htmlFor="" className="text-black font-semibold">
                     Email
@@ -125,6 +133,7 @@ export default function Direction() {
                     type="text"
                     placeholder="example@gmail.com"
                     className="p-2 border border-gray-300 rounded-md"
+                    {...register("email")}
                   />
                   <label htmlFor="" className="text-black font-semibold">
                     Subject
@@ -133,21 +142,22 @@ export default function Direction() {
                     type="text"
                     placeholder="Enter Subject"
                     className="p-2 border border-gray-300 rounded-md"
+                    {...register("subject")}
                   />
                   <label htmlFor="" className="text-black font-semibold">
                     Message
                   </label>
                   <textarea
-                    name=""
                     id=""
                     placeholder="Enter Message"
                     className="p-2 border border-gray-300 rounded-md"
+                    {...register("message")}
                   ></textarea>
                   <button className="bg-red-600 hover:bg-red-700 text-white p-2 rounded-md">
                     Submit
                   </button>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>
