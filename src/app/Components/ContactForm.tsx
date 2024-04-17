@@ -11,7 +11,7 @@ export interface IContactForm{
 
 const validationContactForm = z.object({
     name: z.string(),
-    email: z.string(),
+    email: z.string().email(),
     subject: z.string(),
     message: z.string()
 })
