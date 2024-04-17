@@ -20,7 +20,6 @@ const CardSlider = () => {
     { name: "f", srcImage: "/images/profile/natthanan.jpg" },
   ];
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   const showCard = (index: number) => {
     setData(authData.slice(index, index + cardPerSlide));
   };
@@ -32,15 +31,16 @@ const CardSlider = () => {
         setCardPerSlide(3);
       } else {
         setCardPerSlide(1);
+        showCard(activeImage);
       }
-      showCard(activeImage);
     };
     window.addEventListener("resize", handleResize);
     handleResize();
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [activeImage, showCard]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [window.innerWidth]);
 
   const clickNext = () => {
     activeImage === authData.length - cardPerSlide

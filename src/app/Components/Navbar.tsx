@@ -63,7 +63,7 @@ const Navbar = ({ path }: NavbarProps) => {
                 </button>
               </li>
             )}
-            {path !== "programme" && (
+            {path !== "/programme" && (
               <li className="hover:scale-105 hover:font-semibold transition ease-out delay-50">
                 <Link href="/programme">Programme</Link>
               </li>
