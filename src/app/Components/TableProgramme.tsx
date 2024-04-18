@@ -139,7 +139,7 @@ function TableProgramme() {
             <tr className="border-b-2">
               <th className="text-center font-medium text-2xl">TIME</th>
               <th className="text-center font-medium text-2xl">AGENDA</th>
-              <th className="text-center font-medium text-2xl">GROUP</th>
+              <th className="text-center font-medium text-2xl">FEATURES</th>
             </tr>
           </thead>
           <tbody>

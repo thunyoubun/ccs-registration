@@ -45,13 +45,17 @@ const Navbar = ({ path }: NavbarProps) => {
     >
       <div className=" px-6 flex justify-between items-center">
         {/* Add your logo here */}
-        <Link href="/">
+        <Link href="/" className="flex">
           <Image
             src="/images/css-logo-remove.jpg"
             width={100}
             height={100}
             alt={"css-logo"}
           />
+          <div className="my-2 invisible lg:visible">
+            <h1 className="text-2xl font-semibold">CCUS</h1>
+            <p className="text-sm">Carbon Capture, Utilization and Storage</p>
+          </div>
         </Link>
 
         <div className="hidden md:flex ">

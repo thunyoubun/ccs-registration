@@ -36,7 +36,8 @@ function NavbarRegistration() {
         {/* Add your logo here */}
         <Link href="/">
           <div className="flex">
-            <Image src={"/images/css-logo.jpg"} alt={"CSSU-logo"} width={128} height={128} />
+            {/* <Image src={"/images/css-logo.jpg"} alt={"CSSU-logo"} width={128} height={128} /> */}
+            <h1 className="text-black">CCUS</h1>
           </div>
         </Link>
 

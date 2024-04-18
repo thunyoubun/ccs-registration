@@ -63,10 +63,9 @@ export default function Home() {
               About Event
             </h1>
             <h1 className=" font-bold text-2xl text-center">
-              The Annual Conference for New Research, Innovative Ideas, and
-              Technologies
+              The International Symposium for Carbon Capture, Utilization and Storage (CCUS)
             </h1>
-            <p className=" text-center">
+            <p className="indent-8 text-justify">
               Thailand has pledged for carbon neutrality and net zero emissions
               since COP 26, while the Program Management Units (PMUs) continue
               to fund research projects from fundamentals to industrial
@@ -81,7 +80,7 @@ export default function Home() {
               developers or researchers in academia more efficiently and
               effectively, as in other leading nations.
             </p>
-            <p className=" text-center">
+            <p className="indent-8 text-justify">
               In 2023, a few collaborative events and visits at the
               international scale deployed by Thai entities have been observed.
               Key events include: (i) Denmark and Norway Trip, where academia,
@@ -89,8 +88,8 @@ export default function Home() {
               groups and sites; and (ii) Korea Networking, with both sides
               visiting to collaborate on deeper technology transfer in CCS.
             </p>
-            <p className=" text-center">
-              Following those activities in the past year, the Thailand CCUS
+            <p className="indent-8 text-justify">
+               Following those activities in the past year, the Thailand CCUS
               Alliance (TCCA) has been formulated as a notional CCUS consortium,
               with ongoing collaborations with foreign nations maturing. Thus,
               this international CCS symposium is to be held with the aim of

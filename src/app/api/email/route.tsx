@@ -2,8 +2,11 @@ import { type NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import Mail from "nodemailer/lib/mailer";
 
+const my_email = process.env.MY_EMAIL
+const my_pass = process.env.MY_PASSWORD
+
 export async function POST(request: NextRequest) {
-  const { email, name, message } = await request.json();
+  const { email, name, message, subject } = await request.json();
 
   const transport = nodemailer.createTransport({
     service: "gmail",
@@ -16,17 +19,24 @@ export async function POST(request: NextRequest) {
       Or you can go use these well known services and their settings at
       https://github.com/nodemailer/nodemailer/blob/master/lib/well-known/services.json
   */
+    host: "smtp.gmail.com",
+    port: 465,
+    secure: true,
     auth: {
-      user: process.env.MY_EMAIL,
-      pass: process.env.MY_PASSWORD,
+      user: my_email,
+      pass: my_pass,
     },
+    tls:{
+      rejectUnauthorized: false
+    }
   });
 
+  console.log(subject)
   const mailOptions: Mail.Options = {
-    from: process.env.MY_EMAIL,
-    to: process.env.MY_EMAIL,
+    from: email,
+    to: my_email,
     // cc: email, (uncomment this line if you want to send a copy to the sender)
-    subject: `Message from ${name} (${email})`,
+    subject: subject ,
     text: message,
   };
 
@@ -45,6 +55,6 @@ export async function POST(request: NextRequest) {
     await sendMailPromise();
     return NextResponse.json({ message: "Email sent" });
   } catch (err) {
-    return NextResponse.json({ error: err }, { status: 500 });
+    return NextResponse.json({ error: err }, { status: 400 });
   }
 }
