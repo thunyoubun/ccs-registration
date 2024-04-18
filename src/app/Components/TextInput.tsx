@@ -11,6 +11,7 @@ function TextInput(fnc: Function, word: string, tagName: string, typeInput: stri
                     required
                     />
             </div>
+            <p></p>
         </>
     )
 }
