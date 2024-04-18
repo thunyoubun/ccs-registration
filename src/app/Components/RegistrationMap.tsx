@@ -9,8 +9,8 @@ function RegistrationMap() {
 
   return (
     <div className=" bg-white md:order-none rounded-bl-lg">
-      <div className="p-4 bg-white grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-6">
-        <button
+      <div className="p-4 bg-white grid grid-cols-1 gap-3">
+        {/* <button
           onClick={() => setSecondDate(false)}
           className={`${
             !secondDate
@@ -31,7 +31,8 @@ function RegistrationMap() {
           disabled={secondDate}
         >
           <h1 className="text-xl font-semibold">7 JUNE</h1>
-        </button>
+        </button> */}
+        <h1 className="font-medium text-3xl lg:text-5xl text-center">Location</h1>
       </div>
       <div className="m-4 flex justify-center ">
         {!secondDate ? (
@@ -53,7 +54,7 @@ function RegistrationMap() {
       <div className="text-center p-2">
         <h3 className="">
           <span className="font-semibold">
-            {!secondDate ? "6 June" : "7 June"}
+            {!secondDate ? "6 - 7 June" : "7 June"}
           </span>
           {!secondDate
             ? ", at Novotel Bangkok Future Park Rangsit, Bangkok, Thailand"
