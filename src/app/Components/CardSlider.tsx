@@ -7,7 +7,6 @@ import { IoIosArrowDroprightCircle } from "react-icons/io";
 
 const CardSlider = () => {
   const [activeImage, setActiveImage] = useState(0);
-  const [data, setData] = useState<PeopleCardType[]>([]);
   const [animation, setAnimation] = useState("animate-fade-left" as string);
   const [cardPerSlide, setCardPerSlide] = useState(3);
 
@@ -20,10 +19,6 @@ const CardSlider = () => {
     { name: "f", srcImage: "/images/profile/natthanan.jpg" },
   ];
 
-  const showCard = (index: number) => {
-    setData(authData.slice(index, index + cardPerSlide));
-  };
-
   //if window rezie change card per slide
   useEffect(() => {
     const handleResize = () => {
@@ -31,7 +26,6 @@ const CardSlider = () => {
         setCardPerSlide(3);
       } else {
         setCardPerSlide(1);
-        showCard(activeImage);
       }
     };
     window.addEventListener("resize", handleResize);
@@ -40,7 +34,7 @@ const CardSlider = () => {
       window.removeEventListener("resize", handleResize);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [window.innerWidth]);
+  }, []);
 
   const clickNext = () => {
     activeImage === authData.length - cardPerSlide
@@ -70,14 +64,17 @@ const CardSlider = () => {
         </button>
         <div className={` flex gap-4`}>
           {/*show card just 3 in row */}
-          {data.map((auth, index) => (
-            <div key={index} className={` ${animation}`}>
-              <PeopleCard
-                name={auth.name}
-                srcImage={auth.srcImage}
-              ></PeopleCard>
-            </div>
-          ))}
+          {authData
+            .slice(activeImage, activeImage + cardPerSlide)
+            .map((auth, index) => (
+              <div key={index} className={` ${animation}`}>
+                <PeopleCard
+                  key={index}
+                  name={auth.name}
+                  srcImage={auth.srcImage}
+                ></PeopleCard>
+              </div>
+            ))}
         </div>
 
         <button onClick={clickNext} className="text-black/50 hover:text-black ">
