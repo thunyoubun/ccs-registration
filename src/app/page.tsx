@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
 
@@ -12,8 +12,12 @@ import Direction from "./Screens/Direction";
 import Footer from "./Components/Footer";
 
 import { ScrollToSection } from "./Functionalitys/ScrollTo";
+import axios from "axios";
 
 export default function Home() {
+  useEffect(()=>{
+  
+  },[])
   return (
     <div className="relative">
       <Navbar path={"/"} />
