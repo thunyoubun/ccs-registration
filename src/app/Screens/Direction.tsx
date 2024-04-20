@@ -56,7 +56,7 @@ export default function Direction() {
         <div className="w-full mt-8 flex justify-center px-8 pb-8">
           <div className="w-full bg-white rounded-lg">
             {/* Google Map */}
-            <div className="p-4 rounded-t-lg bg-white grid grid-cols-1 gap-3 sm:grid-cols-6 rounded-tl-lg">
+            {/* <div className="p-4 rounded-t-lg bg-white grid grid-cols-1 gap-3 sm:grid-cols-6 rounded-tl-lg">
               <button
                 onClick={() => setSecondDate(false)}
                 className={`${
@@ -79,8 +79,14 @@ export default function Direction() {
               >
                 <h1 className="text-xl font-semibold">7 JUNE</h1>
               </button>
+            </div> */}
+            <div className="text-center p-4">
+              <h3 className="">
+                <span className=" font-semibold">6 -7 June</span>, At Novotel
+                Bangkok Future Park Rangsit, Bangkok, Thailand
+              </h3>
             </div>
-            <div className="mx-4 md:h-fit h-72 relative ">
+            <div className="mx-4 mb-4 md:h-fit h-72 relative ">
               {!secondDate ? (
                 <iframe
                   className="  w-full md:h-96 h-full   "
@@ -98,17 +104,6 @@ export default function Direction() {
                   loading="lazy"
                 ></iframe>
               )}
-            </div>
-            <div className="text-center p-4">
-              <h3 className="">
-                <span className=" font-semibold">
-                  {!secondDate ? "6 June" : " 7 June"}
-                </span>
-
-                {!secondDate
-                  ? ", At Novotel Bangkok Future Park Rangsit, Bangkok, Thailand"
-                  : ", At Chiang Mai University, Chiang Mai, Thailand"}
-              </h3>
             </div>
           </div>
         </div>
