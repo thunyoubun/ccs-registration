@@ -102,8 +102,8 @@ function TableProgramme() {
   );
 
   return (
-    <div className="bg-white grid-cols-1 rounded shadow-lg ">
-      <div className="rounded-t-sm   bg-white p-3 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-6">
+    <div className="bg-white grid-cols-1 rounded shadow-lg md:m-2 lg:m-16">
+      <div className="rounded-t-sm bg-white p-3 grid gap-3 grid-cols-6 ">
         <button
           className={`${
             !selectSecond
@@ -133,8 +133,8 @@ function TableProgramme() {
           <h1 className="text-xl font-semibold">07 JUNE</h1>
         </button>
       </div>
-      <div className="flex">
-        <table className="table-auto w-full m-4 ">
+      <div className="flex overflow-auto my-6">
+        <table className="table-auto w-full md:m-4 lg:m-6">
           <thead className="w-full">
             <tr className="border-b-2">
               <th className="text-center font-medium text-2xl">TIME</th>

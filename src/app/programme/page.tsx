@@ -7,12 +7,12 @@ import ToTop from "../Components/ToTop";
 function ProgrammePage() {
   return (
     <header>
-      <div className="h-screen w-full relative">
+      <div className="relative">
         <Navbar path={"programme"} />
         <ToTop />
-        <div className="mt-24 p-16  bg-gradient-to-r from-red-700 to-blue-800 flex justify-center ">
-          <div className="w-full grid grid-cols-1 gap-7">
-            <h2 className="text-white text-5xl font-semibold text-center">
+        <div className="mt-28 bg-gradient-to-r from-red-700 to-blue-800 flex justify-center ">
+          <div className="w-full">
+            <h2 className="text-white text-5xl font-semibold text-center p-6 my-4 lg:mt-10">
               Programme
             </h2>
             <TableProgramme />
