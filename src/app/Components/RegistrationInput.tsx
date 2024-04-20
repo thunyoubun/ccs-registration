@@ -13,15 +13,15 @@ function RegistrationInput() {
     console.table(data);
   };
   return (
-    <div className="p-2 bg-white w-full md:order-none md:rounded-br-lg lg:p-4">
+    <div className="p-4 bg-white md:rounded-br-lg lg:p-4 xl:p-8">
       <h1 className="font-medium text-3xl lg:text-5xl text-center">
         Registration
       </h1>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="mt-5 grid grid-cols-1 gap-x-5 gap-y-5 lg:grid-cols-6"
+        className="mt-5 grid grid-cols-1 gap-x-2 gap-y-2 lg:gap-x-5 lg:gap-y-5 lg:grid-cols-6"
       >
-        <div className="col-span-full lg:col-span-3">
+        <div className=" lg:col-span-3">
           {TextInput(register, "First name", "firstname", "text")}
         </div>
         <div className="col-span-full lg:col-span-3">
@@ -35,7 +35,7 @@ function RegistrationInput() {
         </div>
         <div className="col-span-full">
           <h3 className="font-medium text-xl">Convenience:</h3>
-          <div className="flex justify-center gap-5">
+          <div className="flex gap-5 mx-2 md:mx-4 lg:justify-center lg:mx-0">
             <div className="col-span-2">
               <label htmlFor="" className="font-medium">
                 6 June 2024:
@@ -66,7 +66,7 @@ function RegistrationInput() {
               </label>
             </div>
           </div>
-          <div className="flex justify-center gap-5">
+          <div className="flex gap-5 mx-2 md:mx-4 lg:justify-center lg:mx-0">
             <div className="col-span-2">
               <label htmlFor="" className="font-medium">
                 7 June 2024:

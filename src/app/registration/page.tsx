@@ -5,7 +5,6 @@ import RegistrationMap from "../Components/RegistrationMap";
 import Countdown from "../Components/Countdown";
 import Navbar from "../Components/Navbar";
 import ToTop from "../Components/ToTop";
-import { useRouter } from "next/router";
 
 function RegistrationPage() {
   return (
@@ -13,11 +12,11 @@ function RegistrationPage() {
       <div className="relative">
         <Navbar path={"/registration"} />
         <ToTop />
-        <div className="mt-24 p-8 lg:p-16 bg-gradient-to-r from-red-700 to-blue-800 flex justify-center">
-          <div className="">
+        <div className="mt-36 w-auto lg:p-16 bg-gradient-to-r from-red-700 to-blue-800 flex justify-center">
+          <div className="w-full mb-6 md:m-10 xl:w-fit">
             {/* Countdown */}
             <Countdown targetDate={new Date("2024-06-03")} />
-            <div className="grid lg:flex">
+            <div className="lg:flex xl:">
               {/* Google Map */}
               <RegistrationMap />
               {/* Registration Form */}
@@ -32,7 +31,7 @@ function RegistrationPage() {
               Our sponsor:
             </label>
           </div>
-          <div>
+          <div className="flex justify-center">
             <div className="grid grid-cols-1 items-center sm:grid-cols-2 lg:grid-cols-4">
               <CardSponsor
                 path={
