@@ -1,4 +1,5 @@
 "use client";
+import axios from "axios";
 import RegistrationForm, { IRegistrationForm } from "./RegistrationForm";
 import TextInput from "./TextInput";
 
@@ -6,11 +7,18 @@ function RegistrationInput() {
   const {
     handleSubmit,
     register,
-    formState: { isSubmitting },
+    formState: { isSubmitting, errors },
   } = RegistrationForm();
 
   const onSubmit = (data: IRegistrationForm) => {
-    console.table(data);
+    
+     axios.post('/api/register', data).then((res) => {
+        if(res.status == 200){
+            console.log("success")
+        }else{
+            console.log("error")
+        }
+     })
   };
   return (
     <div className="p-4 bg-white md:rounded-br-lg lg:p-4 xl:p-8">
@@ -20,18 +28,19 @@ function RegistrationInput() {
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="mt-5 grid grid-cols-1 gap-x-2 gap-y-2 lg:gap-x-5 lg:gap-y-5 lg:grid-cols-6"
+        noValidate
       >
         <div className=" lg:col-span-3">
-          {TextInput(register, "First name", "firstname", "text")}
+          {TextInput(register, "First name", "firstname", "text", errors.firstname)}
         </div>
         <div className="col-span-full lg:col-span-3">
-          {TextInput(register, "Last name", "lastname", "text")}
+          {TextInput(register, "Last name", "lastname", "text", errors.lastname)}
         </div>
         <div className="col-span-full">
-          {TextInput(register, "Affiliation", "affiliation", "text")}
+          {TextInput(register, "Affiliation", "affiliation", "text", errors.affiliation)}
         </div>
         <div className="col-span-full">
-          {TextInput(register, "Email", "email", "email")}
+          {TextInput(register, "Email", "email", "email", errors.email)}
         </div>
         <div className="col-span-full">
           <h3 className="font-medium text-xl">Convenience:</h3>
@@ -48,6 +57,7 @@ function RegistrationInput() {
                 value=""
                 {...register("june06.morning")}
                 id="06morning"
+                disabled={isSubmitting}
               />
               <label className="ms-2" htmlFor="06morning">
                 morning
@@ -60,6 +70,7 @@ function RegistrationInput() {
                 value=""
                 {...register("june06.afternoon")}
                 id="06afternoon"
+                disabled={isSubmitting}
               />
               <label className="ms-2" htmlFor="06afternoon">
                 afternoon
@@ -78,6 +89,7 @@ function RegistrationInput() {
                 type="checkbox"
                 value=""
                 id="07morning"
+                disabled={isSubmitting}
                 {...register("june07.morning")}
               />
               <label className="ms-2" htmlFor="07morning">
@@ -90,6 +102,7 @@ function RegistrationInput() {
                 type="checkbox"
                 value=""
                 id="07afternoon"
+                disabled={isSubmitting}
                 {...register("june07.afternoon")}
               />
               <label className="ms-2" htmlFor="07afternoon">
@@ -101,7 +114,7 @@ function RegistrationInput() {
         <button
           type="submit"
           className="p-2 bg-red-600 hover:bg-red-700 col-span-full rounded-md text-white font-semibold"
-          disabled={isSubmitting ? true : false}
+          disabled={isSubmitting}
         >
           Register
         </button>
