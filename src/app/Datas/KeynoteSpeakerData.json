@@ -1,0 +1,20 @@
+{
+    "keynoteSpeaker":[
+        {
+            "id": 0,
+            "firstname": "",
+            "lastname": "",
+            "bio": [],
+            "topic": [],
+            "abstration": []
+        },
+        {
+            "id": 1,
+            "firstname": "",
+            "lastname": "",
+            "bio": [],
+            "topic": [],
+            "abstration": []
+        }
+    ]
+}
