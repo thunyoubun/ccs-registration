@@ -14,7 +14,6 @@ export async function POST(req:NextRequest){
         june07_morning: june07.morning,
         june07_afternoon: june07.afternoon
     }
-    console.log(newData)
     try{
         const result = axios.post('https://api-secure-petroleum-climate.eng.cmu.ac.th/registration', newData ).then((res)=> res )
         return NextResponse.json({ message: "New register has been add."}, { status: 200 })
@@ -22,4 +21,8 @@ export async function POST(req:NextRequest){
         return NextResponse.json({ error: err})
     }
     
+}
+
+export async function GET(){
+    return axios.get('https://api-secure-petroleum-climate.eng.cmu.ac.th/registration').then((res)=> res)
 }
