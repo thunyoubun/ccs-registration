@@ -1,17 +1,39 @@
 "use client";
-import { createClient } from "@supabase/supabase-js";
+
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-export async function DashboardPage() {
-  const [aplicant, setAplicant] = useState<any[]>([]);
+interface Applicant {
+  id: number;
+  first_name: string;
+  last_name: string;
+  affiliation: string;
+  convenience: {
+    day: [
+      {
+        date: string;
+        evening: string;
+        morning: string;
+      },
+      {
+        date: string;
+        evening: string;
+        morning: string;
+      }
+    ];
+  };
+}
+
+export function DashboardPage() {
+  const [applicant, setApplicant] = useState<Applicant[]>([]);
 
   useEffect(() => {
     async function fetchData() {
       try {
         const newData = await axios.get("/api/applicant");
         if (newData.data) {
-          setAplicant(newData.data);
+          console.log(newData.data);
+          setApplicant(newData.data);
         } else {
           console.error("Error fetching data:");
         }
@@ -49,15 +71,23 @@ export async function DashboardPage() {
                 </tr>
               </thead>
               <tbody>
-                {aplicant?.map((aplicant, index) => (
+                {applicant?.map((item, index) => (
                   <tr key={index}>
                     <td className="text-center">{index + 1}</td>
                     <td className="text-center">
-                      {aplicant.first_name + " " + aplicant.last_name}
+                      {item.first_name + " " + item.last_name}
                     </td>
-                    <td className="text-center">{aplicant.affiliation}</td>
-                    <td className="text-center">-</td>
-                    <td className="text-center">-</td>
+                    <td className="text-center">{item.affiliation}</td>
+                    <td className="text-center">
+                      {item.convenience.day[0].date} | Morning :
+                      {item.convenience.day[0].morning.toString()} | Evening :
+                      {item.convenience.day[0].evening.toString()}
+                    </td>
+                    <td className="text-center">
+                      {item.convenience.day[1].date} | Morning :
+                      {item.convenience.day[1].morning.toString()} | Evening :
+                      {item.convenience.day[1].evening.toString()}
+                    </td>
                   </tr>
                 ))}
               </tbody>

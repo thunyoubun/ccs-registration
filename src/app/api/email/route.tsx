@@ -2,8 +2,8 @@ import { type NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import Mail from "nodemailer/lib/mailer";
 
-const my_email = process.env.MY_EMAIL
-const my_pass = process.env.MY_PASSWORD
+const my_email = process.env.NEXT_PUBLIC_EMAIL;
+const my_pass = process.env.NEXT_PUBLIC_PASSWORD;
 
 export async function POST(request: NextRequest) {
   const { email, name, message, subject } = await request.json();
@@ -26,18 +26,18 @@ export async function POST(request: NextRequest) {
       user: my_email,
       pass: my_pass,
     },
-    tls:{
-      rejectUnauthorized: false
-    }
+    tls: {
+      rejectUnauthorized: false,
+    },
   });
 
-  console.log(subject)
+  console.log(subject);
   const mailOptions: Mail.Options = {
     from: email,
     to: my_email,
-    // cc: email, (uncomment this line if you want to send a copy to the sender)
-    subject: subject ,
-    text: message,
+    cc: email,
+    subject: subject,
+    text: `Message from ${name} (${email}) \n\n${message}`,
   };
 
   const sendMailPromise = () =>
