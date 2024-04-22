@@ -1,101 +1,43 @@
 "use client";
-
-import axios from "axios";
-import { useEffect, useState } from "react";
-
-interface Applicant {
-  id: number;
-  first_name: string;
-  last_name: string;
-  affiliation: string;
-  convenience: {
-    day: [
-      {
-        date: string;
-        evening: string;
-        morning: string;
-      },
-      {
-        date: string;
-        evening: string;
-        morning: string;
-      }
-    ];
-  };
-}
+import React from "react";
+import Table from "../Components/TableRegis";
+import { FaHome } from "react-icons/fa";
+import { RxDashboard } from "react-icons/rx";
+import { BsSearch } from "react-icons/bs";
+import Link from "next/link";
 
 export function DashboardPage() {
-  const [applicant, setApplicant] = useState<Applicant[]>([]);
-
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        const newData = await axios.get("/api/applicant");
-        if (newData.data) {
-          console.log(newData.data);
-          setApplicant(newData.data);
-        } else {
-          console.error("Error fetching data:");
-        }
-      } catch (error) {
-        console.error("Error fetching data:");
-      }
-    }
-    fetchData();
-  }, []);
   return (
-    <>
-      <div className="relative">
-        <div className="w-auto h-auto bg-gradient-to-r from-red-700 to-blue-800 ">
-          <h1 className="text-white text-center font-medium text-5xl py-8">
-            Registrats
-          </h1>
-          <div className="rounded-md bg-gray-400 p-6">
-            <h1 className="">56</h1>
+    <div className="relative">
+      <div className="w-auto h-screen bg-gradient-to-r from-red-700 to-blue-800 ">
+        <div className="flex flex-col gap-8 h-full p-8">
+          <div className="flex gap-2 h-fit w-full bg-white p-4 items-center rounded-lg text-black ">
+            <Link href={"/"}>
+              <FaHome className=" font-semibold text-3xl" />
+            </Link>
+
+            <h1 className="flex items-baseline h-fit font-semibold text-start text-3xl">
+              / Dashboard
+            </h1>
           </div>
-          <div className="my-6 bg-white">
-            <table className="table-auto">
-              <thead>
-                <tr>
-                  <th className="text-center">No.</th>
-                  <th className="text-center">Full Name</th>
-                  <th className="text-center">Affiliation</th>
-                  <th className="row-span-4">Convenience</th>
-                </tr>
-                <tr>
-                  <th></th>
-                  <th></th>
-                  <th></th>
-                  <th className="row-span-2 text-center">6 June 2024</th>
-                  <th className="row-span-2">7 June 2024</th>
-                </tr>
-              </thead>
-              <tbody>
-                {applicant?.map((item, index) => (
-                  <tr key={index}>
-                    <td className="text-center">{index + 1}</td>
-                    <td className="text-center">
-                      {item.first_name + " " + item.last_name}
-                    </td>
-                    <td className="text-center">{item.affiliation}</td>
-                    <td className="text-center">
-                      {item.convenience.day[0].date} | Morning :
-                      {item.convenience.day[0].morning.toString()} | Evening :
-                      {item.convenience.day[0].evening.toString()}
-                    </td>
-                    <td className="text-center">
-                      {item.convenience.day[1].date} | Morning :
-                      {item.convenience.day[1].morning.toString()} | Evening :
-                      {item.convenience.day[1].evening.toString()}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+
+          <div className="flex-1 rounded-lg bg-white ">
+            {/*search bar */}
+
+            <div className="w-full flex  h-full gap-4 flex-col rounded-md p-4">
+              <div className="flex border w-fit py-2 border-1 gap-2 items-center bg-gray-100 rounded-md px-4">
+                <BsSearch />
+                <input
+                  placeholder="Search by Name "
+                  className="w-full bg-gray-100 rounded-md px-4"
+                ></input>
+              </div>
+              <Table />
+            </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
