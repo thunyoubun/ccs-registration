@@ -17,3 +17,13 @@ export async function GET(request: NextRequest) {
 
   return NextResponse.json(data, { status: 200 });
 }
+
+// เพิ่มข้อมูลลงในฐานข้อมูล
+export async function POST(request: NextRequest) {
+  const { data, error } = await supabase.from("Applicant").insert(request.body);
+  if (error) {
+    return NextResponse.json({ error: error }, { status: 400 });
+  }
+
+  return NextResponse.json(data, { status: 201 });
+}
