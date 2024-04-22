@@ -1,7 +1,9 @@
-function TextInput(fnc: Function, word: string, tagName: string, typeInput: string){
+import { FieldError } from "react-hook-form"
+
+function TextInput(fnc: Function, word: string, tagName: string, typeInput: string, err: FieldError|undefined){
     return(
         <>
-            <label htmlFor={tagName} className="block text-sm font-medium text-gray-900">{word}</label>
+            <label htmlFor={tagName} className="block text-sm font-medium text-gray-900 required">{word}<span className="text-red-500">*</span></label>
             <div className="mt-2">
                 <input 
                     type={typeInput} 
@@ -11,7 +13,7 @@ function TextInput(fnc: Function, word: string, tagName: string, typeInput: stri
                     required
                     />
             </div>
-            <p></p>
+            {err&&<span className="text-sm text-red-500">{`Please enter a valid ${tagName}.`}</span>}
         </>
     )
 }
