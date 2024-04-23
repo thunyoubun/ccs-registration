@@ -1,10 +1,11 @@
+import { IAPIRegister } from "@/app/Components/RegistrationForm";
 import axios from "axios";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req:NextRequest){
-    const { firstname, lastname, affiliation, email, june06, june07} = await req.json()
+    const { id, firstname, lastname, affiliation, email, june06, june07} = await req.json()
     const newData = {
-        id: 0,
+        id: id,
         firstname: firstname,
         lastname: lastname,
         affiliation: affiliation,
@@ -15,7 +16,7 @@ export async function POST(req:NextRequest){
         june07_afternoon: june07.afternoon
     }
     try{
-        const result = axios.post('https://api-secure-petroleum-climate.eng.cmu.ac.th/registration', newData ).then((res)=> res )
+        const result:IAPIRegister[] = await axios.post('https://api-secure-petroleum-climate.eng.cmu.ac.th/registration', newData ).then((res)=> res.data )
         return NextResponse.json({ message: "New register has been add."}, { status: 200 })
     }catch(err){
         return NextResponse.json({ error: err})
@@ -24,5 +25,11 @@ export async function POST(req:NextRequest){
 }
 
 export async function GET(){
-    return axios.get('https://api-secure-petroleum-climate.eng.cmu.ac.th/registration').then((res)=> res)
+    try{
+        const result = await axios.get('https://api-secure-petroleum-climate.eng.cmu.ac.th/registration').then((res)=> res.data)
+        return NextResponse.json({ data: result })
+    }catch(err){
+        return NextResponse.json({ error: err })
+    }
+    
 }

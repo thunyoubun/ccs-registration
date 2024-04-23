@@ -1,7 +1,7 @@
 import React from "react";
 
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { IAPIRegister } from "./RegistrationForm";
 
 interface Applicant {
   id: number;
@@ -25,25 +25,7 @@ interface Applicant {
   };
 }
 
-const TableRegis = () => {
-  const [applicant, setApplicant] = useState<Applicant[]>([]);
-
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        const newData = await axios.get("/api/applicant");
-        if (newData.data) {
-          console.log(newData.data);
-          setApplicant(newData.data);
-        } else {
-          console.error("Error fetching data:");
-        }
-      } catch (error) {
-        console.error("Error fetching data:");
-      }
-    }
-    fetchData();
-  }, []);
+const TableRegis = ({ data }:{ data: IAPIRegister[]}) => {
   return (
     <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
       <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
@@ -67,7 +49,7 @@ const TableRegis = () => {
           </tr>
         </thead>
         <tbody>
-          {applicant.map((applicant) => (
+          {data.map((applicant) => (
             <tr
               key={applicant.id}
               className="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
@@ -76,7 +58,7 @@ const TableRegis = () => {
                 scope="row"
                 className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
               >
-                {applicant.first_name} {applicant.last_name}
+                {applicant.firstname} {applicant.lastname}
               </th>
               <th className="px-6 py-4">{applicant.email}</th>
               <th className="px-6 py-4">{applicant.affiliation}</th>
@@ -85,24 +67,24 @@ const TableRegis = () => {
                   Morning :{" "}
                   <span
                     className={`${
-                      applicant.convenience.day[0].morning
+                      applicant.june06_morning
                         ? "text-green-500"
                         : "text-red-500"
                     }`}
                   >
-                    {applicant.convenience.day[0].morning ? "Yes" : "No"}
+                    {applicant.june06_morning ? "Yes" : "No"}
                   </span>
                 </td>
                 <td>
                   Evening :{" "}
                   <span
                     className={`${
-                      applicant.convenience.day[0].morning
+                      applicant.june06_afternoon
                         ? "text-green-500"
                         : "text-red-500"
                     }`}
                   >
-                    {applicant.convenience.day[0].morning ? "Yes" : "No"}
+                    {applicant.june06_afternoon ? "Yes" : "No"}
                   </span>
                 </td>
               </th>
@@ -111,24 +93,24 @@ const TableRegis = () => {
                   Morning :{" "}
                   <span
                     className={`${
-                      applicant.convenience.day[1].morning
+                      applicant.june07_morning
                         ? "text-green-500"
                         : "text-red-500"
                     }`}
                   >
-                    {applicant.convenience.day[1].morning ? "Yes" : "No"}
+                    {applicant.june07_morning ? "Yes" : "No"}
                   </span>
                 </td>
                 <td>
                   Evening :{" "}
                   <span
                     className={`${
-                      applicant.convenience.day[1].morning
+                      applicant.june07_afternoon
                         ? "text-green-500"
                         : "text-red-500"
                     }`}
                   >
-                    {applicant.convenience.day[1].morning ? "Yes" : "No"}
+                    {applicant.june07_afternoon ? "Yes" : "No"}
                   </span>
                 </td>
               </th>
