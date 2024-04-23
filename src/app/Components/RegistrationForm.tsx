@@ -2,7 +2,20 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 
-export interface IRegistrationForm{
+export interface IAPIRegister {
+    id: number,
+    firstname: string,
+    lastname: string,
+    affiliation: string,
+    email: string,
+    june06_morning: boolean,
+    june06_afternoon: boolean,
+    june07_morning: boolean,
+    june07_afternoon: boolean
+}
+
+export interface IRegistrationForm {
+    id: number,
     firstname: string,
     lastname: string,
     affiliation: string,
@@ -18,10 +31,11 @@ export interface IRegistrationForm{
 }
 
 const validationRegistration = z.object({
-    firstname: z.string().min(1, { message: 'Firstname is required.'} ),
-    lastname: z.string().min(1, { message: 'Surename is required.'} ),
+    id: z.number().min(1),
+    firstname: z.string().min(1, { message: 'Firstname is required.' }),
+    lastname: z.string().min(1, { message: 'Surename is required.' }),
     affiliation: z.string().min(1, { message: 'Affiliation is required.' }),
-    email: z.string().min(1, { message: 'Email is required.'}).email(),
+    email: z.string().min(1, { message: 'Email is required.' }).email(),
     june06: z.object({
         morning: z.boolean(),
         afternoon: z.boolean()
@@ -32,10 +46,11 @@ const validationRegistration = z.object({
     })
 })
 
-function RegistrationForm(){
+function RegistrationForm() {
     const form = useForm<IRegistrationForm>({
         resolver: zodResolver(validationRegistration),
-        defaultValues:{
+        defaultValues: {
+            id: 0,
             firstname: '',
             lastname: '',
             affiliation: '',
