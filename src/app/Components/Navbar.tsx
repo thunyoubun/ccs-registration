@@ -39,18 +39,19 @@ const Navbar = ({ path }: NavbarProps) => {
 
   return (
     <div
-      className={` bg-white px-8  md:px-20 py-4 w-full fixed top-0 z-50 ${
+      className={` bg-white px-4 md:px-20 py-4 w-full fixed top-0 z-50 ${
         scrolled ? " block " : " hidden"
       } `}
     >
       <div className=" px-6 flex justify-between items-center">
         {/* Add your logo here */}
-        <Link href="/" className="flex">
+        <Link href="/" className="flex items-center">
           <Image
             src="/images/css-logo-remove.jpg"
             width={100}
             height={100}
             alt={"css-logo"}
+            className=" sm:h-24  sm:w-32 h-20 w-24"
           />
           <div className="my-2 invisible lg:visible">
             <h1 className="text-2xl font-semibold">CCUS</h1>
@@ -80,7 +81,7 @@ const Navbar = ({ path }: NavbarProps) => {
           </ul>
         </div>
 
-        <div className="md:hidden flex z-10">
+        <div className="md:hidden flex items-center z-10">
           <button onClick={() => setIsActived(!isActived)}>
             {!isActived ? (
               <RxHamburgerMenu size={30} />
@@ -94,7 +95,7 @@ const Navbar = ({ path }: NavbarProps) => {
           className={
             !isActived
               ? "hidden z-10"
-              : "flex gap-8 flex-col absolute top-0 left-0 w-full h-screen justify-center items-center uppercase bg-red-500 "
+              : "flex gap-8 flex-col absolute top-0 left-0 w-full h-screen justify-center items-center uppercase bg-red-500 transition-opacity opacity-100 ease-in-out delay-100"
           }
         >
           {path === "/" && (
