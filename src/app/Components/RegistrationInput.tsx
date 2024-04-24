@@ -11,15 +11,16 @@ function RegistrationInput() {
     formState: { isSubmitting, errors },
   } = RegistrationForm();
 
-  const onSubmit = (data: IRegistrationForm) => {
-    axios.post("/api/register", data).then((res) => {
-      if (res.status == 200) {
-        console.log("success");
+  const onSubmit = async (data: IRegistrationForm) => {
+    await axios.post("/api/register", data).then((res) => {
+      if (res.data.status == 200) {
+        console.log("Success");
       } else {
-        console.log("error");
+        console.log("Error");
       }
     });
   };
+
   return (
     <div className="p-4 bg-white md:rounded-br-lg lg:p-4 xl:p-8">
       <h1 className="font-medium text-3xl lg:text-5xl text-center">

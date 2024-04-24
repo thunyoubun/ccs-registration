@@ -3,9 +3,9 @@ import axios from "axios";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req:NextRequest){
-    const { id, firstname, lastname, affiliation, email, june06, june07} = await req.json()
+    const { firstname, lastname, affiliation, email, june06, june07} = await req.json()
     const newData = {
-        id: id,
+        id: 0,
         firstname: firstname,
         lastname: lastname,
         affiliation: affiliation,
@@ -16,10 +16,10 @@ export async function POST(req:NextRequest){
         june07_afternoon: june07.afternoon
     }
     try{
-        const result:IAPIRegister[] = await axios.post('https://api-secure-petroleum-climate.eng.cmu.ac.th/registration', newData ).then((res)=> res.data )
-        return NextResponse.json({ message: "New register has been add."}, { status: 200 })
+        const result = await axios.post('https://api-secure-petroleum-climate.eng.cmu.ac.th/registration', newData ).then((res)=> res.data )
+        return NextResponse.json(result)
     }catch(err){
-        return NextResponse.json({ error: err})
+        return NextResponse.json(err)
     }
     
 }
@@ -27,9 +27,9 @@ export async function POST(req:NextRequest){
 export async function GET(){
     try{
         const result = await axios.get('https://api-secure-petroleum-climate.eng.cmu.ac.th/registration').then((res)=> res.data)
-        return NextResponse.json({ data: result })
+        return NextResponse.json({ data: result }, { status: 200 })
     }catch(err){
-        return NextResponse.json({ error: err })
+        return NextResponse.json(err, { status: 400 })
     }
     
 }
