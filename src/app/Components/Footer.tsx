@@ -5,7 +5,7 @@ import { MdOutlineLocalPhone } from "react-icons/md";
 const Footer = () => {
   return (
     <div className="bg-white h-fit flex justify-center items-center">
-      <div className="m-10 w-full  flex flex-col gap-4 items-center justify-center">
+      <div className="m-4 w-full  flex flex-col gap-4 items-center justify-center">
         <Image
           src="/images/css-logo-remove.jpg"
           width={200}

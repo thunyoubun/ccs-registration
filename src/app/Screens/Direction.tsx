@@ -27,8 +27,10 @@ export default function Direction() {
     reset,
     formState: { errors },
   } = useForm<FormData>();
+
   function onSubmit(data: FormData) {
     setSending(true);
+    console.log(data);
     axios
       .post("/api/email", data)
       .then((response) => {
