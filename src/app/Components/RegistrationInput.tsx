@@ -1,5 +1,6 @@
 "use client";
 import axios from "axios";
+import Swal from "sweetalert2";
 import RegistrationForm, { IRegistrationForm } from "./RegistrationForm";
 import TextInput from "./TextInput";
 
@@ -11,14 +12,13 @@ function RegistrationInput() {
   } = RegistrationForm();
 
   const onSubmit = (data: IRegistrationForm) => {
-    
-     axios.post('/api/register', data).then((res) => {
-        if(res.status == 200){
-            console.log("success")
-        }else{
-            console.log("error")
-        }
-     })
+    axios.post("/api/register", data).then((res) => {
+      if (res.status == 200) {
+        console.log("success");
+      } else {
+        console.log("error");
+      }
+    });
   };
   return (
     <div className="p-4 bg-white md:rounded-br-lg lg:p-4 xl:p-8">
@@ -31,13 +31,31 @@ function RegistrationInput() {
         noValidate
       >
         <div className=" lg:col-span-3">
-          {TextInput(register, "First name", "firstname", "text", errors.firstname)}
+          {TextInput(
+            register,
+            "First name",
+            "firstname",
+            "text",
+            errors.firstname
+          )}
         </div>
         <div className="col-span-full lg:col-span-3">
-          {TextInput(register, "Last name", "lastname", "text", errors.lastname)}
+          {TextInput(
+            register,
+            "Last name",
+            "lastname",
+            "text",
+            errors.lastname
+          )}
         </div>
         <div className="col-span-full">
-          {TextInput(register, "Affiliation", "affiliation", "text", errors.affiliation)}
+          {TextInput(
+            register,
+            "Affiliation",
+            "affiliation",
+            "text",
+            errors.affiliation
+          )}
         </div>
         <div className="col-span-full">
           {TextInput(register, "Email", "email", "email", errors.email)}
