@@ -49,7 +49,7 @@ function RowData({ date }: { date: IProgrammeData[] }) {
             {schedule.description.length > 0 ? (
               <div>
                 {schedule.description.map((data) => (
-                  <h2 key={data}>{data}</h2>
+                  <h2 className="p-1" key={data}>{data}</h2>
                 ))}
               </div>
             ) : (
@@ -58,9 +58,11 @@ function RowData({ date }: { date: IProgrammeData[] }) {
             {schedule.speakers.length > 0 ? (
               <div>
                 <h2 className="font-semibold">Speaker:</h2>
+                <ul>
                 {schedule.speakers.map((data) => (
-                  <h2 key={data}>{data}</h2>
+                  <li className="p-1" key={data}>{data}</li>
                 ))}
+                </ul>
               </div>
             ) : (
               ""
@@ -68,9 +70,11 @@ function RowData({ date }: { date: IProgrammeData[] }) {
             {schedule.panelists.length > 0 ? (
               <div>
                 <h2 className="font-semibold">Panelists:</h2>
+                <ul className={`${schedule.panelists.length > 1? "list-disc mx-4":""}`}>
                 {schedule.panelists.map((data) => (
-                  <h2 key={data}>{data}</h2>
+                  <li className="p-1" key={data}>{data}</li>
                 ))}
+                </ul>
               </div>
             ) : (
               ""
@@ -78,9 +82,11 @@ function RowData({ date }: { date: IProgrammeData[] }) {
             {schedule.facilitators.length > 0 ? (
               <div>
                 <h2 className="font-semibold">Facilitator:</h2>
+                <ul className={`${schedule.facilitators.length > 1?"list-disc mx-4":""}`}>
                 {schedule.facilitators.map((data) => (
-                  <h2 key={data}>{data}</h2>
+                  <li className="p-1" key={data}>{data}</li>
                 ))}
+                </ul>
               </div>
             ) : (
               ""
