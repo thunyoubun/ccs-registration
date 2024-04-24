@@ -1,12 +1,12 @@
 "use client";
 import React, { useState } from "react";
-import { useForm } from "react-hook-form";
+import { useForm, SubmitHandler } from "react-hook-form";
+import Swal from "sweetalert2";
 
 import axios from "axios";
 import { MdOutlineLocalPhone } from "react-icons/md";
 import { GoLocation } from "react-icons/go";
 import { MdOutlineMail } from "react-icons/md";
-import Swal from "sweetalert2";
 
 interface FormData {
   name: string;
@@ -34,27 +34,31 @@ export default function Direction() {
     axios
       .post("/api/email", data)
       .then((response) => {
-        console.log(response);
-        if (response.status == 200) {
+        if (response.status === 200) {
+          setSending(false);
+          reset();
           Swal.fire({
-            title: "Success!",
-            text: "Your email has been sent.",
             icon: "success",
-            confirmButtonText: "Close",
-          })
+            title: "Email Sent",
+            text: "Thank you for contacting us",
+            showConfirmButton: false,
+            timer: 1500,
+          });
         } else {
+          setSending(false);
           Swal.fire({
-            title: "Error!",
-            text: response.data.message,
             icon: "error",
-            confirmButtonText: "Close",
-          })
+            title: "Oops...",
+            text: "Something went wrong! Please try again later",
+          });
         }
-        setSending(false);
-        reset();
       })
       .catch((error) => {
-        console.log(error);
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Something went wrong! Please try again later",
+        });
         setSending(false);
       });
   }
