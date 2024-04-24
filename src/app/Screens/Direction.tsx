@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
+import Swal from "sweetalert2";
 
 import axios from "axios";
 import { MdOutlineLocalPhone } from "react-icons/md";
@@ -34,12 +35,31 @@ export default function Direction() {
     axios
       .post("/api/email", data)
       .then((response) => {
-        console.log(response);
-        setSending(false);
-        reset();
+        if (response.status === 200) {
+          setSending(false);
+          reset();
+          Swal.fire({
+            icon: "success",
+            title: "Email Sent",
+            text: "Thank you for contacting us",
+            showConfirmButton: false,
+            timer: 1500,
+          });
+        } else {
+          setSending(false);
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Something went wrong! Please try again later",
+          });
+        }
       })
       .catch((error) => {
-        console.log(error);
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Something went wrong! Please try again later",
+        });
         setSending(false);
       });
   }

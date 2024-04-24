@@ -63,9 +63,7 @@ const Navbar = ({ path }: NavbarProps) => {
           <ul className="flex gap-8">
             {path === "/" && (
               <li className="hover:scale-105 hover:font-semibold transition ease-out delay-50">
-                <button onClick={() => ScrollToSection("keynote-speakers")}>
-                  <h1>Keynote speakers</h1>
-                </button>
+                <Link href="/keynote-speaker">Keynote Speaker</Link>
               </li>
             )}
             {path !== "/programme" && (
@@ -100,9 +98,9 @@ const Navbar = ({ path }: NavbarProps) => {
         >
           {path === "/" && (
             <li className="hover:scale-105 hover:font-semibold transition ease-out delay-50">
-              <button onClick={() => ScrollToSection("keynote-speakers")}>
+              <Link href="/keynote-speaker">
                 <h1 className=" uppercase">Keynote speakers</h1>
-              </button>
+              </Link>
             </li>
           )}
           {path !== "programme" && (

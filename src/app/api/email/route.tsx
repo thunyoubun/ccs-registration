@@ -31,7 +31,6 @@ export async function POST(request: NextRequest) {
     },
   });
 
-  console.log(subject);
   const mailOptions: Mail.Options = {
     from: email,
     to: my_email,
