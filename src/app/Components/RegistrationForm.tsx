@@ -15,7 +15,6 @@ export interface IAPIRegister {
 }
 
 export interface IRegistrationForm {
-    id: number,
     firstname: string,
     lastname: string,
     affiliation: string,
@@ -31,7 +30,6 @@ export interface IRegistrationForm {
 }
 
 const validationRegistration = z.object({
-    id: z.number().min(1),
     firstname: z.string().min(1, { message: 'Firstname is required.' }),
     lastname: z.string().min(1, { message: 'Surename is required.' }),
     affiliation: z.string().min(1, { message: 'Affiliation is required.' }),
@@ -50,7 +48,6 @@ function RegistrationForm() {
     const form = useForm<IRegistrationForm>({
         resolver: zodResolver(validationRegistration),
         defaultValues: {
-            id: 0,
             firstname: '',
             lastname: '',
             affiliation: '',

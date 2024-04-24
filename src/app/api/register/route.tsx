@@ -3,9 +3,9 @@ import axios from "axios";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req:NextRequest){
-    const { id, firstname, lastname, affiliation, email, june06, june07} = await req.json()
+    const { firstname, lastname, affiliation, email, june06, june07} = await req.json()
     const newData = {
-        id: id,
+        id: 0,
         firstname: firstname,
         lastname: lastname,
         affiliation: affiliation,
