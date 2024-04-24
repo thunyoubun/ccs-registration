@@ -16,11 +16,13 @@ export function DashboardPage() {
     [] as IAPIRegister[]
   );
   const [searchname, setSearchname] = useState<string>("");
+  const [totalParticipants, setTotalParticipants] = useState<number>(0);
   useEffect(() => {
     const fetchdata = async () => {
       await axios.get("/api/register").then((res) => {
         const result: IAPIRegister[] = res.data.data;
         setParticipants(result);
+        setTotalParticipants(result.length);
       });
     };
     fetchdata();
@@ -61,6 +63,13 @@ export function DashboardPage() {
                   className="w-full bg-gray-100 rounded-md px-4"
                   onChange={(e) => setSearchname(e.currentTarget.value)}
                 ></input>
+              </div>
+              <div>
+                <h1 className=" font-semibold">
+                  Total{" "}
+                  <span className=" text-red-500">{totalParticipants}</span>{" "}
+                  peoples
+                </h1>
               </div>
               <Table data={FillterParticipants()} />
             </div>

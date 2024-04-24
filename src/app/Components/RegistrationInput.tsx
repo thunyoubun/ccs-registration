@@ -13,10 +13,20 @@ function RegistrationInput() {
 
   const onSubmit = async (data: IRegistrationForm) => {
     await axios.post("/api/register", data).then((res) => {
-      if (res.data.status == 200) {
-        console.log("Success");
+      if (res.data.ok) {
+        Swal.fire({
+          title: "Success!",
+          text: "You have successfully registered",
+          icon: "success",
+          confirmButtonText: "Close",
+        });
       } else {
-        console.log("Error");
+        Swal.fire({
+          title: "Error!",
+          text: res.data.message,
+          icon: "error",
+          confirmButtonText: "Close",
+        });
       }
     });
   };
