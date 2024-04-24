@@ -1,12 +1,12 @@
 "use client";
 import React, { useState } from "react";
-import { useForm, SubmitHandler } from "react-hook-form";
+import { useForm } from "react-hook-form";
 
 import axios from "axios";
 import { MdOutlineLocalPhone } from "react-icons/md";
 import { GoLocation } from "react-icons/go";
 import { MdOutlineMail } from "react-icons/md";
-import { send } from "process";
+import Swal from "sweetalert2";
 
 interface FormData {
   name: string;
@@ -35,6 +35,21 @@ export default function Direction() {
       .post("/api/email", data)
       .then((response) => {
         console.log(response);
+        if (response.status == 200) {
+          Swal.fire({
+            title: "Success!",
+            text: "Your email has been sent.",
+            icon: "success",
+            confirmButtonText: "Close",
+          })
+        } else {
+          Swal.fire({
+            title: "Error!",
+            text: response.data.message,
+            icon: "error",
+            confirmButtonText: "Close",
+          })
+        }
         setSending(false);
         reset();
       })
@@ -145,10 +160,10 @@ export default function Direction() {
               <div>
                 <form
                   onSubmit={handleSubmit(onSubmit)}
-                  className="flex flex-col gap-4 mt-4"
+                  className="flex flex-col gap-2 mt-4"
                 >
                   <label htmlFor="" className="text-black font-semibold">
-                    Name
+                    Name <span className="text-red-500">*</span>
                   </label>
                   <input
                     {...register("name", { required: true })}
@@ -157,8 +172,9 @@ export default function Direction() {
                     className="p-2 border border-gray-300 rounded-md"
                     {...register("name")}
                   />
+                  {errors.name && <span className="text-sm text-red-500">Please enter a valid name.</span>}
                   <label htmlFor="" className="text-black font-semibold">
-                    Email
+                    Email <span className="text-red-500">*</span>
                   </label>
                   <input
                     {...register("email", {
@@ -170,8 +186,9 @@ export default function Direction() {
                     className="p-2 border border-gray-300 rounded-md"
                     {...register("email")}
                   />
+                  {errors.email && <span className="text-sm text-red-500">Please enter a valid email.</span>}
                   <label htmlFor="" className="text-black font-semibold">
-                    Subject
+                    Subject <span className="text-red-500">*</span>
                   </label>
                   <input
                     {...register("subject", { required: true })}
@@ -180,8 +197,9 @@ export default function Direction() {
                     className="p-2 border border-gray-300 rounded-md"
                     {...register("subject")}
                   />
+                  {errors.subject && <span className="text-sm text-red-500">Please enter a valid subject.</span>}
                   <label htmlFor="" className="text-black font-semibold">
-                    Message
+                    Message <span className="text-red-500">*</span>
                   </label>
                   <textarea
                     {...register("message", { required: true })}
@@ -189,6 +207,7 @@ export default function Direction() {
                     className="p-2 border border-gray-300 rounded-md"
                     {...register("message")}
                   ></textarea>
+                  {errors.message && <span className="text-sm text-red-500">Please enter a valid message.</span>}
                   <button
                     type="submit"
                     className="bg-red-600 hover:bg-red-700 text-white p-2 rounded-md"
