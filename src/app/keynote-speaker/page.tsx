@@ -1,16 +1,67 @@
 'use client'
-import Image from "next/image"
 import Navbar from "../Components/Navbar"
 import ToTop from "../Components/ToTop"
-import CardSlider from "../Components/CardSlider"
 import PeopleCard from "../Components/PeopleCard"
 import Footer from "../Components/Footer"
-import { useEffect, useRef, useState } from "react"
-import { motion } from 'framer-motion'
+import { useEffect, useState } from "react"
+import { IoIosArrowDropleftCircle, IoIosArrowDroprightCircle } from 'react-icons/io'
+
+const authData = [
+    {
+        id: "a",
+        src: "/images/profile/natthanan.jpg"
+    },
+    {
+        id: "b",
+        src: "/images/profile/natthanan.jpg"
+    },
+    {
+        id: "c",
+        src: "/images/profile/natthanan.jpg"
+    },
+    {
+        id: "d",
+        src: "/images/profile/natthanan.jpg"
+    },
+    {
+        id: "e",
+        src: "/images/profile/natthanan.jpg"
+    },
+    {
+        id: "f",
+        src: "/images/profile/natthanan.jpg"
+    },
+    {
+        id: "g",
+        src: "/images/profile/natthanan.jpg"
+    },
+    {
+        id: "h",
+        src: "/images/profile/natthanan.jpg"
+    },
+    {
+        id: "i",
+        src: "/images/profile/natthanan.jpg"
+    },
+    {
+        id: "j",
+        src: "/images/profile/natthanan.jpg"
+    },
+    {
+        id: "k",
+        src: "/images/profile/natthanan.jpg"
+    },
+    {
+        id: "l",
+        src: "/images/profile/natthanan.jpg"
+    },
+]
 
 function KeynoteSpeakerPage() {
     const [activateSlide, setActivateSlide] = useState<boolean>(false)
-    const dragable = useRef<HTMLDivElement>({} as HTMLDivElement)
+    const [animation, setAnimation] = useState<string>("animate-fade-left");
+    const [activeImage, setActiveImage] = useState<number>(0)
+
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth > 768) {
@@ -25,6 +76,23 @@ function KeynoteSpeakerPage() {
             window.removeEventListener('resize', handleResize)
         }
     }, [])
+
+    const NextKeynote = () => {
+        activeImage === authData.length - 1 ? setActiveImage(0) : setActiveImage(activeImage + 1);
+        setTimeout(() => {
+            setAnimation("animate-fade-right");
+        }, 100);
+        setAnimation("");
+    }
+
+    const PrevKeynote = () => {
+        activeImage === 0 ? setActiveImage(authData.length - 1) : setActiveImage(activeImage - 1);
+
+        setTimeout(() => {
+            setAnimation("animate-fade-left");
+        }, 100);
+        setAnimation("");
+    }
     return (
         <header>
             <div className="relative">
@@ -32,26 +100,34 @@ function KeynoteSpeakerPage() {
                 <ToTop />
                 <div className="mt-28 bg-gradient-to-r from-red-700 to-blue-800 flex justify-center flex-col">
                     <h2 className="text-white text-5xl p-8 text-center font-semibold">Keynote Speaker</h2>
-                    <div className="grid gap-4 lg:grid-cols-3 lg:gap-4 lg:mx-2 lg:my-6">
+                    <div className="grid gap-4 my-4 lg:grid-cols-3 lg:gap-4 lg:mx-2 lg:my-6">
                         {activateSlide ?
-                        <motion.div ref={dragable}
-                        drag="x"
-                        dragConstraints={{ right: 0, left: 0}}
-                        >
-                        </motion.div>
-                        :
-                            <><PeopleCard name={"a"} srcImage={"/images/profile/natthanan.jpg"} />
-                                <PeopleCard name={"b"} srcImage={"/images/profile/natthanan.jpg"} />
-                                <PeopleCard name={"c"} srcImage={"/images/profile/natthanan.jpg"} />
-                                <PeopleCard name={"d"} srcImage={"/images/profile/natthanan.jpg"} />
-                                <PeopleCard name={"e"} srcImage={"/images/profile/natthanan.jpg"} />
-                                <PeopleCard name={"f"} srcImage={"/images/profile/natthanan.jpg"} />
-                                <PeopleCard name={"g"} srcImage={"/images/profile/natthanan.jpg"} />
-                                <PeopleCard name={"h"} srcImage={"/images/profile/natthanan.jpg"} />
-                                <PeopleCard name={"i"} srcImage={"/images/profile/natthanan.jpg"} />
-                                <PeopleCard name={"j"} srcImage={"/images/profile/natthanan.jpg"} />
-                                <PeopleCard name={"k"} srcImage={"/images/profile/natthanan.jpg"} />
-                                <PeopleCard name={"l"} srcImage={"/images/profile/natthanan.jpg"} />
+                            <div className="flex gap-1">
+                                <button onClick={() => PrevKeynote()}>
+                                    <IoIosArrowDropleftCircle size={50} />
+                                </button>
+                                <div className="flex gap-4">
+                                    {authData
+                                        .slice(activeImage, activeImage + 1)
+                                        .map((auth) => (
+                                            <div key={auth.id} className={` ${animation}`}>
+                                                <PeopleCard
+                                                    key={auth.id}
+                                                    name={auth.id}
+                                                    srcImage={auth.src}
+                                                ></PeopleCard>
+                                            </div>
+                                        ))}
+                                </div>
+                                <button onClick={() => NextKeynote()}>
+                                    <IoIosArrowDroprightCircle size={50} />
+                                </button>
+                            </div>
+                            :
+                            <>
+                                {authData.map((data) =>
+                                    <PeopleCard key={data.id} name={data.id} srcImage={data.src} />
+                                )}
                             </>
                         }
 
