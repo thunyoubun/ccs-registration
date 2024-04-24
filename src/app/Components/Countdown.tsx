@@ -9,7 +9,7 @@ function Countdown({ targetDate }: { targetDate: Date }) {
     setFirstLoading(true);
   }, []);
   return (
-    <div className="p-4 bg-red-700 text-white text-center gap-3 lg:flex lg:justify-center">
+    <div className="p-4 bg-red-700 border-8 border-white text-white text-center gap-3 lg:flex lg:justify-center rounded-t-md">
       <div className="flex flex-col">
         <h1 className="text-5xl font-medium content-center lg:text-6xl">
           Deadline -
