@@ -2,7 +2,8 @@
 import React, { useEffect, useState } from "react";
 import Table from "../Components/TableRegis";
 import { FaHome } from "react-icons/fa";
-import { RxDashboard } from "react-icons/rx";
+
+import { RxExit } from "react-icons/rx";
 import { BsSearch } from "react-icons/bs";
 import Link from "next/link";
 import axios from "axios";
@@ -17,6 +18,7 @@ export function DashboardPage() {
   );
   const [searchname, setSearchname] = useState<string>("");
   const [totalParticipants, setTotalParticipants] = useState<number>(0);
+
   useEffect(() => {
     const fetchdata = async () => {
       await axios.get("/api/register").then((res) => {
@@ -37,19 +39,40 @@ export function DashboardPage() {
     );
     return result;
   }
-  console.log(participants);
+
+  async function logOut() {
+    try {
+      const response = await axios.post("/api/auth/logout");
+      console.log(response.data.ok);
+      if (response.data.ok) {
+        window.location.href = "/login";
+      }
+    } catch (error) {}
+  }
+
   return (
     <div className="relative">
       <div className="w-auto h-screen bg-gradient-to-r from-red-700 to-blue-800 ">
         <div className="flex flex-col gap-8 h-full p-8">
-          <div className="flex gap-2 h-[20%] w-full bg-white p-4 items-center rounded-lg text-black ">
-            <Link href={"/"}>
-              <FaHome className=" font-semibold text-3xl" />
-            </Link>
+          <div className="flex gap-2 h-[20%] w-full bg-white px-8 py-4 items-center justify-between rounded-lg text-black ">
+            <div className="flex">
+              <Link href={"/"}>
+                <FaHome className=" font-semibold text-3xl" />
+              </Link>
 
-            <h1 className="flex items-baseline h-fit font-semibold text-start text-3xl">
-              / Dashboard
-            </h1>
+              <h1 className="flex items-baseline h-fit font-semibold text-start text-3xl">
+                / Dashboard
+              </h1>
+            </div>
+            <div>
+              <button
+                className="flex gap-2 items-center"
+                onClick={() => logOut()}
+              >
+                <RxExit className=" font-semibold text-3xl" />
+                <h1>Sign Out</h1>
+              </button>
+            </div>
           </div>
 
           <div className="flex max-h-[80%] rounded-lg bg-white ">

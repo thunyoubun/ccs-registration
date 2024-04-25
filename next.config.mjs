@@ -1,3 +1,3 @@
 // next.config.js
 
-export const basePath = "/symposium";
+/* export const basePath = "/symposium"; */

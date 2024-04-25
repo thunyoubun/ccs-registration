@@ -1,10 +1,21 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import jwt from "jsonwebtoken";
+import { cookies } from "next/headers";
 
 // This function can be marked `async` if using `await` inside
 export async function middleware(req: NextRequest) {
-  return NextResponse.redirect(new URL("/home", req.url));
+  // Check if the user is authenticated
+  const token = req.cookies.get("token")?.value;
+  if (!token) {
+    return NextResponse.redirect(new URL("/login", req.url));
+  }
+
+  // Verify the token
+  const response = await verifyAuth(token);
+  if (!response.ok) {
+    return NextResponse.redirect(new URL("/login", req.url));
+  }
 }
 
 export const verifyAuth = async (token: string) => {
