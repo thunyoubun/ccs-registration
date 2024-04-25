@@ -7,7 +7,6 @@ import axios from "axios";
 import { MdOutlineLocalPhone } from "react-icons/md";
 import { GoLocation } from "react-icons/go";
 import { MdOutlineMail } from "react-icons/md";
-import { send } from "process";
 
 interface FormData {
   name: string;
@@ -165,10 +164,10 @@ export default function Direction() {
               <div>
                 <form
                   onSubmit={handleSubmit(onSubmit)}
-                  className="flex flex-col gap-4 mt-4"
+                  className="flex flex-col gap-2 mt-4"
                 >
                   <label htmlFor="" className="text-black font-semibold">
-                    Name
+                    Name <span className="text-red-500">*</span>
                   </label>
                   <input
                     {...register("name", { required: true })}
@@ -177,8 +176,9 @@ export default function Direction() {
                     className="p-2 border border-gray-300 rounded-md"
                     {...register("name")}
                   />
+                  {errors.name && <span className="text-sm text-red-500">Please enter a valid name.</span>}
                   <label htmlFor="" className="text-black font-semibold">
-                    Email
+                    Email <span className="text-red-500">*</span>
                   </label>
                   <input
                     {...register("email", {
@@ -190,8 +190,9 @@ export default function Direction() {
                     className="p-2 border border-gray-300 rounded-md"
                     {...register("email")}
                   />
+                  {errors.email && <span className="text-sm text-red-500">Please enter a valid email.</span>}
                   <label htmlFor="" className="text-black font-semibold">
-                    Subject
+                    Subject <span className="text-red-500">*</span>
                   </label>
                   <input
                     {...register("subject", { required: true })}
@@ -200,8 +201,9 @@ export default function Direction() {
                     className="p-2 border border-gray-300 rounded-md"
                     {...register("subject")}
                   />
+                  {errors.subject && <span className="text-sm text-red-500">Please enter a valid subject.</span>}
                   <label htmlFor="" className="text-black font-semibold">
-                    Message
+                    Message <span className="text-red-500">*</span>
                   </label>
                   <textarea
                     {...register("message", { required: true })}
@@ -209,6 +211,7 @@ export default function Direction() {
                     className="p-2 border border-gray-300 rounded-md"
                     {...register("message")}
                   ></textarea>
+                  {errors.message && <span className="text-sm text-red-500">Please enter a valid message.</span>}
                   <button
                     type="submit"
                     className="bg-red-600 hover:bg-red-700 text-white p-2 rounded-md"
