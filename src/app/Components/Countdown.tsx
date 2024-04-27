@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import { useCountDown } from "../Functionalitys/useCountDown";
 
-function Countdown({ targetDate }: { targetDate: Date }) {
-  const [day, hour, minute, second] = useCountDown(targetDate);
+function Countdown({ day, hour, minute, second }: { day: number, hour: number, minute: number, second: number }) {
   const [firstLoading, setFirstLoading] = useState<boolean>(false);
 
   useEffect(() => {
