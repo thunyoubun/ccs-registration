@@ -4,7 +4,7 @@ import Swal from "sweetalert2";
 import RegistrationForm, { IRegistrationForm } from "./RegistrationForm";
 import TextInput from "./TextInput";
 
-function RegistrationInput() {
+function RegistrationInput({ expired }: { expired: number }) {
   const {
     handleSubmit,
     register,
@@ -142,8 +142,8 @@ function RegistrationInput() {
         </div>
         <button
           type="submit"
-          className="p-2 bg-red-600 hover:bg-red-700 col-span-full rounded-md text-white font-semibold"
-          disabled={isSubmitting}
+          className={`${isSubmitting || !!expired? "bg-gray-300 cursor-not-allowed opacity-50":"bg-red-600 hover:bg-red-700 text-white"} p-2  col-span-full rounded-md  font-semibold`}
+          disabled={isSubmitting || !!expired}
         >
           Register
         </button>

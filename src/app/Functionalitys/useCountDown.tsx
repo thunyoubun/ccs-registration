@@ -17,10 +17,11 @@ function useCountDown(targetdate: Date){
 
 const getReturnValue = (countdown: number) => {
     countdown = countdown> 0? countdown : 0
+    const isExpired = countdown == 0? 1: 0
     const days = Math.floor(countdown /(1000*60*60*24))
     const hours = Math.floor( (countdown%(1000*60*60*24)) / (1000*60*60))
     const minuts = Math.floor( (countdown%(1000*60*60)) / (1000*60))
     const seconds = Math.floor( (countdown%(1000*60)) / 1000)
-    return [ days, hours, minuts, seconds ]
+    return [ days, hours, minuts, seconds, isExpired ]
 }
 export { useCountDown }
