@@ -15,11 +15,11 @@ export default function Main() {
           <div className="mx-8 md:mx-20  text-center  ">
             <h1 className=" text-white font-bold  text-5xl">
               {/* The 16th International Conference */}
-              International CCS Symposium:
+              International CCUS Symposium:
             </h1>
             <h1 className=" mt-6 text-white font-bold text-5xl">
-              {/* on Information Technology and Electrical Engineering */}A
-              ‘Supercritical’ Research Toward Industrial Solution
+              {/* on Information Technology and Electrical Engineering */}
+              &apos;Supercritical&apos; Partways Toward Carbon Neutrality
             </h1>
           </div>
 

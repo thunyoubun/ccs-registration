@@ -14,7 +14,8 @@ const Footer = () => {
         />
         <div className=" text-center text-sm">
           <h1>
-          International CCS Symposium: A ‘Supercritical’ Research Toward Industrial Solution
+            International CCUS Symposium: &apos;Supercritical&apos; Partways
+            Toward Carbon Neutrality
           </h1>
         </div>
         <div className=" text-center text-sm">

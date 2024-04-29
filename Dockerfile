@@ -13,5 +13,11 @@ RUN npm install
 # Copy the rest of the frontend files
 COPY . .
 
-# Set the command to start the Next.js application
-CMD ["npm", "run", "dev"]
+# สร้าง production build
+RUN npm run build
+
+# ระบุพอร์ตที่แอปพลิเคชันจะใช้ในการเชื่อมต่อ
+EXPOSE 3000
+
+# เริ่มต้นแอปพลิเคชันในโหมด Production
+CMD ["npm", "start"]
