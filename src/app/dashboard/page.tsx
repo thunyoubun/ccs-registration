@@ -12,7 +12,7 @@ import {
   IRegistrationForm,
 } from "../Components/RegistrationForm";
 
-export function DashboardPage() {
+export default function DashboardPage() {
   const [participants, setParticipants] = useState<IAPIRegister[]>(
     [] as IAPIRegister[]
   );
@@ -43,7 +43,7 @@ export function DashboardPage() {
   async function logOut() {
     try {
       const response = await axios.post("/api/auth/logout");
-      console.log(response.data.ok);
+
       if (response.data.ok) {
         window.location.href = "/login";
       }
@@ -102,5 +102,3 @@ export function DashboardPage() {
     </div>
   );
 }
-
-export default DashboardPage;
