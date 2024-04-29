@@ -14,8 +14,7 @@ const Footer = () => {
         />
         <div className=" text-center text-sm">
           <h1>
-            15th International Conference on Information Technology and
-            Electrical Engineering
+          International CCS Symposium: A ‘Supercritical’ Research Toward Industrial Solution
           </h1>
         </div>
         <div className=" text-center text-sm">
