@@ -1,12 +1,21 @@
 import { type NextRequest, NextResponse } from "next/server";
 import jwt from "jsonwebtoken";
-import User from "../../../Datas/User.json";
+
+import axios from "axios";
 
 async function authenticateUser(username: string, password: string) {
-  const user = User.user.find(
-    (user) => user.username === username && user.password === password
+  const res = await axios.post(
+    "https://api-secure-petroleum-climate.eng.cmu.ac.th/css-user",
+    {
+      username: username,
+      password: password,
+    }
   );
-  return user;
+  if (res.status === 200) {
+    return res.data.ok;
+  } else {
+    return false;
+  }
 }
 
 export async function POST(request: NextRequest) {

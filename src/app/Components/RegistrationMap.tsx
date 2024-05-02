@@ -8,7 +8,7 @@ function RegistrationMap() {
   }, []);
 
   return (
-    <div className=" bg-white md:order-none xl:p-8 flex flex-col gap-5 rounded-bl-md">
+    <div className=" bg-white md:order-none xl:p-8 flex flex-col gap-5 md:rounded-bl-md rounded-none">
       <div className=" font-medium text-3xl lg:text-5xl text-center ">
         {/* <button
           onClick={() => setSecondDate(false)}

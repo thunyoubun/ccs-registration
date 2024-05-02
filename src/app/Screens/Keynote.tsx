@@ -6,7 +6,7 @@ export default function Keynote() {
   return (
     <div
       id="keynote-speakers"
-      className="md:h-screen h-fit bg-gradient-to-r from-red-700 to-blue-800  p-8 md:p-20"
+      className=" h-fit bg-gradient-to-r from-red-700 to-blue-800  p-8 md:p-20"
     >
       <div className="flex-1  ">
         <div className="flex justify-center">
