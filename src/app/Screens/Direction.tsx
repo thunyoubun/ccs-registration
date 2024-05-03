@@ -204,7 +204,7 @@ export default function Direction() {
                   <input type="number"
                     {...register("phone", { required: true, min: 10, max:10})}
                     className="p-2 border border-gray-300 rounded-md"
-                  placeholder="0999999999" 
+                  placeholder="Enter your phone number" 
                   />
                   {errors.phone && <span className="text-sm text-red-500">Please enter a valid email.</span>}
                   <label htmlFor="" className="text-black font-semibold">
