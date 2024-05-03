@@ -54,8 +54,8 @@ const Navbar = ({ path }: NavbarProps) => {
             className=" sm:h-24  sm:w-32 h-20 w-24"
           />
           <div className="my-2 invisible lg:visible">
-            <h1 className="text-2xl font-semibold">CCUS</h1>
-            <p className="text-sm">Carbon Capture, Utilization and Storage</p>
+            <h1 className="text-2xl font-semibold">CCUS Symposium</h1>
+            <p className="text-sm">&apos;Supercritical&apos; Pathways Toward Carbon Neutrality</p>
           </div>
         </Link>
 
