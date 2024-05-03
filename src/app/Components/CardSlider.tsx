@@ -11,15 +11,6 @@ const CardSlider = () => {
   const [animation, setAnimation] = useState("animate-fade-left" as string);
   const [cardPerSlide, setCardPerSlide] = useState(3);
 
-  const authData = [
-    { name: "a", srcImage: "/images/profile/natthanan.jpg" },
-    { name: "b", srcImage: "/images/profile/natthanan.jpg" },
-    { name: "c", srcImage: "/images/profile/natthanan.jpg" },
-    { name: "d", srcImage: "/images/profile/natthanan.jpg" },
-    { name: "e", srcImage: "/images/profile/natthanan.jpg" },
-    { name: "f", srcImage: "/images/profile/natthanan.jpg" },
-  ];
-
   //if window rezie change card per slide
   useEffect(() => {
     const handleResize = () => {
@@ -38,7 +29,7 @@ const CardSlider = () => {
   }, []);
 
   const clickNext = () => {
-    activeImage === authData.length - cardPerSlide
+    activeImage === KeynoteSpeakerData.keynoteSpeaker.length - cardPerSlide
       ? setActiveImage(0)
       : setActiveImage(activeImage + cardPerSlide);
     setTimeout(() => {
@@ -48,7 +39,7 @@ const CardSlider = () => {
   };
   const clickPrev = () => {
     activeImage === 0
-      ? setActiveImage(authData.length - cardPerSlide)
+      ? setActiveImage(KeynoteSpeakerData.keynoteSpeaker.length - cardPerSlide)
       : setActiveImage(activeImage - cardPerSlide);
 
     setTimeout(() => {
