@@ -62,17 +62,17 @@ const Navbar = ({ path }: NavbarProps) => {
         <div className="hidden md:flex ">
           <ul className="flex gap-8">
             {path === "/" && (
-              <li className="hover:scale-105 hover:font-semibold transition ease-out delay-50">
+              <li className="font-bold hover:scale-125 hover:font-extrabold transition ease-out delay-50">
                 <Link href="/keynote-speaker">Keynote Speaker</Link>
               </li>
             )}
             {path !== "/programme" && (
-              <li className="hover:scale-105 hover:font-semibold transition ease-out delay-50">
+              <li className="font-bold hover:scale-125 hover:font-extrabold transition ease-out delay-50">
                 <Link href="/programme">Programme</Link>
               </li>
             )}
             {path !== "/registration" && (
-              <li className="hover:scale-105 hover:font-semibold transition ease-out delay-50">
+              <li className="font-bold hover:scale-125 hover:font-extrabold transition ease-out delay-50">
                 <Link href="/registration">Registration</Link>
               </li>
             )}
