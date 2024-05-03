@@ -40,8 +40,8 @@ const ToTop = () => {
           : " invisible transition-opacity delay-200 opacity-0  ease-in-out scale-0"
       } fixed z-50 bottom-5 right-5 shadow-lg rounded-full `}
     >
-      <div className="bg-white border-2 border-red-500 shadow-lg rounded-full p-2">
-        <FaArrowUp className="text-2xl text-red-500 " />
+      <div className="bg-white border-2 border-teal-400 shadow-lg rounded-full p-2">
+        <FaArrowUp className="text-2xl text-teal-400 " />
       </div>
     </button>
   );

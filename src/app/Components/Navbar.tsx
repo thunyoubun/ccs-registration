@@ -55,24 +55,26 @@ const Navbar = ({ path }: NavbarProps) => {
           />
           <div className="my-2 invisible lg:visible">
             <h1 className="text-2xl font-semibold">CCUS Symposium</h1>
-            <p className="text-sm">&apos;Supercritical&apos; Pathways Toward Carbon Neutrality</p>
+            <p className="text-sm">
+              &apos;Supercritical&apos; Pathways Toward Carbon Neutrality
+            </p>
           </div>
         </Link>
 
         <div className="hidden md:flex ">
           <ul className="flex gap-8">
             {path === "/" && (
-              <li className="hover:scale-105 hover:font-semibold transition ease-out delay-50">
+              <li className="hover:scale-105 font-semibold hover:drop-shadow-md transition ease-out delay-50">
                 <Link href="/keynote-speaker">Keynote Speaker</Link>
               </li>
             )}
             {path !== "/programme" && (
-              <li className="hover:scale-105 hover:font-semibold transition ease-out delay-50">
+              <li className="hover:scale-105 font-semibold hover:drop-shadow-md transition ease-out delay-50">
                 <Link href="/programme">Programme</Link>
               </li>
             )}
             {path !== "/registration" && (
-              <li className="hover:scale-105 hover:font-semibold transition ease-out delay-50">
+              <li className="hover:scale-105 font-semibold hover:drop-shadow-md transition ease-out delay-50">
                 <Link href="/registration">Registration</Link>
               </li>
             )}

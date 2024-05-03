@@ -1,21 +1,38 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 
 export interface PeopleCardType {
   name: string;
   srcImage: string;
-  affiliation: string
+  affiliation: string;
   /* bio: string;
   topic: string;
   abstract: string; */
 }
 
 const PeopleCard = ({ name, srcImage, affiliation }: PeopleCardType) => {
+  const [fullName, setFullName] = useState("");
+  const [srcImg, setSrcImg] = useState("");
+  const [aff, setAff] = useState("");
+
+  useEffect(() => {
+    setFullName(name);
+    if (srcImage.length === 0 || srcImage === undefined || srcImage === null) {
+      setSrcImg("/images/default-avatar.jpg");
+    } else {
+      setSrcImg(srcImage);
+    }
+
+    setAff(affiliation);
+  }, [name, srcImage, affiliation]);
+
   return (
-    <div className={`h-full bg-transparent/30 p-4 rounded-lg z-0  shadow-lg`}>
+    <div
+      className={`h-full w-80 bg-transparent/30 p-4 rounded-lg z-0  shadow-lg`}
+    >
       <div className="flex flex-col justify-center items-center gap-4">
-        <div className=" bg-red-600 border-4 border-red-600 rounded-full mt-4 shadow-lg  overflow-hidden">
+        <div className=" w-40 h-40 bg-white border-4 border-teal-400  rounded-full mt-4 shadow-lg  overflow-hidden">
           <Image
             src={srcImage}
             width={160}
@@ -26,9 +43,7 @@ const PeopleCard = ({ name, srcImage, affiliation }: PeopleCardType) => {
         </div>
         <div className="text-white text-center flex flex-col gap-2 ">
           <h1 className=" text-xl">{name}</h1>
-          <h1 className="  text-white/50">
-            {affiliation}
-          </h1>
+          <h1 className="  text-white/50">{affiliation}</h1>
         </div>
         {/* <div className="flex flex-col gap-2 max-h-44 overflow-auto">
           <div className="text-center  flex  gap-2 ">

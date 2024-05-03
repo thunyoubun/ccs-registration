@@ -47,13 +47,14 @@ export default function Main() {
       >
         <div className="m-8 md:m-20 ">
           <div className=" flex flex-col gap-4">
-            <h1 className=" text-red-500 font-semibold text-3xl text-center">
+            <h1 className=" text-teal-400  font-semibold text-3xl text-center">
               About Event
             </h1>
             <h1 className=" font-bold text-2xl text-center">
               {/* The International Symposium for Carbon Capture, Utilization and
               Storage (CCUS) */}
-              This International CCUS Symposium: &apos;Supercritical&apos; Pathways Toward Carbon Neutrality
+              This International CCUS Symposium: &apos;Supercritical&apos;
+              Pathways Toward Carbon Neutrality
             </h1>
             <p className="indent-8 text-justify">
               Thailand has pledged for carbon neutrality and net zero emissions

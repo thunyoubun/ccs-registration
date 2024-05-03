@@ -18,7 +18,7 @@ export default function Organize() {
               height={400}
               alt="ccs-logo"
             />
-            <h1 className="text-red-500 text-xl font-semibold">
+            <h1 className="text-teal-400 text-xl font-semibold">
               Co-Organized{" "}
             </h1>
             <h2 className=" text-black text-base font-normal">
@@ -32,7 +32,7 @@ export default function Organize() {
               height={200}
               alt="cmu-logo"
             />
-            <h1 className="text-red-500 text-xl font-semibold">
+            <h1 className="text-teal-400  text-xl font-semibold">
               Co-Organized{" "}
             </h1>
             <h2 className=" text-black text-base font-normal">

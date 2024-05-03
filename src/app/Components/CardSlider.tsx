@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import PeopleCard from "./PeopleCard";
 import { PeopleCardType } from "./PeopleCard";
-import KeynoteSpeakerData from '../Datas/KeynoteSpeakerData.json'
+import KeynoteSpeakerData from "../Datas/KeynoteSpeakerData.json";
 
 import { IoIosArrowDropleftCircle } from "react-icons/io";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
@@ -28,19 +28,24 @@ const CardSlider = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // we have 13 keynote speaker
+  // if we have 13 keynote speaker, we have 5 slide. each slide have 3 card, except last slide
+  // next slide
   const clickNext = () => {
-    activeImage === KeynoteSpeakerData.keynoteSpeaker.length - cardPerSlide
+    activeImage === KeynoteSpeakerData.keynoteSpeaker.length - 1
       ? setActiveImage(0)
-      : setActiveImage(activeImage + cardPerSlide);
+      : setActiveImage(activeImage + 3);
     setTimeout(() => {
       setAnimation("animate-fade-right");
     }, 100);
     setAnimation("");
   };
+
+  // previous slide
   const clickPrev = () => {
     activeImage === 0
-      ? setActiveImage(KeynoteSpeakerData.keynoteSpeaker.length - cardPerSlide)
-      : setActiveImage(activeImage - cardPerSlide);
+      ? setActiveImage(KeynoteSpeakerData.keynoteSpeaker.length - 1)
+      : setActiveImage(activeImage - 3);
 
     setTimeout(() => {
       setAnimation("animate-fade-left");
@@ -50,7 +55,7 @@ const CardSlider = () => {
 
   return (
     <div>
-      <div className="flex gap-4 justify-center items-center z-0">
+      <div className="flex gap-4 justify-center items-center z-0 w-full">
         <button onClick={clickPrev} className="text-black/50 hover:text-black ">
           <IoIosArrowDropleftCircle size={50} />
         </button>
