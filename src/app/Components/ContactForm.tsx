@@ -6,14 +6,16 @@ export interface IContactForm{
     name: string,
     email: string,
     subject: string,
-    message: string
+    message: string,
+    phone: string
 }
 
 const validationContactForm = z.object({
-    name: z.string(),
-    email: z.string().email(),
-    subject: z.string(),
-    message: z.string()
+    name: z.string().min(1),
+    email: z.string().email().min(1),
+    subject: z.string().min(1),
+    message: z.string().min(1),
+    phone: z.string().min(1).max(10)
 })
 
 function ContactForm(){
@@ -23,7 +25,8 @@ function ContactForm(){
             name: '',
             email: '',
             subject: '',
-            message: ''
+            message: '',
+            phone: ''
         }
     })
 
