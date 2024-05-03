@@ -4,7 +4,7 @@
             "id": 0,
             "fullname": "Dr. Pongvipa Lohsomboon",
             "affiliation": "Senior Expert (TSRI) and Chairperson for Circular Economy Program Board (PMU-C)",
-            "srcImg": ""
+            "srcImg": "/images/keynote-speaker/1.jpg"
         },
         {
             "id": 1,
@@ -16,55 +16,55 @@
             "id": 2,
             "fullname": "Assoc. Prof. Dr. Suparit Tangparitkul",
             "affiliation": "Director of Chiang Mai CCS (Chiang Mai University)",
-            "srcImg": ""
+            "srcImg": "/images/keynote-speaker/3.png"
         },
         {
             "id": 3,
             "fullname": "Dr. Cathrine Ringstad",
             "affiliation": "Senior Advisor CCS, Bellona Environmental Foundation, Norway",
-            "srcImg": ""
+            "srcImg": "/images/keynote-speaker/4.png"
         },
         {
             "id": 4,
             "fullname": "Mr. Søren Poulsen",
             "affiliation": "Project Director, Greensand Project, Denmark",
-            "srcImg": ""
+            "srcImg": "/images/keynote-speaker/5.png"
         },
         {
             "id": 5,
             "fullname": "Assoc. Prof. Wongkot Wongsapai",
             "affiliation": "Chiang Mai University ",
-            "srcImg": ""
+            "srcImg": "/images/keynote-speaker/6.png"
         },
         {
             "id": 6,
             "fullname": "Mr. Surachai Vangrattanachai",
             "affiliation": "CCUs Director, SCG CGS",
-            "srcImg": ""
+            "srcImg": "/images/keynote-speaker/7.jpg"
         },
         {
             "id": 7,
             "fullname": "Dr. Yanadet Sripanich",
             "affiliation": "Energy Transition/CCS Business Lead, PTTEP",
-            "srcImg": ""
+            "srcImg": "/images/keynote-speaker/8.jpg"
         },
         {
             "id": 8,
             "fullname": "Prof. Dr. Nicolas von Solms",
             "affiliation": "Technical University of Denmark (DTU), Denmark",
-            "srcImg": ""
+            "srcImg": "/images/keynote-speaker/9.png"
         },
         {
             "id": 9,
             "fullname": "Prof. Dr. Carl Fredrik Berg",
             "affiliation": "Norwegian University of Science and Technology (NTNU), Norway",
-            "srcImg": ""
+            "srcImg": "/images/keynote-speaker/10.jpg"
         },
         {
             "id": 10,
             "fullname": "Prof. Dr. Hyundon Shin",
             "affiliation": "Inha University, Korea",
-            "srcImg": ""
+            "srcImg": "/images/keynote-speaker/11.jpg"
         },
         {
             "id": 11,
@@ -76,7 +76,7 @@
             "id": 12,
             "fullname": "Asst. Prof. Dr. Natthanan Promsuk",
             "affiliation": "Chiang Mai University",
-            "srcImg": ""
+            "srcImg": "/images/keynote-speaker/13.jpg"
         }
     ]
 }

@@ -8,7 +8,7 @@ import Schedule from "./Screens/Schedule";
 import Keynote from "./Screens/Keynote";
 import Organize from "./Screens/Organize";
 import Direction from "./Screens/Direction";
-import Footer from "./Components/Footer";
+import FooterSponsor from "./Components/FooterSponsor";
 
 export default function Home() {
   return (
@@ -20,7 +20,7 @@ export default function Home() {
       <Keynote />
       <Organize />
       <Direction />
-      <Footer />
+      <FooterSponsor />
     </div>
   );
 }
