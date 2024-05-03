@@ -95,7 +95,7 @@ const Navbar = ({ path }: NavbarProps) => {
           className={
             !isActived
               ? "hidden z-10"
-              : "flex gap-8 flex-col absolute top-0 left-0 w-full h-screen justify-center items-center uppercase bg-red-500 transition-opacity opacity-100 ease-in-out delay-100"
+              : "flex gap-8 flex-col absolute top-0 left-0 w-full h-screen justify-center items-center uppercase bg-teal-400 transition-opacity opacity-100 ease-in-out delay-100"
           }
         >
           {path === "/" && (
