@@ -5,12 +5,13 @@ import { Inter } from "next/font/google";
 export interface PeopleCardType {
   name: string;
   srcImage: string;
+  affiliation: string
   /* bio: string;
   topic: string;
   abstract: string; */
 }
 
-const PeopleCard = ({ name, srcImage }: PeopleCardType) => {
+const PeopleCard = ({ name, srcImage, affiliation }: PeopleCardType) => {
   return (
     <div className={`h-full bg-transparent/30 p-4 rounded-lg z-0  shadow-lg`}>
       <div className="flex flex-col justify-center items-center gap-4">
@@ -24,13 +25,12 @@ const PeopleCard = ({ name, srcImage }: PeopleCardType) => {
           ></Image>
         </div>
         <div className="text-white text-center flex flex-col gap-2 ">
-          <h1 className=" text-xl">D.Eng. Assoc. Prof. {name}, </h1>
+          <h1 className=" text-xl">{name}</h1>
           <h1 className="  text-white/50">
-            Computer Engineering Department, Faculty of Engineering, Chiang Mai
-            University, Thailand
+            {affiliation}
           </h1>
         </div>
-        <div className="flex flex-col gap-2 max-h-44 overflow-auto">
+        {/* <div className="flex flex-col gap-2 max-h-44 overflow-auto">
           <div className="text-center  flex  gap-2 ">
             <div className="bg-white h-fit text-black rounded-2xl w-40 p-1 ">
               <h1 className=" font-semibold">BIO</h1>
@@ -61,7 +61,7 @@ const PeopleCard = ({ name, srcImage }: PeopleCardType) => {
               perferendis delectus dolore accusamus!
             </h1>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -7,12 +7,14 @@ import axios from "axios";
 import { MdOutlineLocalPhone } from "react-icons/md";
 import { GoLocation } from "react-icons/go";
 import { MdOutlineMail } from "react-icons/md";
+import { FaFax } from "react-icons/fa";
 
 interface FormData {
   name: string;
   email: string;
   subject: string;
   message: string;
+  phone:string
 }
 
 export default function Direction() {
@@ -65,7 +67,7 @@ export default function Direction() {
   return (
     <div
       id="direction"
-      className="flex flex-col h-fit bg-gradient-to-r from-red-700 to-blue-800 "
+      className="flex flex-col h-fit bg-gradient-to-r from-teal-500 to-blue-950 "
     >
       <div className="flex-1 md:m-20 m-8 ">
         <div className="flex flex-col">
@@ -132,34 +134,39 @@ export default function Direction() {
         <div className="w-full md:flex grid gap-8 ">
           <div className="w-full md:w-1/2 px-8  ">
             <div className="p-6 flex flex-col justify-center gap-4">
-              <h1 className="text-white text-3xl font-semibold">Contact Us</h1>
+              <h1 className="text-white text-3xl font-semibold">Chiang Mai CCS</h1>
               <h1 className="text-white">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum
-                temporibus hic autem quo quos voluptatem. Quod in molestiae
-                suscipit ratione?
+                (Chiang Mai Research Group for Carbon Capture and Storage)
               </h1>
 
               <div className="flex gap-2 text-white">
-                <GoLocation size={40} className="text-xl " />
+                <GoLocation size={25} className="text-xl " />
                 <h1>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-                  quos beatae minus vero consequuntur illum nam excepturi nobis
+                  Chiang Mai University,
+                  Chiang Mai 52000, Thailand
                 </h1>
               </div>
               <div className="flex gap-2 text-white">
                 <MdOutlineLocalPhone size={25} className=" inline" />
-                <h1>(+66) 2-723-4900</h1>
+                <h1>053-944128</h1>
+              </div>
+              <div className="flex gap-2 text-white">
+                <FaFax size={25} className="inline" />
+                <h1>053-944186</h1>
               </div>
               <div className="flex gap-2 text-white">
                 <MdOutlineMail size={25} className=" inline" />
-                <h1>example@gmail.com</h1>
+                <div className="flex flex-col">
+                  <h1>suparit.t@cmu.ac.th</h1>
+                  <h1>natthanan.p@cmu.ac.th</h1>
+                </div>
               </div>
             </div>
           </div>
           <div className="w-full md:w-1/2 px-8">
             <div className="bg-white h-full rounded-md p-6 shadow-lg">
               <div className="">
-                <h1 className=" text-3xl font-semibold">Contact Form</h1>
+                <h1 className=" text-3xl font-semibold">Inquiry Form</h1>
               </div>
               <div>
                 <form
@@ -191,6 +198,15 @@ export default function Direction() {
                     {...register("email")}
                   />
                   {errors.email && <span className="text-sm text-red-500">Please enter a valid email.</span>}
+                  <label htmlFor="" className="text-black font-semibold">
+                    Phone No. <span className="text-red-500">*</span>
+                  </label>
+                  <input type="number"
+                    {...register("phone", { required: true, min: 10, max:10})}
+                    className="p-2 border border-gray-300 rounded-md"
+                  placeholder="0999999999" 
+                  />
+                  {errors.phone && <span className="text-sm text-red-500">Please enter a valid email.</span>}
                   <label htmlFor="" className="text-black font-semibold">
                     Subject <span className="text-red-500">*</span>
                   </label>

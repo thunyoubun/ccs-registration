@@ -13,7 +13,7 @@ function RowDataSimple({ data }: { data: IProgrammeData[] }) {
       key={schedule.time}
     >
       <td>{schedule.time}</td>
-      <td>{schedule.topic}</td>
+      <td className="text-left">{schedule.topic}</td>
       <td>{schedule.group != "None" ? schedule.group : ""}</td>
     </tr>
   ));

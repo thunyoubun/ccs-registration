@@ -72,7 +72,7 @@ function RegistrationInput({ expired }: { expired: number }) {
           {TextInput(register, "Email", "email", "email", errors.email)}
         </div>
         <div className="col-span-full">
-          <h3 className="font-medium text-xl">Convenience:</h3>
+          <h3 className="font-medium text-xl">Preferred Date:</h3>
           <div className="flex gap-5 mx-2 md:mx-4 lg:justify-center lg:mx-0">
             <div className="col-span-2">
               <label htmlFor="" className="font-medium">
