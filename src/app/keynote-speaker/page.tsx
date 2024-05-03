@@ -8,7 +8,7 @@ import {
   IoIosArrowDropleftCircle,
   IoIosArrowDroprightCircle,
 } from "react-icons/io";
-
+import KeynoteSpeakerData from "../Datas/KeynoteSpeakerData.json"
 const authData = [
   {
     id: "a",
@@ -116,12 +116,13 @@ function KeynoteSpeakerPage() {
                   <IoIosArrowDropleftCircle size={50} />
                 </button>
                 <div className="flex gap-4">
-                  {authData.slice(activeImage, activeImage + 1).map((auth) => (
+                  {KeynoteSpeakerData.keynoteSpeaker.slice(activeImage, activeImage + 1).map((auth) => (
                     <div key={auth.id} className={` ${animation}`}>
                       <PeopleCard
                         key={auth.id}
-                        name={auth.id}
-                        srcImage={auth.src}
+                        name={auth.fullname}
+                        srcImage={auth.srcImg}
+                        affiliation={auth.affiliation}
                       ></PeopleCard>
                     </div>
                   ))}
@@ -132,11 +133,12 @@ function KeynoteSpeakerPage() {
               </div>
             ) : (
               <>
-                {authData.map((data) => (
+                {KeynoteSpeakerData.keynoteSpeaker.map((data) => (
                   <PeopleCard
                     key={data.id}
-                    name={data.id}
-                    srcImage={data.src}
+                    name={data.fullname}
+                    srcImage={data.srcImg}
+                    affiliation={data.affiliation}
                   />
                 ))}
               </>
