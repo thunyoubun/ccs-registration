@@ -9,7 +9,7 @@ function FooterSponsor(){
             </label>
           </div>
           <div className="flex justify-center">
-            <div className="grid grid-cols-1 items-center sm:grid-cols-2 lg:grid-cols-4">
+            <div className="grid grid-cols-1 gap-4 items-center sm:grid-cols-2 lg:grid-cols-4">
               <CardSponsor
                 path={
                   "/images/sponsors/1200px-Seal_of_the_Minister_of_Foreign_Affair_of_Thailand.svg.png"
