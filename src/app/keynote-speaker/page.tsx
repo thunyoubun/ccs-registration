@@ -9,56 +9,6 @@ import {
   IoIosArrowDroprightCircle,
 } from "react-icons/io";
 import KeynoteSpeakerData from "../Datas/KeynoteSpeakerData.json"
-const authData = [
-  {
-    id: "a",
-    src: "/images/profile/natthanan.jpg",
-  },
-  {
-    id: "b",
-    src: "/images/profile/natthanan.jpg",
-  },
-  {
-    id: "c",
-    src: "/images/profile/natthanan.jpg",
-  },
-  {
-    id: "d",
-    src: "/images/profile/natthanan.jpg",
-  },
-  {
-    id: "e",
-    src: "/images/profile/natthanan.jpg",
-  },
-  {
-    id: "f",
-    src: "/images/profile/natthanan.jpg",
-  },
-  {
-    id: "g",
-    src: "/images/profile/natthanan.jpg",
-  },
-  {
-    id: "h",
-    src: "/images/profile/natthanan.jpg",
-  },
-  {
-    id: "i",
-    src: "/images/profile/natthanan.jpg",
-  },
-  {
-    id: "j",
-    src: "/images/profile/natthanan.jpg",
-  },
-  {
-    id: "k",
-    src: "/images/profile/natthanan.jpg",
-  },
-  {
-    id: "l",
-    src: "/images/profile/natthanan.jpg",
-  },
-];
 
 function KeynoteSpeakerPage() {
   const [activateSlide, setActivateSlide] = useState<boolean>(false);
@@ -81,7 +31,7 @@ function KeynoteSpeakerPage() {
   }, []);
 
   const NextKeynote = () => {
-    activeImage === authData.length - 1
+    activeImage === KeynoteSpeakerData.keynoteSpeaker.length - 1
       ? setActiveImage(0)
       : setActiveImage(activeImage + 1);
     setTimeout(() => {
@@ -92,7 +42,7 @@ function KeynoteSpeakerPage() {
 
   const PrevKeynote = () => {
     activeImage === 0
-      ? setActiveImage(authData.length - 1)
+      ? setActiveImage(KeynoteSpeakerData.keynoteSpeaker.length - 1)
       : setActiveImage(activeImage - 1);
 
     setTimeout(() => {
