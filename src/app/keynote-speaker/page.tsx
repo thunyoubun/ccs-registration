@@ -8,7 +8,7 @@ import {
   IoIosArrowDropleftCircle,
   IoIosArrowDroprightCircle,
 } from "react-icons/io";
-import KeynoteSpeakerData from "../Datas/KeynoteSpeakerData.json"
+import KeynoteSpeakerData from "../Datas/KeynoteSpeakerData.json";
 
 function KeynoteSpeakerPage() {
   const [activateSlide, setActivateSlide] = useState<boolean>(false);
@@ -59,23 +59,25 @@ function KeynoteSpeakerPage() {
           <h2 className="text-white text-5xl p-8 text-center font-semibold">
             Keynote Speaker
           </h2>
-          <div className="grid gap-4 my-4 lg:grid-cols-3 lg:gap-4 lg:mx-2 lg:my-6">
+          <div className="grid gap-4 my-4 justify-center lg:grid-cols-3 lg:gap-4 lg:mx-2 lg:my-6">
             {activateSlide ? (
               <div className="flex gap-1">
                 <button onClick={() => PrevKeynote()}>
                   <IoIosArrowDropleftCircle size={50} />
                 </button>
                 <div className="flex gap-4">
-                  {KeynoteSpeakerData.keynoteSpeaker.slice(activeImage, activeImage + 1).map((auth) => (
-                    <div key={auth.id} className={` ${animation}`}>
-                      <PeopleCard
-                        key={auth.id}
-                        name={auth.fullname}
-                        srcImage={auth.srcImg}
-                        affiliation={auth.affiliation}
-                      ></PeopleCard>
-                    </div>
-                  ))}
+                  {KeynoteSpeakerData.keynoteSpeaker
+                    .slice(activeImage, activeImage + 1)
+                    .map((auth) => (
+                      <div key={auth.id} className={` ${animation}`}>
+                        <PeopleCard
+                          key={auth.id}
+                          name={auth.fullname}
+                          srcImage={auth.srcImg}
+                          affiliation={auth.affiliation}
+                        ></PeopleCard>
+                      </div>
+                    ))}
                 </div>
                 <button onClick={() => NextKeynote()}>
                   <IoIosArrowDroprightCircle size={50} />

@@ -14,7 +14,7 @@ interface FormData {
   email: string;
   subject: string;
   message: string;
-  phone: string
+  phone: string;
 }
 
 export default function Direction() {
@@ -134,17 +134,16 @@ export default function Direction() {
         <div className="w-full md:flex grid gap-8 ">
           <div className="w-full md:w-1/2 px-8  ">
             <div className="p-6 flex flex-col justify-center gap-4">
-              <h1 className="text-white text-3xl font-semibold">Chiang Mai CCS</h1>
+              <h1 className="text-white text-3xl font-semibold">
+                Chiang Mai CCS
+              </h1>
               <h1 className="text-white">
                 (Chiang Mai Research Group for Carbon Capture and Storage)
               </h1>
 
               <div className="flex gap-2 text-white">
                 <GoLocation size={25} className="text-xl " />
-                <h1>
-                  Chiang Mai University,
-                  Chiang Mai 52000, Thailand
-                </h1>
+                <h1>Chiang Mai University, Chiang Mai 52000, Thailand</h1>
               </div>
               <div className="flex gap-2 text-white">
                 <MdOutlineLocalPhone size={25} className=" inline" />
@@ -183,7 +182,11 @@ export default function Direction() {
                     className="p-2 border border-gray-300 rounded-md"
                     {...register("name")}
                   />
-                  {errors.name && <span className="text-sm text-red-500">Please enter a valid name.</span>}
+                  {errors.name && (
+                    <span className="text-sm text-red-500">
+                      Please enter a valid name.
+                    </span>
+                  )}
                   <label htmlFor="" className="text-black font-semibold">
                     Email <span className="text-red-500">*</span>
                   </label>
@@ -197,16 +200,29 @@ export default function Direction() {
                     className="p-2 border border-gray-300 rounded-md"
                     {...register("email")}
                   />
-                  {errors.email && <span className="text-sm text-red-500">Please enter a valid email.</span>}
+                  {errors.email && (
+                    <span className="text-sm text-red-500">
+                      Please enter a valid email.
+                    </span>
+                  )}
                   <label htmlFor="" className="text-black font-semibold">
                     Phone No. <span className="text-red-500">*</span>
                   </label>
-                  <input type="string"
-                    {...register("phone", { required: true, minLength: 10, maxLength: 10 })}
+                  <input
+                    type="string"
+                    {...register("phone", {
+                      required: true,
+                      minLength: 10,
+                      maxLength: 10,
+                    })}
                     className="p-2 border border-gray-300 rounded-md"
-                  placeholder="Enter your phone number" 
+                    placeholder="Enter your phone number"
                   />
-                  {errors.phone && <span className="text-sm text-red-500">Please enter a valid phone number.</span>}
+                  {errors.phone && (
+                    <span className="text-sm text-red-500">
+                      Please enter a valid phone number.
+                    </span>
+                  )}
                   <label htmlFor="" className="text-black font-semibold">
                     Subject <span className="text-red-500">*</span>
                   </label>
@@ -217,7 +233,11 @@ export default function Direction() {
                     className="p-2 border border-gray-300 rounded-md"
                     {...register("subject")}
                   />
-                  {errors.subject && <span className="text-sm text-red-500">Please enter a valid subject.</span>}
+                  {errors.subject && (
+                    <span className="text-sm text-red-500">
+                      Please enter a valid subject.
+                    </span>
+                  )}
                   <label htmlFor="" className="text-black font-semibold">
                     Message <span className="text-red-500">*</span>
                   </label>
@@ -227,10 +247,14 @@ export default function Direction() {
                     className="p-2 border border-gray-300 rounded-md"
                     {...register("message")}
                   ></textarea>
-                  {errors.message && <span className="text-sm text-red-500">Please enter a valid message.</span>}
+                  {errors.message && (
+                    <span className="text-sm text-red-500">
+                      Please enter a valid message.
+                    </span>
+                  )}
                   <button
                     type="submit"
-                    className="bg-red-600 hover:bg-red-700 text-white p-2 rounded-md"
+                    className="bg-teal-400  hover:bg-teal-700 text-white font-semibold  p-2 rounded-md"
                   >
                     {sending ? "Sending..." : "Send"}
                   </button>
