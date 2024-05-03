@@ -49,9 +49,7 @@ function RowData({ date }: { date: IProgrammeData[] }) {
             {schedule.description.length > 0 ? (
               <div>
                 {schedule.description.map((data) => (
-                  <h2 className="p-1" key={data}>
-                    {data}
-                  </h2>
+                  <h2 className="p-1" key={data} dangerouslySetInnerHTML={{ __html: data}} />
                 ))}
               </div>
             ) : (
@@ -62,9 +60,7 @@ function RowData({ date }: { date: IProgrammeData[] }) {
                 <h2 className="font-semibold">Speaker:</h2>
                 <ul>
                   {schedule.speakers.map((data) => (
-                    <li className="p-1" key={data}>
-                      {data}
-                    </li>
+                    <li className="p-1" key={data} dangerouslySetInnerHTML={{__html: data}} />
                   ))}
                 </ul>
               </div>
@@ -80,9 +76,7 @@ function RowData({ date }: { date: IProgrammeData[] }) {
                   }`}
                 >
                   {schedule.panelists.map((data) => (
-                    <li className="p-1" key={data}>
-                      {data}
-                    </li>
+                    <li className="p-1" key={data} dangerouslySetInnerHTML={{__html: data}} />
                   ))}
                 </ul>
               </div>
@@ -98,9 +92,7 @@ function RowData({ date }: { date: IProgrammeData[] }) {
                   }`}
                 >
                   {schedule.facilitators.map((data) => (
-                    <li className="p-1" key={data}>
-                      {data}
-                    </li>
+                    <li className="p-1" key={data} dangerouslySetInnerHTML={{__html: data}} />
                   ))}
                 </ul>
               </div>
@@ -161,7 +153,7 @@ function TableProgramme() {
             <tr className="border-b-2">
               <th className="text-center font-medium text-2xl">TIME</th>
               <th className="text-center font-medium text-2xl">AGENDA</th>
-              <th className="text-center font-medium text-2xl">FEATURES</th>
+              <th className="text-center font-medium text-2xl">GROUP</th>
             </tr>
           </thead>
           <tbody>

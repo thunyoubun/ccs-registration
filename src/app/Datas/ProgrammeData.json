@@ -14,8 +14,8 @@
             "time": "09.00 - 09.30 AM",
             "topic": "Opening ceremony",
             "description": [ 
-                "Welcome remark by Director General of Department of European Affairs (TBC)", 
-                "Opening remark by Representative of PMU-B Director (TBC)" 
+                "Welcome remark by Director General of Department of European Affairs <i>(TBC)</i>", 
+                "Opening remark by Representative of PMU-B Director <i>(TBC)</i>" 
             ],
             "speakers": [],
             "panelists": [],
@@ -28,7 +28,7 @@
             "topic": "Carbon Neutrality Research and Innovation",
             "description": [],
             "speakers": [
-                "Assoc. Prof. Dr. Winita Punyodom, Research University Network and CMU (TBC)"
+                "Assoc. Prof. Dr. Winita Punyodom, Research University Network and CMU <i>(TBC)</i>"
             ],
             "panelists": [],
             "facilitators": [],
@@ -120,7 +120,7 @@
             "topic": "Carbon Credit Methodology & Financial Incentive for CCS",
             "description": [],
             "speakers": [
-                "Assoc. Prof. Wongkot Wongsapai, CMU, Thailand (TBC)"
+                "Assoc. Prof. Wongkot Wongsapai, CMU, Thailand <i>(TBC)</i>"
             ],
             "panelists": [],
             "facilitators": [],
@@ -185,7 +185,7 @@
     ],
     "programmeSchedule07":[
         {
-            "time": "08.30 - 09.00",
+            "time": "08.30 - 09.00 AM",
             "topic": "Registration and welcome refreshment",
             "description":[],
             "speakers": [],
