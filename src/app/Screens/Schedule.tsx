@@ -8,7 +8,7 @@ function RowDataSimple({ data }: { data: IProgrammeData[] }) {
   return data.map((schedule) => (
     <tr
       className={`${
-        schedule.bgColor ? "bg-red-600 text-white" : ""
+        schedule.bgColor ? "bg-teal-500 text-white" : ""
       } text-center rounded-lg shadow-sm`}
       key={schedule.time}
     >
@@ -74,7 +74,7 @@ export default function Schedule() {
 
           <div className="w-full border"></div>
           <div className="w-full flex justify-center ">
-            <button className="  w-fit  bg-white   border-2 border-red-600 rounded-lg p-2 text-black hover:scale-105 transition ease-in-out delay-150 ">
+            <button className="  w-fit  bg-white   border-2 border-teal-600 rounded-lg p-2 text-black hover:scale-105 transition ease-in-out delay-150 ">
               <Link href={"/programme"}>
                 <h1>Full Schedule and Programme</h1>
               </Link>
