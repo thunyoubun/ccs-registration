@@ -6,7 +6,7 @@ const my_email = process.env.NEXT_PUBLIC_EMAIL;
 const my_pass = process.env.NEXT_PUBLIC_PASSWORD;
 
 export async function POST(request: NextRequest) {
-  const { email, name, message, subject } = await request.json();
+  const { email, name, message, subject, phone } = await request.json();
 
   const transport = nodemailer.createTransport({
     service: "gmail",
@@ -36,7 +36,7 @@ export async function POST(request: NextRequest) {
     to: my_email,
     cc: email,
     subject: subject,
-    text: `Message from ${name} (${email}) \n\n${message}`,
+    text: `Message from ${name} (Email: ${email}, Tel: ${phone}) \n\n${message}`,
   };
 
   const sendMailPromise = () =>

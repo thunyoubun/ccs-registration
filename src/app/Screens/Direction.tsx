@@ -14,7 +14,7 @@ interface FormData {
   email: string;
   subject: string;
   message: string;
-  phone:string
+  phone: string
 }
 
 export default function Direction() {
@@ -201,12 +201,12 @@ export default function Direction() {
                   <label htmlFor="" className="text-black font-semibold">
                     Phone No. <span className="text-red-500">*</span>
                   </label>
-                  <input type="number"
-                    {...register("phone", { required: true, min: 10, max:10})}
+                  <input type="string"
+                    {...register("phone", { required: true, minLength: 10, maxLength: 10 })}
                     className="p-2 border border-gray-300 rounded-md"
                   placeholder="Enter your phone number" 
                   />
-                  {errors.phone && <span className="text-sm text-red-500">Please enter a valid email.</span>}
+                  {errors.phone && <span className="text-sm text-red-500">Please enter a valid phone number.</span>}
                   <label htmlFor="" className="text-black font-semibold">
                     Subject <span className="text-red-500">*</span>
                   </label>
