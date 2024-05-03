@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import PeopleCard from "./PeopleCard";
 import { PeopleCardType } from "./PeopleCard";
+import KeynoteSpeakerData from '../Datas/KeynoteSpeakerData.json'
 
 import { IoIosArrowDropleftCircle } from "react-icons/io";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
@@ -64,14 +65,15 @@ const CardSlider = () => {
         </button>
         <div className={` flex gap-4`}>
           {/*show card just 3 in row */}
-          {authData
+          {KeynoteSpeakerData.keynoteSpeaker
             .slice(activeImage, activeImage + cardPerSlide)
             .map((auth, index) => (
               <div key={index} className={` ${animation}`}>
                 <PeopleCard
                   key={index}
-                  name={auth.name}
-                  srcImage={auth.srcImage}
+                  name={auth.fullname}
+                  srcImage={auth.srcImg}
+                  affiliation={auth.affiliation}
                 ></PeopleCard>
               </div>
             ))}
