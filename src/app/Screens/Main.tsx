@@ -9,17 +9,17 @@ export default function Main() {
     <div>
       <div
         id="home"
-        className=" md:mt-20 mt-28  bg-gradient-to-r from-red-700 to-blue-800  flex justify-center items-center"
+        className=" md:mt-20 mt-28  bg-gradient-to-r from-teal-500 to-blue-950  flex justify-center items-center"
       >
         <div className="md:m-20 m-8 flex flex-col gap-7 justify-center items-center">
           <div className="mx-8 md:mx-20  text-center  ">
             <h1 className=" text-white font-bold  text-5xl">
               {/* The 16th International Conference */}
-              International CCUS Symposium:
+              This International CCUS Symposium:
             </h1>
             <h1 className=" mt-6 text-white font-bold text-5xl">
               {/* on Information Technology and Electrical Engineering */}
-              &apos;Supercritical&apos; Partways Toward Carbon Neutrality
+              &apos;Supercritical&apos; Pathways Toward Carbon Neutrality
             </h1>
           </div>
 
@@ -51,8 +51,9 @@ export default function Main() {
               About Event
             </h1>
             <h1 className=" font-bold text-2xl text-center">
-              The International Symposium for Carbon Capture, Utilization and
-              Storage (CCUS)
+              {/* The International Symposium for Carbon Capture, Utilization and
+              Storage (CCUS) */}
+              This International CCUS Symposium: &apos;Supercritical&apos; Pathways Toward Carbon Neutrality
             </h1>
             <p className="indent-8 text-justify">
               Thailand has pledged for carbon neutrality and net zero emissions
