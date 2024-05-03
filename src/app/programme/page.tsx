@@ -1,5 +1,5 @@
 "use client";
-import Footer from "../Components/Footer";
+import FooterSponsor from "../Components/FooterSponsor";
 import Navbar from "../Components/Navbar";
 import ProgrammeBody from "../Components/ProgrammeBody";
 import ToTop from "../Components/ToTop";
@@ -11,7 +11,7 @@ function ProgrammePage() {
         <Navbar path={"programme"} />
         <ToTop />
         <ProgrammeBody />
-        <Footer />
+        <FooterSponsor />
       </div>
     </header>
   );
