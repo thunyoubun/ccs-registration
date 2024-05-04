@@ -79,25 +79,60 @@
       "srcImg": "/images/keynote-speaker/13.jpg"
     }
   ],
-  "Industrial Panel Discussion":[
+  "IndustrialPanelDiscussion":[
     {
       "id": 0,
-      "fullname": "",
-      "affiliation": "",
-      "srcImg": "",
+      "fullname": "Mr. Surachai Vangrattanachai",
+      "affiliation": "CCUs Director, SCG CGS",
+      "srcImg": "/images/keynote-speaker/7.png",
+      "topics": []
+    },
+    {
+      "id": 1,
+      "fullname": "Dr. Yanadet Sripanich",
+      "affiliation": "Energy Transition/CCS Business Lead, PTTEP",
+      "srcImg": "/images/keynote-speaker/8.jpg",
       "topics": []
     }
   ],
-  "Technical & Research Panel Discussion":[
+  "TechnicalResearchPanelDiscussion":[
     {
       "id": 0,
-      "fullname": "",
-      "affiliation": "",
-      "srcImg": "",
+      "fullname": "Prof. Dr. Nicolas von Solms",
+      "affiliation": "Technical University of Denmark (DTU), Denmark",
+      "srcImg": "/images/keynote-speaker/9.png",
+      "topics": []
+    },
+    {
+      "id": 1,
+      "fullname": "Prof. Dr. Carl Fredrik Berg",
+      "affiliation": "Norwegian University of Science and Technology (NTNU), Norway",
+      "srcImg": "/images/keynote-speaker/10.jpg",
+      "topics": []
+    },
+    {
+      "id": 2,
+      "fullname": "Prof. Dr. Hyundon Shin",
+      "affiliation": "Inha University, Korea",
+      "srcImg": "/images/keynote-speaker/11.jpg",
+      "topics": []
+    },
+    {
+      "id": 3,
+      "fullname": "Dr. Bambang Widarsono",
+      "affiliation": "BRIN, Indonesia",
+      "srcImg": "/images/keynote-speaker/default-avatar.jpg",
+      "topics": []
+    },
+    {
+      "id": 4,
+      "fullname": "Asst. Prof. Dr. Natthanan Promsuk",
+      "affiliation": "Chiang Mai University",
+      "srcImg": "/images/keynote-speaker/13.jpg",
       "topics": []
     }
   ],
-  "Technical & Research Session":[
+  "TechnicalResearchSession":[
     {
       "id": 0,
       "fullname": "Dr. Pongvipa Lohsomboon",
@@ -122,7 +157,8 @@
       "affiliation": "Director of Chiang Mai CCS (Chiang Mai University)",
       "srcImg": "/images/keynote-speaker/3.png",
       "topics": [
-        "Bending the Tree of CCS: Lowering the High-hanging Fruit"
+        "Bending the Tree of CCS: Lowering the High-hanging Fruit",
+        "CCS Industry’s Landscape and Its Ecosystem: Opportunities and Challenges"
       ]
     },
     {
@@ -131,7 +167,8 @@
       "affiliation": "Senior Advisor CCS, Bellona Environmental Foundation, Norway",
       "srcImg": "/images/keynote-speaker/4.png",
       "topics": [
-        "Norway’s CCS: the State, Industries, and Academia Partnership"
+        "Norway’s CCS: the State, Industries, and Academia Partnership",
+        "CCS Industry’s Landscape and Its Ecosystem: Opportunities and Challenges"
       ]
     },
     {
@@ -140,7 +177,8 @@
       "affiliation": "Project Director, Greensand Project, Denmark",
       "srcImg": "/images/keynote-speaker/5.png",
       "topics": [
-        "Greensand Project: CO<sub>2</sub> Graveyard of Denmark"
+        "Greensand Project: CO<sub>2</sub> Graveyard of Denmark",
+        "CCS Industry’s Landscape and Its Ecosystem: Opportunities and Challenges"
       ]
     },
     {
