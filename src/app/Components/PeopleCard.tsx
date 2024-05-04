@@ -29,7 +29,7 @@ const PeopleCard = ({ name, srcImage, affiliation }: PeopleCardType) => {
 
   return (
     <div
-      className={`h-full w-80 bg-transparent/30 p-4 rounded-lg z-0  shadow-lg`}
+      className={`h-full md:w-80 w-60 bg-transparent/30 p-4 rounded-lg z-0  shadow-lg`}
     >
       <div className="flex flex-col justify-center items-center gap-4">
         <div className=" w-40 h-40 bg-white border-4 border-teal-400  rounded-full mt-4 shadow-lg  overflow-hidden">

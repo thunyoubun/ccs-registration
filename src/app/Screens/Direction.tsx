@@ -69,7 +69,7 @@ export default function Direction() {
       id="direction"
       className="flex flex-col h-fit bg-gradient-to-r from-teal-500 to-blue-950 "
     >
-      <div className="flex-1 md:m-20 m-8 ">
+      <div className="flex-1 md:m-20 m-6 ">
         <div className="flex flex-col">
           <h1 className=" text-3xl text-white  font-semibold text-center p-6">
             Event Direction & Information

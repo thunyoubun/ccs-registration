@@ -63,12 +63,12 @@ const Navbar = ({ path }: NavbarProps) => {
 
         <div className="hidden md:flex ">
           <ul className="flex gap-8">
-            {path === "/" && (
+            {path !== "keynote-speaker" && (
               <li className="hover:scale-105 font-semibold hover:drop-shadow-md transition ease-out delay-50">
                 <Link href="/keynote-speaker">Keynote Speaker</Link>
               </li>
             )}
-            {path !== "/programme" && (
+            {path !== "programme" && (
               <li className="hover:scale-105 font-semibold hover:drop-shadow-md transition ease-out delay-50">
                 <Link href="/programme">Programme</Link>
               </li>
@@ -81,7 +81,7 @@ const Navbar = ({ path }: NavbarProps) => {
           </ul>
         </div>
 
-        <div className="md:hidden flex items-center z-10">
+        <div className="md:hidden flex items-center z-50">
           <button onClick={() => setIsActived(!isActived)}>
             {!isActived ? (
               <RxHamburgerMenu size={30} />
@@ -95,23 +95,30 @@ const Navbar = ({ path }: NavbarProps) => {
           className={
             !isActived
               ? "hidden z-10"
-              : "flex gap-8 flex-col absolute top-0 left-0 w-full h-screen justify-center items-center uppercase bg-teal-400 transition-opacity opacity-100 ease-in-out delay-100"
+              : "flex z-40 gap-8 flex-col absolute top-0 left-0 w-full h-screen justify-center items-center uppercase bg-teal-400 transition-opacity opacity-100 ease-in-out delay-100"
           }
         >
-          {path === "/" && (
-            <li className="hover:scale-105 hover:font-semibold transition ease-out delay-50">
+          {path !== "/" && (
+            <li className="hover:scale-105 font-semibold hover:drop-shadow-md transition ease-out delay-50">
+              <Link href="/">
+                <h1 className=" uppercase">Home</h1>
+              </Link>
+            </li>
+          )}
+          {path !== "/keynote-speaker" && (
+            <li className="hover:scale-105 font-semibold hover:drop-shadow-md transition ease-out delay-50">
               <Link href="/keynote-speaker">
                 <h1 className=" uppercase">Keynote speakers</h1>
               </Link>
             </li>
           )}
           {path !== "programme" && (
-            <li className="hover:scale-105 hover:font-semibold transition ease-out delay-50">
+            <li className="hover:scale-105 font-semibold hover:drop-shadow-md transition ease-out delay-50">
               <Link href="/programme">Programme</Link>
             </li>
           )}
           {path !== "/registration" && (
-            <li className="hover:scale-105 hover:font-semibold transition ease-out delay-50">
+            <li className="hover:scale-105 font-semibold hover:drop-shadow-md transition ease-out delay-50">
               <Link href="/registration">Registration</Link>
             </li>
           )}

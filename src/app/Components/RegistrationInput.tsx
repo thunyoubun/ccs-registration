@@ -32,7 +32,7 @@ function RegistrationInput({ expired }: { expired: number }) {
   };
 
   return (
-    <div className="p-4 bg-white md:rounded-br-lg lg:p-4 xl:p-8">
+    <div className="p-4 bg-white md:rounded-br-lg rounded-b-lg lg:p-4 xl:p-8">
       <h1 className="font-medium text-3xl lg:text-5xl text-center">
         Registration
       </h1>
@@ -142,7 +142,11 @@ function RegistrationInput({ expired }: { expired: number }) {
         </div>
         <button
           type="submit"
-          className={`${isSubmitting || !!expired? "bg-gray-300 cursor-not-allowed opacity-50":"bg-red-600 hover:bg-red-700 text-white"} p-2  col-span-full rounded-md  font-semibold`}
+          className={`${
+            isSubmitting || !!expired
+              ? "bg-gray-300 cursor-not-allowed opacity-50"
+              : "bg-red-600 hover:bg-red-700 text-white"
+          } p-2  col-span-full rounded-md  font-semibold`}
           disabled={isSubmitting || !!expired}
         >
           Register
