@@ -38,7 +38,7 @@ const PeopleCard = ({ name, srcImage, affiliation }: PeopleCardType) => {
             width={300}
             height={300}
             alt={name + "-image"}
-            className="hover:scale-150 scale-125  transition duration-500 cursor-pointer object-cover object-bottom "
+            className="hover:scale-110  transition duration-500 cursor-pointer object-cover object-bottom "
           ></Image>
         </div>
         <div className="text-white text-center flex flex-col gap-2 ">
