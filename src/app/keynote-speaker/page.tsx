@@ -96,6 +96,13 @@ function KeynoteSpeakerPage() {
               </>
             )}
           </div>
+          <div>
+            <h1 className="font-semibold text-2xl text-white">Technical & Research Session</h1>
+            <div></div>
+          </div>
+          <div>
+            
+          </div>
         </div>
         <Footer />
       </div>

@@ -20,7 +20,7 @@ function RowDataSimple({ data }: { data: IProgrammeData[] }) {
 }
 
 export default function Schedule() {
-  const [activeTab, setActiveTab] = useState(false);
+  const [activeTab, setActiveTab] = useState(true);
   const [selectData, setSelectData] = useState<IProgrammeData[]>(
     ScheduleData.programmeSchedule06
   );

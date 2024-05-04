@@ -78,5 +78,79 @@
       "affiliation": "Chiang Mai University",
       "srcImg": "/images/keynote-speaker/13.jpg"
     }
+  ],
+  "Industrial Panel Discussion":[
+    {
+      "id": 0,
+      "fullname": "",
+      "affiliation": "",
+      "srcImg": "",
+      "topics": []
+    }
+  ],
+  "Technical & Research Panel Discussion":[
+    {
+      "id": 0,
+      "fullname": "",
+      "affiliation": "",
+      "srcImg": "",
+      "topics": []
+    }
+  ],
+  "Technical & Research Session":[
+    {
+      "id": 0,
+      "fullname": "Dr. Pongvipa Lohsomboon",
+      "affiliation": "Senior Expert (TSRI) and Chairperson for Circular Economy Program Board (PMU-C)",
+      "srcImg": "/images/keynote-speaker/1.jpg",
+      "topics": [
+        "Science, Research, and Innovation Toward Net-Zero via CCUS"
+      ]
+    },
+    {
+      "id": 1,
+      "fullname": "Dr. Kajornsak Faungnawakij",
+      "affiliation": "Representative from TCCA and Director of Nanocatalysis and Molecular Simulation Research Group, NANOTEC, NSTDA",
+      "srcImg": "/images/keynote-speaker/2.png",
+      "topics": [
+        "Introduction of Thailand CCUS Alliance (TCCA): Mission and Strategics"
+      ]
+    },
+    {
+      "id": 2,
+      "fullname": "Assoc. Prof. Dr. Suparit Tangparitkul",
+      "affiliation": "Director of Chiang Mai CCS (Chiang Mai University)",
+      "srcImg": "/images/keynote-speaker/3.png",
+      "topics": [
+        "Bending the Tree of CCS: Lowering the High-hanging Fruit"
+      ]
+    },
+    {
+      "id": 3,
+      "fullname": "Dr. Cathrine Ringstad",
+      "affiliation": "Senior Advisor CCS, Bellona Environmental Foundation, Norway",
+      "srcImg": "/images/keynote-speaker/4.png",
+      "topics": [
+        "Norway’s CCS: the State, Industries, and Academia Partnership"
+      ]
+    },
+    {
+      "id": 4,
+      "fullname": "Mr. Søren Poulsen",
+      "affiliation": "Project Director, Greensand Project, Denmark",
+      "srcImg": "/images/keynote-speaker/5.png",
+      "topics": [
+        "Greensand Project: CO<sub>2</sub> Graveyard of Denmark"
+      ]
+    },
+    {
+      "id": 5,
+      "fullname": "Assoc. Prof. Wongkot Wongsapai",
+      "affiliation": "Chiang Mai University ",
+      "srcImg": "/images/keynote-speaker/6.png",
+      "topics": [
+        "Carbon Credit Methodology & Financial Incentive for CCS"
+      ]
+    }
   ]
 }

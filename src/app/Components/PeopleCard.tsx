@@ -45,6 +45,9 @@ const PeopleCard = ({ name, srcImage, affiliation }: PeopleCardType) => {
           <h1 className=" text-xl">{name}</h1>
           <h1 className="  text-white/50">{affiliation}</h1>
         </div>
+        <div className="">
+          
+        </div>
         {/* <div className="flex flex-col gap-2 max-h-44 overflow-auto">
           <div className="text-center  flex  gap-2 ">
             <div className="bg-white h-fit text-black rounded-2xl w-40 p-1 ">

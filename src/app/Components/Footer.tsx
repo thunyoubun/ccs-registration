@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { MdOutlineLocalPhone } from "react-icons/md";
+import { MdOutlineMail } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -18,10 +18,13 @@ const Footer = () => {
             Toward Carbon Neutrality
           </h1>
         </div>
-        <div className=" text-center text-sm">
-          <h1 className="flex justify-center">
-            <MdOutlineLocalPhone size={25} className=" inline" /> (+66)
-            2-723-4900
+        <div className=" text-left text-sm">
+          <h1 className="flex justify-center gap-2">
+            <MdOutlineMail size={25} className="inline" />
+            <div className="flex flex-col">
+              <h1>natthanan.p@cmu.ac.th</h1>
+              <h1>nuttha_utsaha@cmu.ac.th</h1>
+            </div>
           </h1>
         </div>
       </div>
