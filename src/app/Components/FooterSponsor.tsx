@@ -3,9 +3,9 @@ import CardSponsor from "./CardSponsor"
 function FooterSponsor(){
     return(
         <div className="p-2">
-          <div>
-            <label htmlFor="" className="font-semibold text-xl">
-              Our Sponsor:
+          <div className="flex justify-center">
+            <label htmlFor="" className="font-semibold text-xl text-center">
+              Our Sponsor
             </label>
           </div>
           <div className="flex justify-center">
