@@ -39,7 +39,7 @@ const Navbar = ({ path }: NavbarProps) => {
 
   return (
     <div
-      className={` bg-white px-4 md:px-20 py-2 md:py-4 w-full fixed top-0 z-50 ${
+      className={` bg-white px-4 md:px-20 py-2 md:py-4 w-full fixed top-0 z-50 shadow-md ${
         scrolled ? " block " : " hidden"
       } `}
     >
