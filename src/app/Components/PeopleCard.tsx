@@ -6,12 +6,13 @@ export interface PeopleCardType {
   name: string;
   srcImage: string;
   affiliation: string;
+  topics: string[] | undefined
   /* bio: string;
   topic: string;
   abstract: string; */
 }
 
-const PeopleCard = ({ name, srcImage, affiliation }: PeopleCardType) => {
+const PeopleCard = ({ name, srcImage, affiliation, topics }: PeopleCardType) => {
   const [fullName, setFullName] = useState("");
   const [srcImg, setSrcImg] = useState("");
   const [aff, setAff] = useState("");
@@ -45,41 +46,18 @@ const PeopleCard = ({ name, srcImage, affiliation }: PeopleCardType) => {
           <h1 className=" text-xl">{name}</h1>
           <h1 className="  text-white/50">{affiliation}</h1>
         </div>
-        <div className="">
-          
-        </div>
-        {/* <div className="flex flex-col gap-2 max-h-44 overflow-auto">
-          <div className="text-center  flex  gap-2 ">
-            <div className="bg-white h-fit text-black rounded-2xl w-40 p-1 ">
-              <h1 className=" font-semibold">BIO</h1>
+        {topics != undefined && topics.length > 0 ?
+          <div className="w-full grid gap-2">
+            <h1 className="text-white text-base font-semibold text-center">Topics</h1>
+            <div className="grid gap-1">
+              {topics.map((topic, index)=>
+                <div key={index} className="bg-white text-blue-950 text-center rounded-lg w-full p-2 font-medium text-sm lg:text-md" dangerouslySetInnerHTML={{__html: topic}} />
+              )}
             </div>
-            <h1 className="  text-white text-left text-sm">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Obcaecati vero temporibus et, odio nisi perspiciatis tempore
-              perferendis delectus dolore accusamus!
-            </h1>
           </div>
-          <div className="text-center  flex  gap-2 ">
-            <div className="bg-white h-fit text-black rounded-2xl w-40 p-1 ">
-              <h1 className=" font-semibold">TOPIC</h1>
-            </div>
-            <h1 className="  text-white text-left  text-sm">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Obcaecati vero temporibus et, odio nisi perspiciatis tempore
-              perferendis delectus dolore accusamus!
-            </h1>
-          </div>
-          <div className="text-center  flex  gap-2 ">
-            <div className="bg-white h-fit text-black rounded-2xl w-40 p-1 ">
-              <h1 className=" font-semibold">ABSTRACT</h1>
-            </div>
-            <h1 className="  text-white text-left  text-sm">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Obcaecati vero temporibus et, odio nisi perspiciatis tempore
-              perferendis delectus dolore accusamus!
-            </h1>
-          </div>
-        </div> */}
+        :
+        <></>
+        }
       </div>
     </div>
   );
