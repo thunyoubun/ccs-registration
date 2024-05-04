@@ -34,7 +34,7 @@ const CardSlider = () => {
   const clickNext = () => {
     activeImage === KeynoteSpeakerData.keynoteSpeaker.length - 1
       ? setActiveImage(0)
-      : setActiveImage(activeImage + 3);
+      : setActiveImage(activeImage + cardPerSlide);
     setTimeout(() => {
       setAnimation("animate-fade-right");
     }, 100);
@@ -45,7 +45,7 @@ const CardSlider = () => {
   const clickPrev = () => {
     activeImage === 0
       ? setActiveImage(KeynoteSpeakerData.keynoteSpeaker.length - 1)
-      : setActiveImage(activeImage - 3);
+      : setActiveImage(activeImage - cardPerSlide);
 
     setTimeout(() => {
       setAnimation("animate-fade-left");
