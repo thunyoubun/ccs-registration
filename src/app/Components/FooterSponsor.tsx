@@ -4,8 +4,8 @@ function FooterSponsor(){
     return(
         <div className="p-2">
           <div>
-            <label htmlFor="" className="font-semibold">
-              Our sponsor:
+            <label htmlFor="" className="font-semibold text-xl">
+              Our Sponsor:
             </label>
           </div>
           <div className="flex justify-center">
