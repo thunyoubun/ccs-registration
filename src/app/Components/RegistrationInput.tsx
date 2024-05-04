@@ -32,7 +32,7 @@ function RegistrationInput({ expired }: { expired: number }) {
   };
 
   return (
-    <div className="p-4 bg-white md:rounded-br-lg rounded-b-lg lg:p-4 xl:p-8">
+    <div className="p-4 bg-white md:rounded-br-lg  md:rounded-b-none rounded-b-lg  lg:p-4 xl:p-8">
       <h1 className="font-medium text-3xl lg:text-5xl text-center">
         Registration
       </h1>
@@ -71,9 +71,9 @@ function RegistrationInput({ expired }: { expired: number }) {
         <div className="col-span-full">
           {TextInput(register, "Email", "email", "email", errors.email)}
         </div>
-        <div className="col-span-full">
+        <div className="col-span-full ">
           <h3 className="font-medium text-xl">Preferred Date:</h3>
-          <div className="flex gap-5 mx-2 md:mx-4 lg:justify-center lg:mx-0">
+          <div className="flex gap-5 mx-2 md:mx-4   lg:justify-center lg:mx-0">
             <div className="col-span-2">
               <label htmlFor="" className="font-medium">
                 6 June 2024:

@@ -12,25 +12,25 @@ function FooterSponsor() {
             path={
               "/images/sponsors/1200px-Seal_of_the_Minister_of_Foreign_Affair_of_Thailand.svg.png"
             }
-            nameCompany1={"Ministry of Foreign Affairs Kingdom of Thailand"}
-            nameCompany2={""}
+            nameCompany1={"กระทรวงการต่างประเทศ"}
+            nameCompany2={"Ministry of Foreign Affairs Kingdom of Thailand"}
           />
           <CardSponsor
             path={
               "/images/sponsors/Seal_of_the_Ministry_of_Energy_of_Thailand.svg.png"
             }
-            nameCompany1={"Department of Mineral Fuels MINISTRY OF ENERGY"}
-            nameCompany2={""}
+            nameCompany1={"กรมเชื้อเพลิงธรรมชาติ"}
+            nameCompany2={"Department of Mineral Fuels MINISTRY OF ENERGY"}
           />
           <CardSponsor
             path={"/images/sponsors/สอทnew.png"}
-            nameCompany1={"Royal Thai Embassy, Copenhagen, Denmark"}
-            nameCompany2={"สถานเอกอัครราชทูต ณ โคเปนเฮเกน"}
+            nameCompany1={"สถานเอกอัครราชทูต ณ โคเปนเฮเกน"}
+            nameCompany2={"Royal Thai Embassy, Copenhagen, Denmark"}
           />
           <CardSponsor
             path={"/images/sponsors/images.png"}
-            nameCompany1={"Royal Thai Embassy, Oslo"}
-            nameCompany2={"สถานเอกอัครราชทูต ณ กรุงออสโล"}
+            nameCompany1={"สถานเอกอัครราชทูต ณ กรุงออสโล"}
+            nameCompany2={"Royal Thai Embassy, Oslo"}
           />
           <CardSponsor
             path={"/images/sponsors/images (1).png"}
@@ -51,14 +51,16 @@ function FooterSponsor() {
             nameCompany1={
               "หน่วยบริหารและจัดการทุนด้านการพัฒนากำลังคนและทุนด้านการพัฒนาสถาบันอุดมศึกษาการวิจัยและการสร้างนวัตกรรม"
             }
-            nameCompany2={""}
+            nameCompany2={
+              "Program Management Unit for Human Resources & Institutional Development,Research and Innovation (PMU-B)"
+            }
           />
           <CardSponsor
             path={"/images/sponsors/pmcu-logo.png"}
             nameCompany1={
               "หน่วยบริหารและจัดการทุนด้านการเพิ่มความสามารถในการแข่งขันของประเทศ"
             }
-            nameCompany2={""}
+            nameCompany2={"Program Management Unit for Competitiveness"}
           />
         </div>
       </div>

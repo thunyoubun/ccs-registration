@@ -9,7 +9,7 @@ export default function Main() {
     <div>
       <div
         id="home"
-        className=" md:mt-20 mt-28  bg-gradient-to-r from-teal-500 to-blue-950  flex justify-center items-center"
+        className=" mt-20  bg-gradient-to-r from-teal-500 to-blue-950  flex justify-center items-center"
       >
         <div className="md:m-20 m-8 flex flex-col gap-7 justify-center items-center">
           <div className="mx-8 md:mx-20  text-center  ">

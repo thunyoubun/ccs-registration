@@ -19,7 +19,7 @@ function CardSponsor({
         className=" object-contain h-32 w-32 "
       />
       <div className="text-center">
-        <h5 className="text-base font-medium">{nameCompany1}</h5>
+        <h5 className="text-base font-semibold">{nameCompany1}</h5>
         <h5 className="text-sm font-light">{nameCompany2}</h5>
       </div>
     </div>
