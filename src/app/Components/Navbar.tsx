@@ -39,7 +39,7 @@ const Navbar = ({ path }: NavbarProps) => {
 
   return (
     <div
-      className={` bg-white px-4 md:px-20 py-4 w-full fixed top-0 z-50 ${
+      className={` bg-white px-4 md:px-20 py-2 md:py-4 w-full fixed top-0 z-50 ${
         scrolled ? " block " : " hidden"
       } `}
     >
@@ -63,6 +63,11 @@ const Navbar = ({ path }: NavbarProps) => {
 
         <div className="hidden md:flex ">
           <ul className="flex gap-8">
+            {path !== "/" && (
+              <li className="hover:scale-105 font-semibold hover:drop-shadow-md transition ease-out delay-50">
+                <Link href="/">Home</Link>
+              </li>
+            )}
             {path !== "keynote-speaker" && (
               <li className="hover:scale-105 font-semibold hover:drop-shadow-md transition ease-out delay-50">
                 <Link href="/keynote-speaker">Keynote Speaker</Link>

@@ -33,13 +33,13 @@ const PeopleCard = ({ name, srcImage, affiliation, topics }: PeopleCardType) => 
       className={`h-full md:w-80 w-60 bg-transparent/30 p-4 rounded-lg z-0  shadow-lg`}
     >
       <div className="flex flex-col justify-center items-center gap-4">
-        <div className=" w-40 h-40 bg-white border-4 border-teal-400  rounded-full mt-4 shadow-lg  overflow-hidden">
+        <div className=" w-40 h-40 object-bottom bg-white border-4 border-teal-400  rounded-full mt-4 shadow-lg  overflow-hidden">
           <Image
             src={srcImage}
-            width={160}
-            height={160}
-            alt=""
-            className="hover:scale-110 transition duration-500 cursor-pointer object-cover "
+            width={300}
+            height={300}
+            alt={name + "-image"}
+            className="hover:scale-110  transition duration-500 cursor-pointer object-cover object-bottom "
           ></Image>
         </div>
         <div className="text-white text-center flex flex-col gap-2 ">
