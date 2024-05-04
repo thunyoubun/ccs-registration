@@ -70,6 +70,7 @@ const CardSlider = () => {
                   name={auth.fullname}
                   srcImage={auth.srcImg}
                   affiliation={auth.affiliation}
+                  topics={undefined}
                 ></PeopleCard>
               </div>
             ))}
