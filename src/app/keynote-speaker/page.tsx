@@ -55,22 +55,37 @@ function KeynoteSpeakerPage() {
           <h2 className="text-white text-5xl p-8 text-center font-semibold">
             Keynote Speaker
           </h2>
-          <div className="p-2">
+          <div className="p-2 w-full">
             <h1 className="font-semibold text-2xl text-white">Guest Speaker</h1>
-            <div className="grid gap-4 my-4 justify-center lg:grid-cols-3 lg:gap-4 lg:mx-2 lg:my-6">
-              <RenderPeopleCard data={KeynoteSpeakerData.TechnicalResearchSession} active={activateSlide} />
+            <div className="grid gap-4 my-4 justify-items-center lg:grid-cols-3 lg:gap-4 lg:mx-2 lg:my-6">
+              <RenderPeopleCard
+                data={KeynoteSpeakerData.TechnicalResearchSession}
+                active={activateSlide}
+              />
             </div>
           </div>
           <div className="p-2">
-            <h1 className="font-semibold text-2xl text-white">Industrial Panel Discussion: CCS Industry’s Landscape and Its Ecosystem: Opportunities and Challenges</h1>
-            <div className="grid gap-4 my-4 justify-center lg:grid-cols-3 lg:gap-4 lg:mx-2 lg:my-6">
-              <RenderPeopleCard data={KeynoteSpeakerData.IndustrialPanelDiscussion} active={activateSlide} />
+            <h1 className="font-semibold text-2xl text-white">
+              Industrial Panel Discussion: CCS Industry’s Landscape and Its
+              Ecosystem: Opportunities and Challenges
+            </h1>
+            <div className="grid gap-4 my-4 justify-items-center lg:grid-cols-3 lg:gap-4 lg:mx-2 lg:my-6">
+              <RenderPeopleCard
+                data={KeynoteSpeakerData.IndustrialPanelDiscussion}
+                active={activateSlide}
+              />
             </div>
           </div>
           <div className="p-2">
-            <h1 className="font-semibold text-2xl text-white">Technical & Research Panel Discussion: Toward Tomorrow’s Challenges: What are Next for CCS?</h1>
-            <div className="grid gap-4 my-4 justify-center lg:grid-cols-3 lg:gap-4 lg:mx-2 lg:my-6">
-              <RenderPeopleCard data={KeynoteSpeakerData.TechnicalResearchPanelDiscussion} active={activateSlide} />
+            <h1 className="font-semibold text-2xl text-white">
+              Technical & Research Panel Discussion: Toward Tomorrow’s
+              Challenges: What are Next for CCS?
+            </h1>
+            <div className="grid gap-4 my-4 justify-items-center lg:grid-cols-3 lg:gap-4 lg:mx-2 lg:my-6">
+              <RenderPeopleCard
+                data={KeynoteSpeakerData.TechnicalResearchPanelDiscussion}
+                active={activateSlide}
+              />
             </div>
           </div>
         </div>
