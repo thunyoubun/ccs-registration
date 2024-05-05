@@ -135,7 +135,7 @@ function TableProgramme() {
         <button
           className={`${
             selectSecond
-              ? "bg-red-600 text-white rounded shadow-lg"
+              ? "bg-white text-teal-500 rounded shadow-lg"
               : "text-black"
           } p-3 rounded-lg flex justify-center text-center col-span-3`}
           disabled={selectSecond}
