@@ -25,7 +25,7 @@ function RowData({ date }: { date: IProgrammeData[] }) {
         key={schedule.topic + index}
         className={`${
           schedule.bgColor
-            ? "bg-red-600 shadow rounded-lg text-white"
+            ? "bg-teal-500 shadow rounded-lg text-white"
             : " hover:bg-gray-100 text-black"
         } shadow rounded-lg`}
       >
