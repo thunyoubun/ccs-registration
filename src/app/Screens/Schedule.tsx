@@ -82,7 +82,7 @@ export default function Schedule() {
           <div className="w-full flex justify-center ">
             <button className="  w-fit  bg-white   border-2 border-teal-600 rounded-lg p-2 text-teal-500 hover:scale-105 transition ease-in-out delay-150 ">
               <Link href={"/programme"}>
-                <h1>Full Schedule and Programme</h1>
+                <h1>Full use Agenda</h1>
               </Link>
             </button>
           </div>
