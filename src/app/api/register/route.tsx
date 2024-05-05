@@ -3,13 +3,14 @@ import axios from "axios";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req:NextRequest){
-    const { firstname, lastname, affiliation, email, june06, june07} = await req.json()
+    const { firstname, lastname, affiliation, email, roles, june06, june07} = await req.json()
     const newData = {
         id: 0,
         firstname: firstname,
         lastname: lastname,
         affiliation: affiliation,
         email: email,
+        roles_duties: roles,
         june06_morning: june06.morning,
         june06_afternoon: june06.afternoon,
         june07_morning: june07.morning,
