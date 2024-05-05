@@ -51,9 +51,9 @@ function KeynoteSpeakerPage() {
       <div className="relative">
         <Navbar path={"/"} />
         <ToTop />
-        <div className="mt-20 md:p-20 p-8  bg-gradient-to-r from-red-700 to-blue-800 flex justify-center flex-col">
+        <div className="mt-20 md:p-20 p-8  bg-gradient-to-r from-teal-500 to-blue-950 flex justify-center flex-col">
           <h2 className="text-white text-5xl p-8 text-center font-semibold">
-            Keynote Speaker
+            Speakers
           </h2>
           <div className="p-2 w-full">
             <h1 className="font-semibold text-2xl text-white">Guest Speaker</h1>

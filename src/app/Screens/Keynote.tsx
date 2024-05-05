@@ -11,7 +11,7 @@ export default function Keynote() {
       <div className="flex-1  ">
         <div className="flex justify-center">
           <h1 className=" text-3xl text-white  font-semibold">
-            Keynote Speakers
+            Speakers
           </h1>
         </div>
 

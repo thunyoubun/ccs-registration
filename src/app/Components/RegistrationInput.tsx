@@ -4,6 +4,14 @@ import Swal from "sweetalert2";
 import RegistrationForm, { IRegistrationForm } from "./RegistrationForm";
 import TextInput from "./TextInput";
 
+const nameRoles = "Role/duties Related to CCS/CCU Technology"
+const mockRoles = [
+  "Technology developer/researcher",
+  "CCUS industry or users",
+  "Both technology developer/researcher and CCUS industry or users",
+  "others"
+]
+
 function RegistrationInput({ expired }: { expired: number }) {
   const {
     handleSubmit,
@@ -69,6 +77,14 @@ function RegistrationInput({ expired }: { expired: number }) {
           )}
         </div>
         <div className="col-span-full">
+          <label htmlFor="" className="block text-sm font-medium text-gray-900 required">Role/duties (Related to CCS/CCU Technology)</label>
+          <select name="" id="" className="w-full p-1 rounded-md border-0 shadow-sm ring-1 ring-inset ring-teal-500 focus:ring-2 focus:ring-blue-950">
+            {mockRoles.map((selt)=>
+              <option key={selt} value={selt}>{selt}</option>
+            )}
+          </select>
+        </div>
+        <div className="col-span-full">
           {TextInput(register, "Email", "email", "email", errors.email)}
         </div>
         <div className="col-span-full ">
@@ -81,7 +97,7 @@ function RegistrationInput({ expired }: { expired: number }) {
             </div>
             <div className="flex items-center mb-4 col-span-2">
               <input
-                className="w-4 h-4 border-rose-700 text-rose-700 focus:ring-blue-900"
+                className="w-4 h-4 border-teal-500 text-teal-500 focus:ring-blue-950"
                 type="checkbox"
                 value=""
                 {...register("june06.morning")}
@@ -94,7 +110,7 @@ function RegistrationInput({ expired }: { expired: number }) {
             </div>
             <div className="flex items-center mb-4">
               <input
-                className="w-4 h-4 border-rose-700 text-rose-700 focus:ring-blue-900"
+                className="w-4 h-4 border-teal-500 text-teal-500 focus:ring-blue-950"
                 type="checkbox"
                 value=""
                 {...register("june06.afternoon")}
@@ -114,7 +130,7 @@ function RegistrationInput({ expired }: { expired: number }) {
             </div>
             <div className="flex items-center mb-4 col-span-2">
               <input
-                className="w-4 h-4 border-rose-700 text-rose-700 focus:ring-blue-900"
+                className="w-4 h-4 border-teal-500 text-teal-500 focus:ring-blue-950"
                 type="checkbox"
                 value=""
                 id="07morning"
@@ -127,7 +143,7 @@ function RegistrationInput({ expired }: { expired: number }) {
             </div>
             <div className="flex items-center mb-4">
               <input
-                className="w-4 h-4 border-red-700 text-red-700 focus:ring-blue-900"
+                className="w-4 h-4 border-teal-500 text-teal-500 focus:ring-blue-950"
                 type="checkbox"
                 value=""
                 id="07afternoon"
@@ -145,7 +161,7 @@ function RegistrationInput({ expired }: { expired: number }) {
           className={`${
             isSubmitting || !!expired
               ? "bg-gray-300 cursor-not-allowed opacity-50"
-              : "bg-red-600 hover:bg-red-700 text-white"
+              : "bg-teal-500 hover:bg-teal-500 text-white"
           } p-2  col-span-full rounded-md  font-semibold`}
           disabled={isSubmitting || !!expired}
         >

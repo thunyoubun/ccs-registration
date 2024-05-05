@@ -8,12 +8,12 @@ function Countdown({ day, hour, minute, second }: { day: number, hour: number, m
     setFirstLoading(true);
   }, []);
   return (
-    <div className="p-4 bg-red-700 border-8 border-white text-white text-center gap-3 lg:flex lg:justify-center rounded-t-md">
+    <div className="p-4 bg-teal-500 border-8 border-white text-white text-center gap-3 lg:flex lg:justify-center rounded-t-md">
       <div className="flex flex-col">
         <h1 className="text-5xl font-medium content-center lg:text-6xl">
-          Deadline -
+          Deadline Registration -
         </h1>
-        <h4 className="">(3 June 2024)</h4>
+        <h4 className="p-1">(3 June 2024)</h4>
       </div>
       <div className="flex text-center gap-2 justify-center">
         <div>

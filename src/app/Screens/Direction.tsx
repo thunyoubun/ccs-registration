@@ -72,7 +72,7 @@ export default function Direction() {
       <div className="flex-1 md:m-20 m-6 ">
         <div className="flex flex-col">
           <h1 className=" text-3xl text-white  font-semibold text-center p-6">
-            Event Direction & Information
+            Venue
           </h1>
         </div>
 
@@ -80,7 +80,7 @@ export default function Direction() {
           <div className="w-full bg-white rounded-lg">
             <div className="text-center p-4">
               <h3 className="">
-                <span className=" font-semibold">6 -7 June</span>, at Novotel
+                <span className=" font-semibold">6 -7 June</span>, at room Nakorn Rangsit 1 - 2, Novotel
                 Bangkok Future Park Rangsit, Bangkok, Thailand
               </h3>
             </div>

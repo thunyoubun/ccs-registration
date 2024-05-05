@@ -25,7 +25,7 @@ function RowData({ date }: { date: IProgrammeData[] }) {
         key={schedule.topic + index}
         className={`${
           schedule.bgColor
-            ? "bg-red-600 shadow rounded-lg text-white"
+            ? "bg-teal-500 shadow rounded-lg text-white"
             : " hover:bg-gray-100 text-black"
         } shadow rounded-lg`}
       >
@@ -117,11 +117,11 @@ function TableProgramme() {
 
   return (
     <div className="bg-white grid-cols-1 rounded shadow-lg md:m-16 m-4">
-      <div className="rounded-t-sm bg-white p-3 grid gap-3 grid-cols-6 ">
+      <div className="rounded-t-sm bg-teal-500 p-3 grid gap-3 grid-cols-6 ">
         <button
           className={`${
             !selectSecond
-              ? "bg-red-600 text-white rounded shadow-lg"
+              ? "bg-white text-teal-500 rounded shadow-lg"
               : "text-black"
           } p-3 rounded-lg flex justify-center text-center col-span-3`}
           disabled={!selectSecond}
@@ -135,7 +135,7 @@ function TableProgramme() {
         <button
           className={`${
             selectSecond
-              ? "bg-red-600 text-white rounded shadow-lg"
+              ? "bg-white text-teal-500 rounded shadow-lg"
               : "text-black"
           } p-3 rounded-lg flex justify-center text-center col-span-3`}
           disabled={selectSecond}
@@ -153,7 +153,7 @@ function TableProgramme() {
             <tr className="border-b-2">
               <th className="text-center font-medium text-2xl">TIME</th>
               <th className="text-center font-medium text-2xl">AGENDA</th>
-              <th className="text-center font-medium text-2xl">GROUP</th>
+              <th className="text-center font-medium text-2xl"></th>
             </tr>
           </thead>
           <tbody>

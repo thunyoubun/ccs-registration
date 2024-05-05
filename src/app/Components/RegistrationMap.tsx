@@ -9,32 +9,11 @@ function RegistrationMap() {
 
   return (
     <div className=" bg-white md:order-none xl:p-8 flex flex-col gap-5 md:rounded-bl-md rounded-none">
-      <div className=" font-medium text-3xl lg:text-5xl text-center ">
-        {/* <button
-          onClick={() => setSecondDate(false)}
-          className={`${
-            !secondDate
-              ? "bg-red-700 text-white rounded shadow-lg"
-              : "text-black"
-          } p-3 rounded-lg flex justify-center text-center col-span-3`}
-          disabled={!secondDate}
-        >
-          <h1 className="text-xl font-semibold">6 JUNE</h1>
-        </button>
-        <button
-          onClick={() => setSecondDate(true)}
-          className={`${
-            secondDate
-              ? "bg-red-700 text-white rounded shadow-lg"
-              : "text-black"
-          } p-3 rounded-lg flex justify-center text-center col-span-3`}
-          disabled={secondDate}
-        >
-          <h1 className="text-xl font-semibold">7 JUNE</h1>
-        </button> */}
+      <div className="">
         <h1 className="font-medium text-3xl lg:text-5xl text-center">
           Location
         </h1>
+        <h1 className="text-center p-2"><span className="font-semibold">6 - 7 June</span>, at room Nakorn Rangsit 1 - 2, Novotel Bangkok Future Park Rangsit, Bangkok, Thailand</h1>
       </div>
       <div className=" flex justify-center relative">
         <iframe
@@ -45,7 +24,7 @@ function RegistrationMap() {
           className="w-full md:h-96 h-full"
         ></iframe>
       </div>
-      <div className="text-center p-2">
+      {/* <div className="text-center p-2">
         <h3 className="">
           <span className="font-semibold">
             {!secondDate ? "6 - 7 June" : "7 June"}
@@ -54,7 +33,7 @@ function RegistrationMap() {
             ? ", at Novotel Bangkok Future Park Rangsit, Bangkok, Thailand"
             : ", at Chiang Mai University, Chiang Mai, Thailand"}
         </h3>
-      </div>
+      </div> */}
     </div>
   );
 }
