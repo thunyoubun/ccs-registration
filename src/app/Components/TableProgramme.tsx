@@ -157,7 +157,7 @@ function TableProgramme() {
             </tr>
           </thead>
           <tbody>
-            <RowData date={selectData} />
+            {selectData.length > 0? <RowData date={selectData} />: <React.Fragment><tr><td></td><td className="text-center text-xl">To be announced...</td></tr></React.Fragment>}
           </tbody>
         </table>
       </div>
