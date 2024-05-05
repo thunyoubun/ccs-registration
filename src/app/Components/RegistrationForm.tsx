@@ -8,6 +8,7 @@ export interface IAPIRegister {
     lastname: string,
     affiliation: string,
     email: string,
+    roles_duties: string,
     june06_morning: boolean,
     june06_afternoon: boolean,
     june07_morning: boolean,
@@ -19,6 +20,7 @@ export interface IRegistrationForm {
     lastname: string,
     affiliation: string,
     email: string,
+    roles: string,
     june06: {
         morning: boolean,
         afternoon: boolean
@@ -34,6 +36,7 @@ const validationRegistration = z.object({
     lastname: z.string().min(1, { message: 'Surename is required.' }),
     affiliation: z.string().min(1, { message: 'Affiliation is required.' }),
     email: z.string().min(1, { message: 'Email is required.' }).email(),
+    roles: z.string().min(1, { message: "Roles is required."}),
     june06: z.object({
         morning: z.boolean(),
         afternoon: z.boolean()
@@ -52,6 +55,7 @@ function RegistrationForm() {
             lastname: '',
             affiliation: '',
             email: '',
+            roles: '',
             june06: {
                 morning: true,
                 afternoon: true
