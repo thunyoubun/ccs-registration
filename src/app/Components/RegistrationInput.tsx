@@ -77,12 +77,20 @@ function RegistrationInput({ expired }: { expired: number }) {
           )}
         </div>
         <div className="col-span-full">
-          <label htmlFor="" className="block text-sm font-medium text-gray-900 required">Role/duties (Related to CCS/CCU Technology)</label>
-          <select name="" id="" className="w-full p-1 rounded-md border-0 shadow-sm ring-1 ring-inset ring-teal-500 focus:ring-2 focus:ring-blue-950">
-            {mockRoles.map((selt)=>
-              <option key={selt} value={selt}>{selt}</option>
-            )}
-          </select>
+          <label htmlFor="" className="block text-sm font-medium text-gray-900 required">Role/duties (Related to CCS/CCU Technology)<span className="text-red-500">*</span></label>
+          <div className="mt-2">
+            <select
+              id=""
+              className="w-full p-1 rounded-md border-0 shadow-sm ring-1 ring-inset ring-teal-500 focus:ring-2 focus:ring-blue-950"
+              {...register("roles")}
+              required
+            >
+              {mockRoles.map((selt) =>
+                <option key={selt} value={selt}>{selt}</option>
+              )}
+            </select>
+          </div>
+          {errors.roles && <span className="text-sm text-red-500">Please select your role.</span>}
         </div>
         <div className="col-span-full">
           {TextInput(register, "Email", "email", "email", errors.email)}
@@ -158,11 +166,10 @@ function RegistrationInput({ expired }: { expired: number }) {
         </div>
         <button
           type="submit"
-          className={`${
-            isSubmitting || !!expired
+          className={`${isSubmitting || !!expired
               ? "bg-gray-300 cursor-not-allowed opacity-50"
               : "bg-teal-500 hover:bg-teal-500 text-white"
-          } p-2  col-span-full rounded-md  font-semibold`}
+            } p-2  col-span-full rounded-md  font-semibold`}
           disabled={isSubmitting || !!expired}
         >
           Register
