@@ -184,15 +184,6 @@
         }
     ],
     "programmeSchedule07":[
-        {
-            "time": "08.30 - 09.00 AM",
-            "topic": "Registration and welcome refreshment",
-            "description":[],
-            "speakers": [],
-            "panelists": [],
-            "facilitators": [],
-            "group": "None",
-            "bgColor": false
-        }
+        
     ]
 }
