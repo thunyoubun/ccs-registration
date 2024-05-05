@@ -31,7 +31,7 @@ function RowData({ date }: { date: IProgrammeData[] }) {
       >
         <td className="font-light text-lg text-center p-2">{schedule.time}</td>
         <td>
-          <h3 className="font-medium text-lg">{schedule.topic}</h3>
+          <h3 className="font-medium text-lg" dangerouslySetInnerHTML={{__html: schedule.topic}} />
         </td>
         <td>{schedule.group != "None" ? schedule.group : ""}</td>
       </tr>
