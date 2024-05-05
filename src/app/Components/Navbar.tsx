@@ -70,12 +70,12 @@ const Navbar = ({ path }: NavbarProps) => {
             )}
             {path !== "keynote-speakers" && (
               <li className="hover:scale-105 font-semibold hover:drop-shadow-md transition ease-out delay-50">
-                <Link href="/keynote-speakers">Keynote Speaker</Link>
+                <Link href="/keynote-speakers">Speakers</Link>
               </li>
             )}
             {path !== "program" && (
               <li className="hover:scale-105 font-semibold hover:drop-shadow-md transition ease-out delay-50">
-                <Link href="/program">Programme</Link>
+                <Link href="/program">Agenda</Link>
               </li>
             )}
             {path !== "/register" && (
