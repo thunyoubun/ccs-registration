@@ -76,22 +76,43 @@
       "id": 12,
       "fullname": "Asst. Prof. Dr. Natthanan Promsuk",
       "affiliation": "Chiang Mai University",
-      "srcImg": "/images/keynote-speaker/13.jpg"
+      "srcImg": "/images/keynote-speaker/13.png"
     }
   ],
   "IndustrialPanelDiscussion":[
     {
       "id": 0,
+      "fullname": "Mr. Søren Poulsen",
+      "affiliation": "Project Director, Greensand Project, Denmark",
+      "srcImg": "/images/keynote-speaker/5.png",
+      "topics": []
+    },
+    {
+      "id": 1,
+      "fullname": "Dr. Cathrine Ringstad",
+      "affiliation": "Senior Advisor CCS, Bellona Environmental Foundation, Norway",
+      "srcImg": "/images/keynote-speaker/4.png",
+      "topics": []
+    },
+    {
+      "id": 2,
       "fullname": "Mr. Surachai Vangrattanachai",
       "affiliation": "CCUs Director, SCG CGS",
       "srcImg": "/images/keynote-speaker/7.png",
       "topics": []
     },
     {
-      "id": 1,
+      "id": 3,
       "fullname": "Dr. Yanadet Sripanich",
       "affiliation": "Energy Transition/CCS Business Lead, PTTEP",
       "srcImg": "/images/keynote-speaker/8.jpg",
+      "topics": []
+    },
+    {
+      "id": 4,
+      "fullname": "Assoc. Prof. Dr. Suparit Tangparitkul (Facilitator)",
+      "affiliation": "Director of Chiang Mai CCS (Chiang Mai University)",
+      "srcImg": "/images/keynote-speaker/3.png",
       "topics": []
     }
   ],
@@ -126,9 +147,9 @@
     },
     {
       "id": 4,
-      "fullname": "Asst. Prof. Dr. Natthanan Promsuk",
+      "fullname": "Asst. Prof. Dr. Natthanan Promsuk (Facilitator)",
       "affiliation": "Chiang Mai University",
-      "srcImg": "/images/keynote-speaker/13.jpg",
+      "srcImg": "/images/keynote-speaker/13.png",
       "topics": []
     }
   ],
@@ -157,8 +178,7 @@
       "affiliation": "Director of Chiang Mai CCS (Chiang Mai University)",
       "srcImg": "/images/keynote-speaker/3.png",
       "topics": [
-        "Bending the Tree of CCS: Lowering the High-hanging Fruit",
-        "CCS Industry’s Landscape and Its Ecosystem: Opportunities and Challenges"
+        "Bending the Tree of CCS: Lowering the High-hanging Fruit"
       ]
     },
     {
@@ -167,8 +187,7 @@
       "affiliation": "Senior Advisor CCS, Bellona Environmental Foundation, Norway",
       "srcImg": "/images/keynote-speaker/4.png",
       "topics": [
-        "Norway’s CCS: the State, Industries, and Academia Partnership",
-        "CCS Industry’s Landscape and Its Ecosystem: Opportunities and Challenges"
+        "Norway’s CCS: the State, Industries, and Academia Partnership"
       ]
     },
     {
@@ -177,8 +196,7 @@
       "affiliation": "Project Director, Greensand Project, Denmark",
       "srcImg": "/images/keynote-speaker/5.png",
       "topics": [
-        "Greensand Project: CO<sub>2</sub> Graveyard of Denmark",
-        "CCS Industry’s Landscape and Its Ecosystem: Opportunities and Challenges"
+        "Greensand Project: CO<sub>2</sub> Graveyard of Denmark"
       ]
     },
     {

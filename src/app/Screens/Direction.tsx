@@ -78,34 +78,9 @@ export default function Direction() {
 
         <div className="w-full mt-8 flex justify-center px-8 pb-8">
           <div className="w-full bg-white rounded-lg">
-            {/* Google Map */}
-            {/* <div className="p-4 rounded-t-lg bg-white grid grid-cols-1 gap-3 sm:grid-cols-6 rounded-tl-lg">
-              <button
-                onClick={() => setSecondDate(false)}
-                className={`${
-                  !secondDate
-                    ? "bg-red-600 text-white rounded shadow-lg"
-                    : "text-black"
-                } p-3 rounded-lg flex justify-center text-center col-span-3`}
-                disabled={!secondDate}
-              >
-                <h1 className="text-xl font-semibold">6 JUNE</h1>
-              </button>
-              <button
-                onClick={() => setSecondDate(true)}
-                className={`${
-                  secondDate
-                    ? "bg-red-600 text-white rounded shadow-lg"
-                    : "text-black"
-                } p-3 rounded-lg flex justify-center text-center col-span-3`}
-                disabled={secondDate}
-              >
-                <h1 className="text-xl font-semibold">7 JUNE</h1>
-              </button>
-            </div> */}
             <div className="text-center p-4">
               <h3 className="">
-                <span className=" font-semibold">6 -7 June</span>, At Novotel
+                <span className=" font-semibold">6 -7 June</span>, at Novotel
                 Bangkok Future Park Rangsit, Bangkok, Thailand
               </h3>
             </div>

@@ -95,7 +95,7 @@
         },
         {
             "time": "11.30 - 12.00 PM",
-            "topic": "Greensand Project: CO2 Graveyard of Denmark",
+            "topic": "Greensand Project: CO<sub>2</sub> Graveyard of Denmark",
             "description": [],
             "speakers": [
                 "Mr. Søren Poulsen, Project Director, Greensand Project, Denmark"
@@ -184,15 +184,6 @@
         }
     ],
     "programmeSchedule07":[
-        {
-            "time": "08.30 - 09.00 AM",
-            "topic": "Registration and welcome refreshment",
-            "description":[],
-            "speakers": [],
-            "panelists": [],
-            "facilitators": [],
-            "group": "None",
-            "bgColor": false
-        }
+        
     ]
 }

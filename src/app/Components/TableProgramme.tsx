@@ -31,7 +31,7 @@ function RowData({ date }: { date: IProgrammeData[] }) {
       >
         <td className="font-light text-lg text-center p-2">{schedule.time}</td>
         <td>
-          <h3 className="font-medium text-lg">{schedule.topic}</h3>
+          <h3 className="font-medium text-lg" dangerouslySetInnerHTML={{__html: schedule.topic}} />
         </td>
         <td>{schedule.group != "None" ? schedule.group : ""}</td>
       </tr>
@@ -157,7 +157,7 @@ function TableProgramme() {
             </tr>
           </thead>
           <tbody>
-            <RowData date={selectData} />
+            {selectData.length > 0? <RowData date={selectData} />: <React.Fragment><tr><td></td><td className="text-center text-xl">To be announced...</td></tr></React.Fragment>}
           </tbody>
         </table>
       </div>

@@ -13,7 +13,7 @@ function RowDataSimple({ data }: { data: IProgrammeData[] }) {
       key={schedule.time}
     >
       <td>{schedule.time}</td>
-      <td className="text-left">{schedule.topic}</td>
+      <td className="text-left" dangerouslySetInnerHTML={{__html: schedule.topic}} />
       <td>{schedule.group != "None" ? schedule.group : ""}</td>
     </tr>
   ));
@@ -39,7 +39,10 @@ export default function Schedule() {
         <div className=" mt-8 bg-teal-500 rounded-t-lg p-2 flex gap-4">
           <div className="w-full flex gap-2">
             <button
-              onClick={handleTab}
+              onClick={() => {
+                handleTab()
+                setSelectData(ScheduleData.programmeSchedule06)
+              }}
               className={` ${
                 activeTab ? "bg-white text-teal-500 shadow-lg" : "text-black"
               }  rounded-lg h-16 w-1/2 flex justify-center items-center text-center `}
@@ -47,7 +50,10 @@ export default function Schedule() {
               <h1 className="  text-xl font-semibold">6 June</h1>
             </button>
             <button
-              onClick={handleTab}
+              onClick={() => {
+                handleTab()
+                setSelectData(ScheduleData.programmeSchedule07)
+              }}
               className={`${
                 !activeTab ? "bg-white text-teal-500 shadow-lg" : "text-black"
               }  rounded-lg h-16 w-1/2 flex justify-center items-center text-center`}
@@ -67,7 +73,7 @@ export default function Schedule() {
                 </tr>
               </thead>
               <tbody>
-                <RowDataSimple data={selectData} />
+                {selectData.length > 1? <RowDataSimple data={selectData} />: <tr><td></td><td className="text-center text-xl">To be announced...</td></tr>}
               </tbody>
             </table>
           </div>
