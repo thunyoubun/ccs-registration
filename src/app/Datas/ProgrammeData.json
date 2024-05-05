@@ -28,7 +28,7 @@
             "topic": "Carbon Neutrality Research and Innovation",
             "description": [],
             "speakers": [
-                "Assoc. Prof. Dr. Winita Punyodom, Research University Network and CMU <i>(TBC)</i>"
+                "Assoc. Prof. Dr. Winita Punyodom, CMU <i>(TBC)</i>"
             ],
             "panelists": [],
             "facilitators": [],
@@ -61,7 +61,7 @@
         },
         {
             "time": "10.30 - 10.45 AM",
-            "topic": "Bending the Tree of CCS: Lowering the High-hanging Fruit",
+            "topic": "Bending the Tree: Lowering the CCS High-hanging Fruit",
             "description": [],
             "speakers": [
                 "Assoc. Prof. Dr. Suparit Tangparitkul, Director of Chiang Mai CCS (CMU)"
@@ -86,7 +86,7 @@
             "topic": "Norway’s CCS: the State, Industries, and Academia Partnership",
             "description": [],
             "speakers": [
-                "Dr. Cathrine Ringstad, Senior Advisor CCS, Bellona Environmental Foundation, Norway"
+                "Representtative from Norway <i>(TBC)</i>"
             ],
             "panelists": [],
             "facilitators": [],
@@ -124,7 +124,7 @@
             ],
             "panelists": [],
             "facilitators": [],
-            "group": "B] Industrial Panel Discussion",
+            "group": "A] Technical & Research Session",
             "bgColor": false
         },
         {
@@ -135,6 +135,7 @@
             "panelists": [
                 "Mr. Søren Poulsen, Project Director, Greensand Project, Denmark",
                 "Dr. Cathrine Ringstad, Senior Advisor CCS, Bellona Environmental Foundation, Norway",
+                "Dr. Apiradee Suwannathong, Department of Mineral Fuels (DMF), Thailand",
                 "Mr. Surachai Vangrattanachai, CCUs Director, SCG CGS",
                 "Dr. Yanadet Sripanich, Energy Transition/CCS Business Lead, PTTEP"
             ],
@@ -163,12 +164,12 @@
                 "Prof. Dr. Nicolas von Solms, Technical University of Denmark (DTU), Denmark",
                 "Prof. Dr. Carl Fredrik Berg, Norwegian University of Science and Technology (NTNU), Norway",
                 "Prof. Dr. Hyundon Shin, Inha University, Korea",
-                "Dr. Bambang Widarsono, BRIN, Indonesia"
+                "Prof. Dr. Bambang Widarsono, BRIN, Indonesia"
             ],
             "facilitators": [
                 "Asst. Prof. Dr. Natthanan Promsuk"
             ],
-            "group": "B] Industrial Panel Discussion",
+            "group": "C] Technical & Research Panel Discussion",
             "bgColor": false
         },
         {
