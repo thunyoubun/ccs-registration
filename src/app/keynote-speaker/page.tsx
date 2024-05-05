@@ -1,10 +1,10 @@
 "use client";
 import Navbar from "../Components/Navbar";
 import ToTop from "../Components/ToTop";
-import Footer from "../Components/Footer";
 import { useEffect, useState } from "react";
 import KeynoteSpeakerData from "../Datas/KeynoteSpeakerData.json";
 import RenderPeopleCard from "../Components/RenderPeopleCard";
+import FooterSponsor from "../Components/FooterSponsor";
 
 function KeynoteSpeakerPage() {
   const [activateSlide, setActivateSlide] = useState<boolean>(false);
@@ -89,7 +89,7 @@ function KeynoteSpeakerPage() {
             </div>
           </div>
         </div>
-        <Footer />
+        <FooterSponsor />
       </div>
     </header>
   );
