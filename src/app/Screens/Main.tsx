@@ -81,7 +81,7 @@ export default function Main() {
             </p>
             <p className=" text-justify">
               Following those activities in the past year, the Thailand CCUS
-              Alliance (TCCA) has been formulated as a notional CCUS consortium,
+              Alliance (TCCA) has been formulated as a national CCUS consortium,
               with ongoing collaborations with foreign nations maturing. Thus,
               this international CCS symposium is to be held with the aim of
               being a networking session to kick off the TCCA and bridge the
