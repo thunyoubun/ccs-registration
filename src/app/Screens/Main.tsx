@@ -36,7 +36,7 @@ export default function Main() {
 
           <Link href="/agenda">
             <button className="mt-6 bg-transparent shadow-xl border-2 border-white rounded-lg p-2 text-white hover:scale-105 transition ease-in-out delay-150 ">
-              <h1>Full use Agenda</h1>
+              <h1>Full Agenda</h1>
             </button>
           </Link>
         </div>
