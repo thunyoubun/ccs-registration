@@ -4,13 +4,13 @@ import Swal from "sweetalert2";
 import RegistrationForm, { IRegistrationForm } from "./RegistrationForm";
 import TextInput from "./TextInput";
 
-const nameRoles = "Role/duties Related to CCS/CCU Technology"
+const nameRoles = "Role/duties Related to CCS/CCU Technology";
 const mockRoles = [
   "Technology developer/researcher",
   "CCUS industry or users",
   "Both technology developer/researcher and CCUS industry or users",
-  "others"
-]
+  "others",
+];
 
 function RegistrationInput({ expired }: { expired: number }) {
   const {
@@ -44,6 +44,10 @@ function RegistrationInput({ expired }: { expired: number }) {
       <h1 className="font-medium text-3xl lg:text-5xl text-center">
         Registration
       </h1>
+      <h2 className="text-red-500 mt-5">
+        <span className=" text-red-600">*</span>Only the person who received the
+        confirmation email due to the limited seats
+      </h2>
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="mt-5 grid grid-cols-1 gap-x-2 gap-y-2 lg:gap-x-5 lg:gap-y-5 lg:grid-cols-6"
@@ -77,7 +81,13 @@ function RegistrationInput({ expired }: { expired: number }) {
           )}
         </div>
         <div className="col-span-full">
-          <label htmlFor="" className="block text-sm font-medium text-gray-900 required">Role/duties (Related to CCS/CCU Technology)<span className="text-red-500">*</span></label>
+          <label
+            htmlFor=""
+            className="block text-sm font-medium text-gray-900 required"
+          >
+            Role/duties (Related to CCS/CCU Technology)
+            <span className="text-red-500">*</span>
+          </label>
           <div className="mt-2">
             <select
               id=""
@@ -85,12 +95,18 @@ function RegistrationInput({ expired }: { expired: number }) {
               {...register("roles")}
               required
             >
-              {mockRoles.map((selt) =>
-                <option key={selt} value={selt}>{selt}</option>
-              )}
+              {mockRoles.map((selt) => (
+                <option key={selt} value={selt}>
+                  {selt}
+                </option>
+              ))}
             </select>
           </div>
-          {errors.roles && <span className="text-sm text-red-500">Please select your role.</span>}
+          {errors.roles && (
+            <span className="text-sm text-red-500">
+              Please select your role.
+            </span>
+          )}
         </div>
         <div className="col-span-full">
           {TextInput(register, "Email", "email", "email", errors.email)}
@@ -166,10 +182,11 @@ function RegistrationInput({ expired }: { expired: number }) {
         </div>
         <button
           type="submit"
-          className={`${isSubmitting || !!expired
+          className={`${
+            isSubmitting || !!expired
               ? "bg-gray-300 cursor-not-allowed opacity-50"
               : "bg-teal-500 hover:bg-teal-500 text-white"
-            } p-2  col-span-full rounded-md  font-semibold`}
+          } p-2  col-span-full rounded-md  font-semibold`}
           disabled={isSubmitting || !!expired}
         >
           Register
