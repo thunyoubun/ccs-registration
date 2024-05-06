@@ -44,7 +44,7 @@ function RegistrationInput({ expired }: { expired: number }) {
       <h1 className="font-medium text-3xl lg:text-5xl text-center">
         Registration
       </h1>
-      <h2 className="text-red-500 mt-5">
+      <h2 className="text-red-500  p-2">
         <span className=" text-red-600">*</span>Only the person who received the
         confirmation email due to the limited seats
       </h2>
