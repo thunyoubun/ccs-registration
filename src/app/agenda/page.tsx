@@ -8,7 +8,7 @@ function ProgrammePage() {
   return (
     <header>
       <div className="relative">
-        <Navbar path={"programme"} />
+        <Navbar path={"agenda"} />
         <ToTop />
         <ProgrammeBody />
         <FooterSponsor />

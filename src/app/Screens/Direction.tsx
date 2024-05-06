@@ -80,8 +80,9 @@ export default function Direction() {
           <div className="w-full bg-white rounded-lg">
             <div className="text-center p-4">
               <h3 className="">
-                <span className=" font-semibold">6 -7 June</span>, at room Nakorn Rangsit 1 - 2, Novotel
-                Bangkok Future Park Rangsit, Bangkok, Thailand
+                <span className=" font-semibold">6 -7 June</span>, at room
+                Nakorn Rangsit 1 - 2, Novotel Bangkok Future Park Rangsit,
+                Bangkok, Thailand
               </h3>
             </div>
             <div className="mx-4 mb-4 md:h-fit h-72 relative ">
@@ -106,7 +107,7 @@ export default function Direction() {
           </div>
         </div>
 
-        <div className="w-full md:flex grid gap-8 ">
+        {/* <div className="w-full md:flex grid gap-8 ">
           <div className="w-full md:w-1/2 px-8  ">
             <div className="p-6 flex flex-col justify-center gap-4">
               <h1 className="text-white text-3xl font-semibold">
@@ -237,7 +238,7 @@ export default function Direction() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

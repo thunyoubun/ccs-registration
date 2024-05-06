@@ -13,7 +13,10 @@ function RowDataSimple({ data }: { data: IProgrammeData[] }) {
       key={schedule.time}
     >
       <td>{schedule.time}</td>
-      <td className="text-left" dangerouslySetInnerHTML={{__html: schedule.topic}} />
+      <td
+        className="text-left"
+        dangerouslySetInnerHTML={{ __html: schedule.topic }}
+      />
       <td>{schedule.group != "None" ? schedule.group : ""}</td>
     </tr>
   ));
@@ -40,8 +43,8 @@ export default function Schedule() {
           <div className="w-full flex gap-2">
             <button
               onClick={() => {
-                handleTab()
-                setSelectData(ScheduleData.programmeSchedule06)
+                handleTab();
+                setSelectData(ScheduleData.programmeSchedule06);
               }}
               className={` ${
                 activeTab ? "bg-white text-teal-500 shadow-lg" : "text-black"
@@ -51,8 +54,8 @@ export default function Schedule() {
             </button>
             <button
               onClick={() => {
-                handleTab()
-                setSelectData(ScheduleData.programmeSchedule07)
+                handleTab();
+                setSelectData(ScheduleData.programmeSchedule07);
               }}
               className={`${
                 !activeTab ? "bg-white text-teal-500 shadow-lg" : "text-black"
@@ -73,7 +76,14 @@ export default function Schedule() {
                 </tr>
               </thead>
               <tbody>
-                {selectData.length > 1? <RowDataSimple data={selectData} />: <tr><td></td><td className="text-center text-xl">To be announced...</td></tr>}
+                {selectData.length > 1 ? (
+                  <RowDataSimple data={selectData} />
+                ) : (
+                  <tr>
+                    <td></td>
+                    <td className="text-center text-xl">To be announced...</td>
+                  </tr>
+                )}
               </tbody>
             </table>
           </div>
@@ -81,7 +91,7 @@ export default function Schedule() {
           <div className="w-full border"></div>
           <div className="w-full flex justify-center ">
             <button className="  w-fit  bg-white   border-2 border-teal-600 rounded-lg p-2 text-teal-500 hover:scale-105 transition ease-in-out delay-150 ">
-              <Link href={"/programme"}>
+              <Link href={"/agenda"}>
                 <h1>Full use Agenda</h1>
               </Link>
             </button>

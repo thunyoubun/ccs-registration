@@ -28,7 +28,7 @@ function FooterSponsor() {
             nameCompany2={"Royal Thai Embassy, Copenhagen, Denmark"}
           />
           <CardSponsor
-            path={"/images/sponsors/images.png"}
+            path={"/images/sponsors/สอทnew.png"}
             nameCompany1={"สถานเอกอัครราชทูต ณ กรุงออสโล"}
             nameCompany2={"Royal Thai Embassy, Oslo"}
           />

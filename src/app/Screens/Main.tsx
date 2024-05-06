@@ -28,13 +28,13 @@ export default function Main() {
             className=" bg-white rounded-3xl w-fit py-1 px-2 shadow-lg transition ease-in-out delay-150 hover:scale-105 "
           >
             <h1>
-              6 - 7 June, at room Nakorn Rangsit 1- 2, Novotel Bangkok Future Park Rangsit, Bangkok,
-              Thailand
+              6 - 7 June, at room Nakorn Rangsit 1- 2, Novotel Bangkok Future
+              Park Rangsit, Bangkok, Thailand
               <FaArrowRightLong className="mx-2 inline" />
             </h1>
           </button>
 
-          <Link href="/programme">
+          <Link href="/agenda">
             <button className="mt-6 bg-transparent shadow-xl border-2 border-white rounded-lg p-2 text-white hover:scale-105 transition ease-in-out delay-150 ">
               <h1>Full use Agenda</h1>
             </button>
@@ -53,8 +53,8 @@ export default function Main() {
             <h1 className=" font-bold text-2xl text-center">
               {/* The International Symposium for Carbon Capture, Utilization and
               Storage (CCUS) */}
-              International CCUS Symposium: &apos;Supercritical&apos;
-              Pathways Toward Carbon Neutrality
+              International CCUS Symposium: &apos;Supercritical&apos; Pathways
+              Toward Carbon Neutrality
             </h1>
             <p className=" text-justify">
               Thailand has pledged for carbon neutrality and net zero emissions

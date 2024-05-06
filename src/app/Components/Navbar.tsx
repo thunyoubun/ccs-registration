@@ -68,17 +68,17 @@ const Navbar = ({ path }: NavbarProps) => {
                 <Link href="/">Home</Link>
               </li>
             )}
-            {path !== "keynote-speakers" && (
+            {path !== "speakers" && (
               <li className="hover:scale-105 font-semibold hover:drop-shadow-md transition ease-out delay-50">
-                <Link href="/keynote-speakers">Speakers</Link>
+                <Link href="/speakers">Speakers</Link>
               </li>
             )}
-            {path !== "program" && (
+            {path !== "agenda" && (
               <li className="hover:scale-105 font-semibold hover:drop-shadow-md transition ease-out delay-50">
-                <Link href="/program">Agenda</Link>
+                <Link href="/agenda">Agenda</Link>
               </li>
             )}
-            {path !== "/register" && (
+            {path !== "register" && (
               <li className="hover:scale-105 font-semibold hover:drop-shadow-md transition ease-out delay-50">
                 <Link href="/register">Registration</Link>
               </li>
@@ -110,19 +110,19 @@ const Navbar = ({ path }: NavbarProps) => {
               </Link>
             </li>
           )}
-          {path !== "/keynote-speakers" && (
+          {path !== "speakers" && (
             <li className="hover:scale-105 font-semibold hover:drop-shadow-md transition ease-out delay-50">
-              <Link href="/keynote-speakers">
-                <h1 className=" uppercase">Keynote speakers</h1>
+              <Link href="/speakers">
+                <h1 className=" uppercase">Speakers</h1>
               </Link>
             </li>
           )}
-          {path !== "program" && (
+          {path !== "agenda" && (
             <li className="hover:scale-105 font-semibold hover:drop-shadow-md transition ease-out delay-50">
-              <Link href="/program">Programme</Link>
+              <Link href="/agenda">Agenda</Link>
             </li>
           )}
-          {path !== "/register" && (
+          {path !== "register" && (
             <li className="hover:scale-105 font-semibold hover:drop-shadow-md transition ease-out delay-50">
               <Link href="/register">Registration</Link>
             </li>
