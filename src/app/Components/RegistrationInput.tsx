@@ -42,11 +42,10 @@ function RegistrationInput({ expired }: { expired: number }) {
   return (
     <div className="p-4 bg-white md:rounded-br-lg  md:rounded-b-none rounded-b-lg  lg:p-4 xl:p-8">
       <h1 className="font-medium text-3xl lg:text-5xl text-center">
-        Registration
+        RSVP
       </h1>
-      <h2 className="text-red-500  p-2">
-        <span className=" text-red-600">*</span>Only the person who received the
-        confirmation email due to the limited seats
+      <h2 className="text-red-500  p-2 text-center text-2xl">
+        <span className=" text-red-600">***</span>Confirmation Email Needed<span className="text-red-600">***</span>
       </h2>
       <form
         onSubmit={handleSubmit(onSubmit)}
