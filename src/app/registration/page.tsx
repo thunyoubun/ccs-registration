@@ -8,7 +8,7 @@ function RegistrationPage() {
   return (
     <header>
       <div className="relative">
-        <Navbar path={"register"} />
+        <Navbar path={"registration"} />
         <ToTop />
         <RegistrationBody />
         {/* Footer */}
