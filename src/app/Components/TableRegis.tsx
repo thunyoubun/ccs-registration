@@ -40,6 +40,9 @@ const TableRegis = ({ data }: { data: IAPIRegister[] }) => {
             <th scope="col" className="px-6 py-3">
               Affiliation
             </th>
+            <th>
+              Roles/Duties
+            </th>
             <th scope="col" className="px-6 py-3">
               6 June
             </th>
@@ -62,6 +65,7 @@ const TableRegis = ({ data }: { data: IAPIRegister[] }) => {
               </th>
               <th className="px-6 py-4">{applicant.email}</th>
               <th className="px-6 py-4">{applicant.affiliation}</th>
+              <th className="px-6 py-4">{applicant.roles_duties}</th>
               <th className="px-6 py-4">
                 <td>
                   Morning :{" "}
