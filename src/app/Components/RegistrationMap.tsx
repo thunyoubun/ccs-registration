@@ -8,7 +8,7 @@ function RegistrationMap() {
   }, []);
 
   return (
-    <div className=" bg-white md:order-none xl:p-8 flex flex-col gap-5 md:rounded-bl-md rounded-none">
+    <div className=" bg-white md:order-none lg:p-4 xl:p-8 p-4 flex flex-col gap-5 md:rounded-bl-md rounded-none">
       <div className="">
         <h1 className="font-medium text-3xl lg:text-5xl text-center">
           Location

@@ -28,15 +28,16 @@ export default function Main() {
             className=" bg-white rounded-3xl w-fit py-1 px-2 shadow-lg transition ease-in-out delay-150 hover:scale-105 "
           >
             <h1>
-              6 - 7 June, at room Nakorn Rangsit 1- 2, Novotel Bangkok Future
-              Park Rangsit, Bangkok, Thailand
+              <span className="font-semibold">6 - 7 June</span>, at room Nakorn
+              Rangsit 1- 2, Novotel Bangkok Future Park Rangsit, Bangkok,
+              Thailand
               <FaArrowRightLong className="mx-2 inline" />
             </h1>
           </button>
 
           <Link href="/agenda">
             <button className="mt-6 bg-transparent shadow-xl border-2 border-white rounded-lg p-2 text-white hover:scale-105 transition ease-in-out delay-150 ">
-              <h1>Full use Agenda</h1>
+              <h1>Full Agenda</h1>
             </button>
           </Link>
         </div>
@@ -81,7 +82,7 @@ export default function Main() {
             </p>
             <p className=" text-justify">
               Following those activities in the past year, the Thailand CCUS
-              Alliance (TCCA) has been formulated as a notional CCUS consortium,
+              Alliance (TCCA) has been formulated as a national CCUS consortium,
               with ongoing collaborations with foreign nations maturing. Thus,
               this international CCS symposium is to be held with the aim of
               being a networking session to kick off the TCCA and bridge the

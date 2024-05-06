@@ -10,9 +10,7 @@ export default function Keynote() {
     >
       <div className="flex-1  ">
         <div className="flex justify-center">
-          <h1 className=" text-3xl text-white  font-semibold">
-            Speakers
-          </h1>
+          <h1 className=" text-3xl text-white  font-semibold">Speakers</h1>
         </div>
 
         <div className=" w-full mt-8">

@@ -15,7 +15,7 @@
     {
       "id": 2,
       "fullname": "Assoc. Prof. Dr. Suparit Tangparitkul",
-      "affiliation": "Director of Chiang Mai CCS (Chiang Mai University)",
+      "affiliation": "Director of Chiang Mai CCS (Chiang Mai University) and TCCA",
       "srcImg": "/images/keynote-speaker/3.png"
     },
     {
@@ -33,7 +33,7 @@
     {
       "id": 5,
       "fullname": "Assoc. Prof. Wongkot Wongsapai",
-      "affiliation": "Chiang Mai University ",
+      "affiliation": "Chiang Mai University and TCCA ",
       "srcImg": "/images/keynote-speaker/6.png"
     },
     {
@@ -75,11 +75,11 @@
     {
       "id": 12,
       "fullname": "Asst. Prof. Dr. Natthanan Promsuk",
-      "affiliation": "Chiang Mai University",
+      "affiliation": "Chiang Mai University and TCCA",
       "srcImg": "/images/keynote-speaker/13.png"
     }
   ],
-  "IndustrialPanelDiscussion":[
+  "IndustrialPanelDiscussion": [
     {
       "id": 0,
       "fullname": "Mr. Søren Poulsen",
@@ -111,12 +111,12 @@
     {
       "id": 4,
       "fullname": "Assoc. Prof. Dr. Suparit Tangparitkul (Facilitator)",
-      "affiliation": "Director of Chiang Mai CCS (Chiang Mai University)",
+      "affiliation": "Director of Chiang Mai CCS (Chiang Mai University) and TCCA",
       "srcImg": "/images/keynote-speaker/3.png",
       "topics": []
     }
   ],
-  "TechnicalResearchPanelDiscussion":[
+  "TechnicalResearchPanelDiscussion": [
     {
       "id": 0,
       "fullname": "Prof. Dr. Nicolas von Solms",
@@ -148,20 +148,18 @@
     {
       "id": 4,
       "fullname": "Asst. Prof. Dr. Natthanan Promsuk (Facilitator)",
-      "affiliation": "Chiang Mai University",
+      "affiliation": "Chiang Mai University and TCCA",
       "srcImg": "/images/keynote-speaker/13.png",
       "topics": []
     }
   ],
-  "TechnicalResearchSession":[
+  "TechnicalResearchSession": [
     {
       "id": 0,
       "fullname": "Dr. Pongvipa Lohsomboon",
       "affiliation": "Senior Expert (TSRI) and Chairperson for Circular Economy Program Board (PMU-C)",
       "srcImg": "/images/keynote-speaker/1.jpg",
-      "topics": [
-        "Science, Research, and Innovation Toward Net-Zero via CCUS"
-      ]
+      "topics": ["Science, Research, and Innovation Toward Net-Zero via CCUS"]
     },
     {
       "id": 1,
@@ -175,29 +173,23 @@
     {
       "id": 2,
       "fullname": "Assoc. Prof. Dr. Suparit Tangparitkul",
-      "affiliation": "Director of Chiang Mai CCS (Chiang Mai University)",
+      "affiliation": "Director of Chiang Mai CCS (Chiang Mai University) and TCCA",
       "srcImg": "/images/keynote-speaker/3.png",
-      "topics": [
-        "Bending the Tree of CCS: Lowering the High-hanging Fruit"
-      ]
+      "topics": ["Bending the Tree of CCS: Lowering the High-hanging Fruit"]
     },
     {
       "id": 4,
       "fullname": "Mr. Søren Poulsen",
       "affiliation": "Project Director, Greensand Project, Denmark",
       "srcImg": "/images/keynote-speaker/5.png",
-      "topics": [
-        "Greensand Project: CO<sub>2</sub> Graveyard of Denmark"
-      ]
+      "topics": ["Greensand Project: CO<sub>2</sub> Graveyard of Denmark"]
     },
     {
       "id": 5,
       "fullname": "Assoc. Prof. Wongkot Wongsapai",
-      "affiliation": "Chiang Mai University ",
+      "affiliation": "Chiang Mai University and TCCA ",
       "srcImg": "/images/keynote-speaker/6.png",
-      "topics": [
-        "Carbon Credit Methodology & Financial Incentive for CCS"
-      ]
+      "topics": ["Carbon Credit Methodology & Financial Incentive for CCS"]
     }
   ]
 }
