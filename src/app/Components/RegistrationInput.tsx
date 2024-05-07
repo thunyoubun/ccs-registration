@@ -23,15 +23,15 @@ function RegistrationInput({ expired }: { expired: number }) {
     await axios.post("/api/register", data).then((res) => {
       if (res.data.ok) {
         Swal.fire({
-          title: "Success!",
-          text: "You have successfully registered",
+          title: "Thank you for your interest!",
+          html: "<div><h1>We will get back to you shortly!</h1> <h1>Remark: Conformation email will be sent to the only selected person.</h1></div>",
           icon: "success",
           confirmButtonText: "Close",
         });
       } else {
         Swal.fire({
           title: "Error!",
-          text: res.data.message,
+          text: "Please fill all the required fields or Duplicate email detected!",
           icon: "error",
           confirmButtonText: "Close",
         });
