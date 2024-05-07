@@ -7,7 +7,7 @@ export default function Organize() {
     <div className="md:h-fit h-fit bg-white flex flex-col">
       <div className="md:m-20  m-8  flex-1 ">
         <div className="flex justify-center">
-          <h1 className=" text-3xl text-black  font-semibold">Organized By</h1>
+          <h1 className=" text-3xl text-black  font-semibold">Co-Organized By</h1>
         </div>
 
         <div className="grid md:grid-cols-2 grid-cols-1   m-4    items-center justify-items-center  justify-center gap-8 ">

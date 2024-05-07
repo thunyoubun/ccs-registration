@@ -178,6 +178,15 @@
       "topics": ["Bending the Tree of CCS: Lowering the High-hanging Fruit"]
     },
     {
+      "id": 3,
+      "fullname": "Dr. Cathrine Ringstad",
+      "affiliation": "Senior Advisor CCS, Bellona Environmental Foundation, Norway",
+      "srcImg": "/images/keynote-speaker/4.png",
+      "topics": [
+        "Norway’s CCS: the State, Industries, and Academia Partnership"
+      ]
+    },
+    {
       "id": 4,
       "fullname": "Mr. Søren Poulsen",
       "affiliation": "Project Director, Greensand Project, Denmark",
