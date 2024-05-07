@@ -52,7 +52,7 @@ export default function DashboardPage() {
 
   return (
     <div className="relative">
-      <div className="w-auto h-screen bg-gradient-to-r from-red-700 to-blue-800 ">
+      <div className="w-auto h-screen bg-gradient-to-r from-teal-500 to-blue-950 ">
         <div className="flex flex-col gap-8 h-full p-8">
           <div className="flex gap-2 h-[20%] w-full bg-white px-8 py-4 items-center justify-between rounded-lg text-black ">
             <div className="flex">
