@@ -1,6 +1,12 @@
 {
   "keynoteSpeaker": [
     {
+      "id": 16,
+      "fullname": "Asst. Prof. Dr. Chatchawan Chaichana",
+      "affiliation": "Chiang Mai University and TCCA",
+      "srcImg": "/images/keynote-speaker/default-avatar.jpg"
+    },
+    {
       "id": 0,
       "fullname": "Dr. Pongvipa Lohsomboon",
       "affiliation": "Senior Expert (TSRI) and Chairperson for Circular Economy Program Board (PMU-C)",
@@ -9,7 +15,7 @@
     {
       "id": 1,
       "fullname": "Dr. Kajornsak Faungnawakij",
-      "affiliation": "Representative from TCCA and Director of Nanocatalysis and Molecular Simulation Research Group, NANOTEC, NSTDA",
+      "affiliation": "Director of Nanocatalysis and Molecular Simulation Research Group, NANOTEC, NSTDA, and TCCA",
       "srcImg": "/images/keynote-speaker/2.png"
     },
     {
