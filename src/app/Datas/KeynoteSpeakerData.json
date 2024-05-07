@@ -156,45 +156,54 @@
   "TechnicalResearchSession": [
     {
       "id": 0,
+      "fullname": "Asst. Prof. Dr. Chatchawan Chaichana",
+      "affiliation": "Chiang Mai University and TCCA",
+      "srcImg": "/images/keynote-speaker/default-avatar.jpg",
+      "topics": [
+        "Carbon Neutrality Research and Innovation"
+      ]
+    },
+    {
+      "id": 1,
       "fullname": "Dr. Pongvipa Lohsomboon",
       "affiliation": "Senior Expert (TSRI) and Chairperson for Circular Economy Program Board (PMU-C)",
       "srcImg": "/images/keynote-speaker/1.jpg",
       "topics": ["Science, Research, and Innovation Toward Net-Zero via CCUS"]
     },
     {
-      "id": 1,
+      "id": 2,
       "fullname": "Dr. Kajornsak Faungnawakij",
-      "affiliation": "Representative from TCCA and Director of Nanocatalysis and Molecular Simulation Research Group, NANOTEC, NSTDA",
+      "affiliation": "Director of Nanocatalysis and Molecular Simulation Research Group, NANOTEC, NSTDA, and TCCA",
       "srcImg": "/images/keynote-speaker/2.png",
       "topics": [
         "Introduction of Thailand CCUS Alliance (TCCA): Mission and Strategics"
       ]
     },
     {
-      "id": 2,
+      "id": 3,
       "fullname": "Assoc. Prof. Dr. Suparit Tangparitkul",
       "affiliation": "Director of Chiang Mai CCS (Chiang Mai University) and TCCA",
       "srcImg": "/images/keynote-speaker/3.png",
       "topics": ["Bending the Tree of CCS: Lowering the High-hanging Fruit"]
     },
     {
-      "id": 3,
+      "id": 4,
       "fullname": "Dr. Cathrine Ringstad",
       "affiliation": "Senior Advisor CCS, Bellona Environmental Foundation, Norway",
       "srcImg": "/images/keynote-speaker/4.png",
       "topics": [
-        "Norway’s CCS: the State, Industries, and Academia Partnership"
+        "Norway's CCS: Partnership between the State, Industries, Academia, and NGO's"
       ]
     },
     {
-      "id": 4,
+      "id": 5,
       "fullname": "Mr. Søren Poulsen",
       "affiliation": "Project Director, Greensand Project, Denmark",
       "srcImg": "/images/keynote-speaker/5.png",
       "topics": ["Greensand Project: CO<sub>2</sub> Graveyard of Denmark"]
     },
     {
-      "id": 5,
+      "id": 6,
       "fullname": "Assoc. Prof. Wongkot Wongsapai",
       "affiliation": "Chiang Mai University and TCCA ",
       "srcImg": "/images/keynote-speaker/6.png",

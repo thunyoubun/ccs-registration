@@ -28,7 +28,7 @@
             "topic": "Carbon Neutrality Research and Innovation",
             "description": [],
             "speakers": [
-                "Assoc. Prof. Dr. Winita Punyodom, CMU <i>(TBC)</i>"
+                "Asst. Prof. Dr. Chatchawan Chaichana, CMU and TCCA"
             ],
             "panelists": [],
             "facilitators": [],
@@ -64,7 +64,7 @@
             "topic": "Bending the Tree: Lowering the CCS High-hanging Fruit",
             "description": [],
             "speakers": [
-                "Assoc. Prof. Dr. Suparit Tangparitkul, Director of Chiang Mai CCS (CMU)"
+                "Assoc. Prof. Dr. Suparit Tangparitkul, Director of Chiang Mai CCS (CMU) and TCCA"
             ],
             "panelists": [],
             "facilitators": [],
@@ -83,7 +83,7 @@
         },
         {
             "time": "11.00 - 11.30 AM",
-            "topic": "Norway’s CCS: the State, Industries, and Academia Partnership",
+            "topic": "Norway's CCS: Partnership between the State, Industries, Academia, and NGO's",
             "description": [],
             "speakers": [
                 "Dr. Cathrine Ringstad, Senior Advisor CCS, Bellona Environmental Foundation, Norway"
@@ -106,7 +106,19 @@
             "bgColor": false
         },
         {
-            "time": "12.00 - 13.00 PM",
+            "time": "12.00 - 12.30 PM",
+            "topic": "Carbon Credit Methodology & Financial Incentive for CCS",
+            "description": [],
+            "speakers": [
+                "Assoc. Prof. Wongkot Wongsapai, CMU and TCCA"
+            ],
+            "panelists": [],
+            "facilitators": [],
+            "group": "A] Technical & Research Session",
+            "bgColor": false
+        },
+        {
+            "time": "12.30 - 13.30 PM",
             "topic": "Lunch Break",
             "description": [],
             "speakers": [],
@@ -114,18 +126,6 @@
             "facilitators": [],
             "group": "None",
             "bgColor": true
-        },
-        {
-            "time": "13.00 - 13.30 PM",
-            "topic": "Carbon Credit Methodology & Financial Incentive for CCS",
-            "description": [],
-            "speakers": [
-                "Assoc. Prof. Wongkot Wongsapai, CMU, Thailand <i>(TBC)</i>"
-            ],
-            "panelists": [],
-            "facilitators": [],
-            "group": "A] Technical & Research Session",
-            "bgColor": false
         },
         {
             "time": "13.30 - 14.30 PM",
