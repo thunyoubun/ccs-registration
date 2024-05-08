@@ -36,7 +36,7 @@ export default function Schedule() {
     <div className="md:h-screen h-fit bg-gray-100  p-8 md:p-20 ">
       <div className="  ">
         <div className="flex align-middle justify-center">
-          <h1 className=" text-3xl  font-semibold">Schedule</h1>
+          <h1 className=" text-3xl text-teal-400  font-semibold">Schedule</h1>
         </div>
 
         <div className=" mt-8 bg-teal-500 rounded-t-lg p-2 flex gap-4">

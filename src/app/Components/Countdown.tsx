@@ -18,7 +18,7 @@ function Countdown({
     setFirstLoading(true);
   }, []);
   return (
-    <div className="p-4 bg-teal-500 border-8 border-white text-white text-center gap-3 lg:flex lg:justify-center rounded-t-md">
+    <div className="p-4 bg-teal-500 border-8  border-white text-white text-center gap-3 lg:flex lg:justify-center rounded-t-md">
       <div className="flex flex-col">
         <h1 className="text-5xl font-medium content-center lg:text-6xl">
           RSVP Before <span className=" hidden sm:inline">-</span>

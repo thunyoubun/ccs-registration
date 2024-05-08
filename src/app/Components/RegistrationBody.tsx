@@ -8,7 +8,7 @@ function RegistrationBody() {
     new Date(2024, 5, 3, 23, 59, 59)
   );
   return (
-    <div className=" md:mt-32 mt-28  mt-24  w-auto lg:p-16 bg-gradient-to-r from-teal-500 to-blue-950 flex justify-center">
+    <div className=" md:mt-32 mt-28   w-auto lg:p-16 bg-gradient-to-r from-teal-500 to-blue-950 flex justify-center">
       <div className="w-full mb-6 md:m-16 m-4 xl:w-fit ">
         {/* Countdown */}
         <Countdown day={day} hour={hour} minute={minute} second={second} />

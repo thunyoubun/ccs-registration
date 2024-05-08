@@ -20,14 +20,14 @@ export default function DashboardPage() {
   const [totalParticipants, setTotalParticipants] = useState<number>(0);
 
   useEffect(() => {
-    const fetchdata = async () => {
+    const fetchData = async () => {
       await axios.get("/api/register").then((res) => {
         const result: IAPIRegister[] = res.data.data;
         setParticipants(result);
         setTotalParticipants(result.length);
       });
     };
-    fetchdata();
+    fetchData();
   }, []);
 
   function FillterParticipants() {
@@ -47,21 +47,25 @@ export default function DashboardPage() {
       if (response.data.ok) {
         window.location.href = "/login";
       }
-    } catch (error) {}
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   return (
     <div className="relative">
       <div className="w-auto h-screen bg-gradient-to-r from-teal-500 to-blue-950 ">
         <div className="flex flex-col gap-8 h-full p-8">
-          <div className="flex gap-2 h-[20%] w-full bg-white px-8 py-4 items-center justify-between rounded-lg text-black ">
-            <div className="flex">
+          <div className="flex gap-2 h-20 w-full bg-white px-8 py-4 items-center justify-between rounded-lg text-black ">
+            <div className="flex items-center  gap-2">
               <Link href={"/"}>
-                <FaHome className=" font-semibold text-3xl" />
+                <FaHome className=" justify-center flex text-center font-semibold md:text-3xl text-xl" />
               </Link>
-
-              <h1 className="flex items-baseline h-fit font-semibold text-start text-3xl">
-                / Dashboard
+              <h1 className="flex items-baseline h-fit font-semibold text-start  md:text-3xl text-xl">
+                /
+              </h1>
+              <h1 className="flex items-baseline h-fit font-semibold text-start  md:text-3xl text-xl">
+                Dashboard
               </h1>
             </div>
             <div>
@@ -69,7 +73,7 @@ export default function DashboardPage() {
                 className="flex gap-2 items-center"
                 onClick={() => logOut()}
               >
-                <RxExit className=" font-semibold text-3xl" />
+                <RxExit className=" justify-center flex text-center font-semibold md:text-3xl text-xl" />
                 <h1>Sign Out</h1>
               </button>
             </div>
@@ -79,10 +83,10 @@ export default function DashboardPage() {
             {/*search bar */}
 
             <div className="w-full flex flex-col  gap-4  rounded-md p-4">
-              <div className="flex  border w-fit py-2 border-1 gap-2 items-center bg-gray-100 rounded-md px-4">
+              <div className="flex  border md:w-fit w-full py-2 border-1 gap-2 items-center bg-gray-100 rounded-md px-4">
                 <BsSearch />
                 <input
-                  placeholder="Search by Name "
+                  placeholder="Search by Name or Email"
                   className="w-full bg-gray-100 rounded-md px-4"
                   onChange={(e) => setSearchname(e.currentTarget.value)}
                 ></input>

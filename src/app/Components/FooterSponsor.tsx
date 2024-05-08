@@ -4,7 +4,9 @@ function FooterSponsor() {
   return (
     <div className=" p-8 md:pt-20 md:px-20 ">
       <div className="flex justify-center ">
-        <h1 className="font-semibold text-3xl text-center">Main Supporters</h1>
+        <h1 className="font-semibold text-teal-400 text-3xl text-center">
+          Main Supporters
+        </h1>
       </div>
       <div className="mt-8 flex justify-center">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">

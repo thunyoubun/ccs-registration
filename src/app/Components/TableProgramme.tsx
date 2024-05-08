@@ -25,13 +25,16 @@ function RowData({ date }: { date: IProgrammeData[] }) {
         key={schedule.topic + index}
         className={`${
           schedule.bgColor
-            ? "bg-teal-500 shadow rounded-lg text-white"
+            ? "bg-teal-500 shadow  text-white"
             : " hover:bg-gray-100 text-black"
-        } shadow rounded-lg`}
+        } border `}
       >
         <td className="font-light text-lg text-center p-2">{schedule.time}</td>
         <td>
-          <h3 className="font-medium text-lg" dangerouslySetInnerHTML={{__html: schedule.topic}} />
+          <h3
+            className="font-medium text-lg"
+            dangerouslySetInnerHTML={{ __html: schedule.topic }}
+          />
         </td>
         <td>{schedule.group != "None" ? schedule.group : ""}</td>
       </tr>
@@ -39,17 +42,17 @@ function RowData({ date }: { date: IProgrammeData[] }) {
       schedule.speakers.length > 0 ||
       schedule.panelists.length > 0 ||
       schedule.facilitators.length ? (
-        <tr
-          className="bg-gray-200 rounded-b-lg`"
-          key={schedule.time}
-          id={schedule.time}
-        >
+        <tr className="bg-gray-200 " key={schedule.time} id={schedule.time}>
           <td></td>
           <td className="grid gap-2">
             {schedule.description.length > 0 ? (
               <div>
                 {schedule.description.map((data) => (
-                  <h2 className="p-1" key={data} dangerouslySetInnerHTML={{ __html: data}} />
+                  <h2
+                    className="p-1"
+                    key={data}
+                    dangerouslySetInnerHTML={{ __html: data }}
+                  />
                 ))}
               </div>
             ) : (
@@ -60,7 +63,11 @@ function RowData({ date }: { date: IProgrammeData[] }) {
                 <h2 className="font-semibold">Speaker:</h2>
                 <ul>
                   {schedule.speakers.map((data) => (
-                    <li className="p-1" key={data} dangerouslySetInnerHTML={{__html: data}} />
+                    <li
+                      className="p-1"
+                      key={data}
+                      dangerouslySetInnerHTML={{ __html: data }}
+                    />
                   ))}
                 </ul>
               </div>
@@ -76,7 +83,11 @@ function RowData({ date }: { date: IProgrammeData[] }) {
                   }`}
                 >
                   {schedule.panelists.map((data) => (
-                    <li className="p-1" key={data} dangerouslySetInnerHTML={{__html: data}} />
+                    <li
+                      className="p-1"
+                      key={data}
+                      dangerouslySetInnerHTML={{ __html: data }}
+                    />
                   ))}
                 </ul>
               </div>
@@ -92,7 +103,11 @@ function RowData({ date }: { date: IProgrammeData[] }) {
                   }`}
                 >
                   {schedule.facilitators.map((data) => (
-                    <li className="p-1" key={data} dangerouslySetInnerHTML={{__html: data}} />
+                    <li
+                      className="p-1"
+                      key={data}
+                      dangerouslySetInnerHTML={{ __html: data }}
+                    />
                   ))}
                 </ul>
               </div>
@@ -116,8 +131,8 @@ function TableProgramme() {
   );
 
   return (
-    <div className="bg-white grid-cols-1 rounded shadow-lg md:m-16 m-4">
-      <div className="rounded-t-sm bg-teal-500 p-3 grid gap-3 grid-cols-6 ">
+    <div className=" grid-cols-1  shadow-lg md:m-16 m-4">
+      <div className="rounded-t-md bg-teal-500 p-3 grid gap-3 grid-cols-6 ">
         <button
           className={`${
             !selectSecond
@@ -147,9 +162,9 @@ function TableProgramme() {
           <h1 className="text-xl font-semibold">07 JUNE</h1>
         </button>
       </div>
-      <div className="flex overflow-auto my-6">
-        <table className="table-auto w-full md:m-4 lg:m-6">
-          <thead className="w-full">
+      <div className="flex bg-white  overflow-auto rounded-b-md">
+        <table className="table-auto w-full m-4">
+          <thead className="w-full bg-slate-300">
             <tr className="border-b-2">
               <th className="text-center font-medium text-2xl">TIME</th>
               <th className="text-center font-medium text-2xl">AGENDA</th>
@@ -157,7 +172,16 @@ function TableProgramme() {
             </tr>
           </thead>
           <tbody>
-            {selectData.length > 0? <RowData date={selectData} />: <React.Fragment><tr><td></td><td className="text-center text-xl">To be announced...</td></tr></React.Fragment>}
+            {selectData.length > 0 ? (
+              <RowData date={selectData} />
+            ) : (
+              <React.Fragment>
+                <tr>
+                  <td></td>
+                  <td className="text-center text-xl">To be announced...</td>
+                </tr>
+              </React.Fragment>
+            )}
           </tbody>
         </table>
       </div>

@@ -32,7 +32,7 @@ const CardSlider = () => {
   // if we have 13 keynote speaker, we have 5 slide. each slide have 3 card, except last slide
   // next slide
   const clickNext = () => {
-    activeImage === KeynoteSpeakerData.keynoteSpeaker.length - 1
+    activeImage >= KeynoteSpeakerData.keynoteSpeaker.length - 2
       ? setActiveImage(0)
       : setActiveImage(activeImage + cardPerSlide);
     setTimeout(() => {
@@ -43,8 +43,8 @@ const CardSlider = () => {
 
   // previous slide
   const clickPrev = () => {
-    activeImage === 0
-      ? setActiveImage(KeynoteSpeakerData.keynoteSpeaker.length - 1)
+    activeImage <= 0
+      ? setActiveImage(KeynoteSpeakerData.keynoteSpeaker.length - 2)
       : setActiveImage(activeImage - cardPerSlide);
 
     setTimeout(() => {
@@ -77,7 +77,7 @@ const CardSlider = () => {
         </div>
 
         <button onClick={clickNext} className="text-black/50 hover:text-black ">
-          <IoIosArrowDroprightCircle size={50} />
+          <IoIosArrowDroprightCircle size={50} />{" "}
         </button>
       </div>
     </div>

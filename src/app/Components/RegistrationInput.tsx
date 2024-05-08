@@ -40,7 +40,7 @@ function RegistrationInput({ expired }: { expired: number }) {
   };
 
   return (
-    <div className="p-4 bg-white md:rounded-br-lg  md:rounded-b-none rounded-b-lg  lg:p-4 xl:p-8">
+    <div className="md:w-1/2 w-full p-4 bg-white md:rounded-br-lg  md:rounded-b-none rounded-b-lg  lg:p-4 xl:p-8">
       <h1 className="font-medium text-3xl lg:text-5xl text-center">RSVP</h1>
       <h2 className="text-red-500  p-2 text-center text-lg">
         <span className=" text-red-600">***</span>Confirmation Email Needed
@@ -54,7 +54,7 @@ function RegistrationInput({ expired }: { expired: number }) {
         <div className=" lg:col-span-3">
           {TextInput(
             register,
-            "First name",
+            "First Name",
             "firstname",
             "text",
             errors.firstname
@@ -63,11 +63,14 @@ function RegistrationInput({ expired }: { expired: number }) {
         <div className="col-span-full lg:col-span-3">
           {TextInput(
             register,
-            "Last name",
+            "Last Name",
             "lastname",
             "text",
             errors.lastname
           )}
+        </div>
+        <div className="col-span-full">
+          {TextInput(register, "Email", "email", "email", errors.email)}
         </div>
         <div className="col-span-full">
           {TextInput(
@@ -83,7 +86,7 @@ function RegistrationInput({ expired }: { expired: number }) {
             htmlFor=""
             className="block text-sm font-medium text-gray-900 required"
           >
-            Role/duties (Related to CCS/CCU Technology)
+            Role/Duties (Related to CCS/CCU Technology)
             <span className="text-red-500">*</span>
           </label>
           <div className="mt-2">
@@ -106,13 +109,11 @@ function RegistrationInput({ expired }: { expired: number }) {
             </span>
           )}
         </div>
-        <div className="col-span-full">
-          {TextInput(register, "Email", "email", "email", errors.email)}
-        </div>
+
         <div className="col-span-full ">
           <h3 className="font-medium text-xl">Preferred Date:</h3>
-          <div className="flex gap-5 mx-2 md:mx-4   lg:justify-center lg:mx-0">
-            <div className="col-span-2">
+          <div className="flex gap-5 mt-4 mx-2 md:mx-4   lg:justify-center lg:mx-0">
+            <div className="col-span-2 it">
               <label htmlFor="" className="font-medium">
                 6 June 2024:
               </label>
@@ -127,10 +128,10 @@ function RegistrationInput({ expired }: { expired: number }) {
                 disabled={isSubmitting}
               />
               <label className="ms-2" htmlFor="06morning">
-                morning
+                Morning
               </label>
             </div>
-            <div className="flex items-center mb-4">
+            <div className="flex items-center   mb-4">
               <input
                 className="w-4 h-4 border-teal-500 text-teal-500 focus:ring-blue-950"
                 type="checkbox"
@@ -140,7 +141,7 @@ function RegistrationInput({ expired }: { expired: number }) {
                 disabled={isSubmitting}
               />
               <label className="ms-2" htmlFor="06afternoon">
-                afternoon
+                Afternoon
               </label>
             </div>
           </div>
@@ -160,7 +161,7 @@ function RegistrationInput({ expired }: { expired: number }) {
                 {...register("june07.morning")}
               />
               <label className="ms-2" htmlFor="07morning">
-                morning
+                Morning
               </label>
             </div>
             <div className="flex items-center mb-4">
@@ -173,7 +174,7 @@ function RegistrationInput({ expired }: { expired: number }) {
                 {...register("june07.afternoon")}
               />
               <label className="ms-2" htmlFor="07afternoon">
-                afternoon
+                Afternoon
               </label>
             </div>
           </div>
@@ -183,11 +184,11 @@ function RegistrationInput({ expired }: { expired: number }) {
           className={`${
             isSubmitting || !!expired
               ? "bg-gray-300 cursor-not-allowed opacity-50"
-              : "bg-teal-500 hover:bg-teal-500 text-white"
+              : "bg-teal-500 hover:bg-teal-600 text-white"
           } p-2  col-span-full rounded-md  font-semibold`}
           disabled={isSubmitting || !!expired}
         >
-          Register
+          Submit
         </button>
       </form>
     </div>
