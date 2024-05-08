@@ -162,8 +162,8 @@ function TableProgramme() {
           <h1 className="text-xl font-semibold">07 JUNE</h1>
         </button>
       </div>
-      <div className="flex bg-white  overflow-auto rounded-b-md">
-        <table className="table-auto w-full m-4">
+      <div className="flex bg-white w-full  overflow-auto rounded-b-md">
+        <table className=" table-fixed w-full m-4">
           <thead className="w-full bg-slate-300">
             <tr className="border-b-2">
               <th className="text-center font-medium text-2xl">TIME</th>
@@ -171,7 +171,7 @@ function TableProgramme() {
               <th className="text-center font-medium text-2xl"></th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="w-full">
             {selectData.length > 0 ? (
               <RowData date={selectData} />
             ) : (
