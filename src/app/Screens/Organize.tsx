@@ -20,7 +20,7 @@ export default function Organize() {
               alt="cmu-logo"
             />
             <h2 className=" text-black text-base font-normal">
-              Thailand CCUS Alliance
+              Thailand CCUS Alliance.
             </h2>
           </div>
           <div className=" w-1/2 flex flex-col gap-4 text-center items-center">
@@ -31,7 +31,7 @@ export default function Organize() {
               alt="cmu-logo"
             />
             <h2 className=" text-black text-base font-normal">
-              National Nanotechnology Center (NANOTEC)
+              National Nanotechnology Center (NANOTEC).
             </h2>
           </div>
           <div className=" w-1/2 flex flex-col gap-4 text-center items-center">
@@ -45,7 +45,7 @@ export default function Organize() {
               Co-Organized{" "}
             </h1> */}
             <h2 className=" text-black text-base font-normal">
-              Chiang Mai Carbon Capture & Storage
+              Chiang Mai Carbon Capture & Storage.
             </h2>
           </div>
         </div>
