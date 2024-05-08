@@ -33,7 +33,7 @@ export default function Schedule() {
   };
 
   return (
-    <div className="md:h-screen h-fit bg-gray-100  p-8 md:p-20 ">
+    <div className=" h-fit bg-gray-100  p-8 md:p-20 ">
       <div className="  ">
         <div className="flex align-middle justify-center">
           <h1 className=" text-3xl text-teal-400  font-semibold">Schedule</h1>
