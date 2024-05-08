@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "CCUS Symposium | Programme",
+  title: "CCUS Symposium | Agenda",
 };
 
 export default function RootLayout({

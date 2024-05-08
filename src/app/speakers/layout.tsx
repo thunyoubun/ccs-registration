@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
 export const metadata: Metadata = {
-  title: "CCUS Symposium | Keynote Speakers",
+  title: "CCUS Symposium | Speakers",
 };
 
 export default function RootLayout({

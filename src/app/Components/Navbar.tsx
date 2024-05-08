@@ -39,8 +39,8 @@ const Navbar = ({ path }: NavbarProps) => {
 
   return (
     <div
-      className={` bg-white px-4 md:px-20 py-2 md:py-4 w-full fixed top-0 z-50 shadow-md ${
-        scrolled ? " block " : " hidden"
+      className={` md:h-32 h-28 bg-white px-4 md:px-20 py-2 md:py-4 w-full fixed transform transition duration-300  translate-y-full  top-0 z-50 shadow-md ${
+        scrolled ? " block translate-y-0 " : " hidden t translate-y-full"
       } `}
     >
       <div className=" px-6 flex justify-between items-center">

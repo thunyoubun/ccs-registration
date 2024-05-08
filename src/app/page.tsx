@@ -12,7 +12,7 @@ import FooterSponsor from "./Components/FooterSponsor";
 
 export default function Home() {
   return (
-    <div className="relative">
+    <div className="">
       <Navbar path={"/"} />
       <ToTop />
       <Main />
