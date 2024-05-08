@@ -50,7 +50,7 @@ const TableRegis = ({ data }: { data: IAPIRegister[] }) => {
               7 June
             </th>
             <th scope="col" className="px-6 py-3">
-
+              Create at
             </th>
           </tr>
         </thead>
