@@ -36,7 +36,9 @@ function RowData({ date }: { date: IProgrammeData[] }) {
             dangerouslySetInnerHTML={{ __html: schedule.topic }}
           />
         </td>
-        <td>{schedule.group != "None" ? schedule.group : ""}</td>
+        <td className="text-center">
+          {schedule.group != "None" ? schedule.group : ""}
+        </td>
       </tr>
       {schedule.description.length > 0 ||
       schedule.speakers.length > 0 ||
