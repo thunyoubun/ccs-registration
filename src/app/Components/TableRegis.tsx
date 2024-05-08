@@ -40,7 +40,7 @@ const TableRegis = ({ data }: { data: IAPIRegister[] }) => {
             <th scope="col" className="px-6 py-3">
               Affiliation
             </th>
-            <th>
+            <th scope="col" className="px-6 py-3">
               Roles/Duties
             </th>
             <th scope="col" className="px-6 py-3">
@@ -48,6 +48,9 @@ const TableRegis = ({ data }: { data: IAPIRegister[] }) => {
             </th>
             <th scope="col" className="px-6 py-3">
               7 June
+            </th>
+            <th scope="col" className="px-6 py-3">
+              Create at
             </th>
           </tr>
         </thead>
@@ -118,6 +121,7 @@ const TableRegis = ({ data }: { data: IAPIRegister[] }) => {
                   </span>
                 </td>
               </th>
+              <th className="px-6 py-4">{new Date(applicant.Create_at).toLocaleString()}</th>
             </tr>
           ))}
         </tbody>

@@ -12,7 +12,8 @@ export interface IAPIRegister {
     june06_morning: boolean,
     june06_afternoon: boolean,
     june07_morning: boolean,
-    june07_afternoon: boolean
+    june07_afternoon: boolean,
+    Create_at : string
 }
 
 export interface IRegistrationForm {
