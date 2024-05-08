@@ -11,7 +11,7 @@ export default function Organize() {
             Co-Organized By
           </h1>
         </div>
-        <div className="grid md:grid-cols-2 grid-cols-1   m-4    items-center justify-items-center  justify-center gap-8 ">
+        <div className="grid md:grid-cols-3 grid-cols-1   m-4    items-center justify-items-center  justify-center gap-8 ">
           <div className=" w-1/2 flex flex-col gap-4 text-center items-center">
             <Image
               src={"/images/organizes/TCCA_logo_color.png"}
@@ -21,6 +21,17 @@ export default function Organize() {
             />
             <h2 className=" text-black text-base font-normal">
               Thailand CCUS Alliance
+            </h2>
+          </div>
+          <div className=" w-1/2 flex flex-col gap-4 text-center items-center">
+            <Image
+              src={"/images/sponsors/logo-nano.png"}
+              width={200}
+              height={200}
+              alt="cmu-logo"
+            />
+            <h2 className=" text-black text-base font-normal">
+              National Nanotechnology Center (NANOTEC)
             </h2>
           </div>
           <div className=" w-1/2 flex flex-col gap-4 text-center items-center">
@@ -42,19 +53,11 @@ export default function Organize() {
           <div className="flex justify-center">
             <h1 className=" text-3xl text-black  font-semibold">Sponsor</h1>
           </div>
-          <div className="grid md:grid-cols-2 grid-cols-1   m-4    items-center justify-items-center  justify-center gap-8 ">
+          <div className="grid md:grid-cols-1 grid-cols-1   m-4    items-center justify-items-center  justify-center gap-8 ">
             <div className="w-1/2 flex flex-col gap-4 text-center items-center">
               <Image
                 src={"/images/sponsors/Sponsor_SCG.jpg"}
                 alt={"SCG-logo"}
-                width={400}
-                height={400}
-              />
-            </div>
-            <div className="w-1/2 flex flex-col gap-4 text-center items-center">
-              <Image
-                src={"/images/sponsors/logo-nano.png"}
-                alt={"nano-logo"}
                 width={400}
                 height={400}
               />
