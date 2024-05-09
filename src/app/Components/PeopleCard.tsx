@@ -35,7 +35,7 @@ const PeopleCard = ({
 
   return (
     <div
-      className={`h-full md:w-80 w-auto bg-transparent/30 p-4 rounded-lg z-0  shadow-lg`}
+      className={`h-full md:w-80 lg:w-64 xl:w-80 w-auto bg-transparent/30 p-4 rounded-lg z-0  shadow-lg`}
     >
       <div className="flex flex-col justify-center items-center gap-4">
         <div className=" w-40 h-40 object-bottom object-fill bg-white border-4 border-teal-400  rounded-full mt-4 shadow-lg  overflow-hidden">

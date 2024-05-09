@@ -45,7 +45,7 @@ export default function Organize() {
               className=" object-contain h-40 w-80"
             />
             <h2 className=" text-black text-base font-normal">
-              Chiang Mai Research Group for Carbon Capture and Storage.
+              Chiang Mai Research Group for Carbon Capture and Storage
             </h2>
           </div>
         </div>

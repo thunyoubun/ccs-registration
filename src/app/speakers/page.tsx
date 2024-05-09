@@ -13,7 +13,7 @@ function KeynoteSpeakerPage() {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth > 768) {
+      if (window.innerWidth > 820) {
         setActivateSlide(false);
       } else {
         setActivateSlide(true);

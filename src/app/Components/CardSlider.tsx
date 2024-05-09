@@ -14,7 +14,7 @@ const CardSlider = () => {
   //if window rezie change card per slide
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth > 768) {
+      if (window.innerWidth > 820) {
         setCardPerSlide(3);
       } else {
         setCardPerSlide(1);

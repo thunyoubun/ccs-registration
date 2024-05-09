@@ -24,7 +24,7 @@ function RegistrationInput({ expired }: { expired: number }) {
       if (res.data.ok) {
         Swal.fire({
           title: "Thank you for your interest!",
-          html: "<div><h1>We will get back to you shortly!</h1> <h1>Remark: Conformation email will be sent to the only selected person.</h1></div>",
+          html: "<div><h1>We will get back to you shortly!</h1> <h1>Remark: Confirmation email will be sent to the only selected person.</h1></div>",
           icon: "success",
           confirmButtonText: "Close",
         });

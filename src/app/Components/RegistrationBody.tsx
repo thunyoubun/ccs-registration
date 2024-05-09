@@ -12,7 +12,7 @@ function RegistrationBody() {
       <div className="w-full mb-6 md:m-16 m-4 xl:w-fit ">
         {/* Countdown */}
         <Countdown day={day} hour={hour} minute={minute} second={second} />
-        <div className="lg:flex  xl:">
+        <div className="md:flex block">
           {/* Google Map */}
           <RegistrationMap />
           {/* Registration Form */}
