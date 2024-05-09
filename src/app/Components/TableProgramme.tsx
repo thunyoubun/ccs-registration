@@ -36,7 +36,7 @@ function RowData({ date }: { date: IProgrammeData[] }) {
             dangerouslySetInnerHTML={{ __html: schedule.topic }}
           />
         </td>
-        <td className="text-center">
+        <td className="text-center w-[10%]">
           {schedule.group != "None" ? schedule.group : ""}
         </td>
       </tr>
@@ -168,9 +168,9 @@ function TableProgramme() {
         <table className=" table-fixed w-full m-4">
           <thead className="w-full bg-slate-300">
             <tr className="border-b-2">
-              <th className="text-center font-medium text-2xl">TIME</th>
+              <th className="text-center font-medium text-2xl w-[15%]">TIME</th>
               <th className="text-center font-medium text-2xl">AGENDA</th>
-              <th className="text-center font-medium text-2xl"></th>
+              <th className="text-center font-medium text-2xl w-[20%]"></th>
             </tr>
           </thead>
           <tbody className="w-full">
