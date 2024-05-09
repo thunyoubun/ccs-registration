@@ -183,6 +183,157 @@
         }
     ],
     "programmeSchedule07":[
-        
+        {
+            "time": "08.30 - 09.00 AM",
+            "topic": "ลงทะเบียน",
+            "description": [],
+            "speakers": [],
+            "panelists": [],
+            "facilitators": [],
+            "group": "None",
+            "bgColor": false
+        },
+        {
+            "time": "09.00 - 09.20 AM",
+            "topic": "กล่าวเปิดงาน",
+            "description": [],
+            "speakers": [],
+            "panelists": [],
+            "facilitators": [],
+            "group": "None",
+            "bgColor": false
+        },
+        {
+            "time": "09.20 - 09.50 AM",
+            "topic": "Lessons Learned in Translating Basic Science to Industrial Implementation for Carbon Capture Sorbents",
+            "description": [],
+            "speakers": [
+                "Prof. George Shimizu,  Department of Chemistry, University of Calgary, Calgary, Canada"
+            ],
+            "panelists": [],
+            "facilitators": [],
+            "group": "Knowledge sharing session",
+            "bgColor": false
+        },
+        {
+            "time": "09.50 - 10.10 AM",
+            "topic": "หัวข้อบรรยาย",
+            "description": [],
+            "speakers": [
+                "สถาบันวิจัยวิทยาศาสตร์และเทคโนโลยีแห่งประเทศไทย (วว.) <i>(TBC)</i>"
+            ],
+            "panelists": [],
+            "facilitators": [],
+            "group": "Knowledge sharing session",
+            "bgColor": false
+        },
+        {
+            "time": "10.10 - 10.30 AM",
+            "topic": "รับประทานอาหารว่าง",
+            "description": [],
+            "speakers": [],
+            "panelists": [],
+            "facilitators": [],
+            "group": "None",
+            "bgColor": true
+        },
+        {
+            "time": "10.30 - 10.50 AM",
+            "topic": "นโยบาย แผน และมาตรการ เกี่ยวกับการจัดการการเปลี่ยนแปลงสภาพภูมิอากาศของประเทศ และการลดก๊าซเรือนกระจก",
+            "description": [],
+            "speakers": [
+                "กรมการเปลี่ยนแปลงสภาพภูมิอากาศและสิ่งแวดล้อม <i>(TBC)</i>"
+            ],
+            "panelists": [],
+            "facilitators": [],
+            "group": "Knowledge sharing session",
+            "bgColor": false
+        },
+        {
+            "time": "10.50 - 11.10 AM",
+            "topic": "แนวทางการประเมินและการซื้อ-ขายคาร์บอนเครดิตของ CCU และ CCS  ในประเทศไทยและระดับสากล",
+            "description": [],
+            "speakers": [
+                "องค์การบริหารจัดการก๊าซเรือนกระจก (องค์การมหาชน)"
+            ],
+            "panelists": [],
+            "facilitators": [],
+            "group": "Knowledge sharing session",
+            "bgColor": false
+        },
+        {
+            "time": "11.10 - 11.30 AM",
+            "topic": "หัวข้อบรรยาย",
+            "description": [],
+            "speakers": [
+                "คุณจีรพันธ์ ปัญญานันท์, บริษัท พลังงานบริสุทธิ์ จํากัด (มหาชน)"
+            ],
+            "panelists": [],
+            "facilitators": [],
+            "group": "Knowledge sharing session",
+            "bgColor": false
+        },
+        {
+            "time": "11.30 - 11.50 AM",
+            "topic": "BLCP Decarbonization Projects",
+            "description": [],
+            "speakers": [
+                "คุณยุทธนา เจริญวงศ์, กรรมการผู้จัดการ บริษัท บีแอลซีพี เพาเวอร์ จำกัด"
+            ],
+            "panelists": [],
+            "facilitators": [],
+            "group": "Knowledge sharing session",
+            "bgColor": false
+        },
+        {
+            "time": "11.50 - 13.00 PM",
+            "topic": "พักรับประทานอาหารกลางวัน",
+            "description": [],
+            "speakers": [],
+            "panelists": [],
+            "facilitators": [],
+            "group": "None",
+            "bgColor": true
+        },
+        {
+            "time": "13.00 - 14.00 PM",
+            "topic": "เสวนา การขับเคลื่อน CCUS สู่อุตสาหกรรมในประเทศไทย",
+            "description": [],
+            "speakers": [],
+            "panelists": [
+                "คุณยุทธนา เจริญวงศ์  กรรมการผู้จัดการ บริษัท บีแอลซีพี เพาเวอร์ จำกัด",
+                "คุณชลธา ไกรวัตนุสสรณ์  Business Manager บริษัท จีเนียส อินทิเกรเต็ด โซลูชั่น จํากัด",
+                "(ผู้แทน) กรมการเปลี่ยนแปลงสภาพภูมิอากาศและสิ่งแวดล้อม <i>(TBC)</i>",
+                "(ผู้แทน) องค์การบริหารจัดการก๊าซเรือนกระจก (องค์การมหาชน)"
+            ],
+            "facilitators": [
+                "ดร. สัญชัย คูบูรณ์, ศูนย์นาโนเทคโนโลยีแห่งชาติ สวทช.",
+                "คุณยุทธนา เจริญวงศ์"
+            ],
+            "group": "Brainstorming session",
+            "bgColor": false
+        },
+        {
+            "time": "14.00 - 15.45 PM",
+            "topic": "แนะนำโครงการและแผนงานโครงการ TCCA",
+            "description": [],
+            "speakers": [
+                "ดร. ขจรศักดิ์ เฟื่องนวกิจ หัวหน้าโครงการ, ศูนย์นาโนเทคโนโลยีแห่งชาติ/สวทช."
+            ],
+            "panelists": [],
+            "facilitators": [],
+            "group": "Brainstorming session",
+            "bgColor": false
+        },
+        {
+            "time": "15.45 - 16.00 PM",
+            "topic": "สรุปความคิดเห็นจากการระดมสมอง และกล่าวปิดงาน",
+            "description": [],
+            "speakers": [],
+            "panelists": [],
+            "facilitators": [],
+            "group": "None",
+            "bgColor": false
+        }
     ]
 }

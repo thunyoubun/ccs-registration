@@ -13,12 +13,6 @@ export interface IProgrammeData {
 }
 
 function RowData({ date }: { date: IProgrammeData[] }) {
-  function ExpandRowData(id: string) {
-    const element = document.getElementById(id);
-    if (element) {
-      element.hidden = !element.hidden;
-    }
-  }
   return date.map((schedule, index) => (
     <React.Fragment key={schedule.time + index}>
       <tr
@@ -47,19 +41,6 @@ function RowData({ date }: { date: IProgrammeData[] }) {
         <tr className="bg-gray-200" key={schedule.time} id={schedule.time} >
           <td></td>
           <td colSpan={2} className="gap-2" >
-            {schedule.description.length > 0 ? (
-              <div>
-                {schedule.description.map((data) => (
-                  <h2
-                    className="p-1"
-                    key={data}
-                    dangerouslySetInnerHTML={{ __html: data }}
-                  />
-                ))}
-              </div>
-            ) : (
-              ""
-            )}
             {schedule.speakers.length > 0 ? (
               <div>
                 <h2 className="font-semibold">Speaker:</h2>
@@ -72,6 +53,19 @@ function RowData({ date }: { date: IProgrammeData[] }) {
                     />
                   ))}
                 </ul>
+              </div>
+            ) : (
+              ""
+            )}
+            {schedule.description.length > 0 ? (
+              <div>
+                {schedule.description.map((data) => (
+                  <h2
+                    className="p-1"
+                    key={data}
+                    dangerouslySetInnerHTML={{ __html: data }}
+                  />
+                ))}
               </div>
             ) : (
               ""
