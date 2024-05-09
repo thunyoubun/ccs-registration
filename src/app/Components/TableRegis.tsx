@@ -32,6 +32,9 @@ const TableRegis = ({ data }: { data: IAPIRegister[] }) => {
         <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
           <tr>
             <th scope="col" className="px-6 py-3">
+              No.
+            </th>
+            <th scope="col" className="px-6 py-3">
               Name
             </th>
             <th scope="col" className="px-6 py-3">
@@ -55,11 +58,12 @@ const TableRegis = ({ data }: { data: IAPIRegister[] }) => {
           </tr>
         </thead>
         <tbody>
-          {data.map((applicant) => (
+          {data.map((applicant, index) => (
             <tr
-              key={applicant.id}
+              key={index}
               className="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
             >
+              <th className="px-6 py-4">{index + 1}</th>
               <th
                 scope="row"
                 className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
@@ -121,7 +125,9 @@ const TableRegis = ({ data }: { data: IAPIRegister[] }) => {
                   </span>
                 </td>
               </th>
-              <th className="px-6 py-4">{new Date(applicant.Create_at).toLocaleString()}</th>
+              <th className="px-6 py-4">
+                {new Date(applicant.Create_at).toLocaleString()}
+              </th>
             </tr>
           ))}
         </tbody>

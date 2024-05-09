@@ -23,7 +23,7 @@ export default function DashboardPage() {
     const fetchData = async () => {
       await axios.get("/api/register").then((res) => {
         const result: IAPIRegister[] = res.data.data;
-        setParticipants(result);
+        setParticipants(result.reverse());
         setTotalParticipants(result.length);
       });
     };
