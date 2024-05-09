@@ -22,7 +22,7 @@ function FooterSponsor() {
               "/images/sponsors/Seal_of_the_Ministry_of_Energy_of_Thailand.svg.png"
             }
             nameCompany1={"กรมเชื้อเพลิงธรรมชาติ"}
-            nameCompany2={"Department of Mineral Fuels MINISTRY OF ENERGY"}
+            nameCompany2={"Department of Mineral Fuels, Ministry of Energy"}
           />
           <CardSponsor
             path={"/images/sponsors/สอทnew.png"}
