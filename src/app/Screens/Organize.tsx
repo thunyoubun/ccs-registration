@@ -21,7 +21,7 @@ export default function Organize() {
               className=" object-contain h-40 w-80"
             />
             <h2 className=" text-black text-base font-normal">
-              Thailand CCUS Alliance.
+              Thailand CCUS Alliance
             </h2>
           </div>
           <div className=" flex flex-col gap-4 text-center items-center">
@@ -33,7 +33,7 @@ export default function Organize() {
               className=" object-contain h-40 w-80"
             />
             <h2 className=" text-black text-base font-normal">
-              National Nanotechnology Center (NANOTEC).
+              National Nanotechnology Center (NANOTEC)
             </h2>
           </div>
           <div className=" flex flex-col gap-4 text-center items-center">
@@ -45,7 +45,7 @@ export default function Organize() {
               className=" object-contain h-40 w-80"
             />
             <h2 className=" text-black text-base font-normal">
-              Chiang Mai Research Group for Carbon Capture and Storage
+              Chiang Mai Research Group for Carbon Capture and Storage.
             </h2>
           </div>
         </div>

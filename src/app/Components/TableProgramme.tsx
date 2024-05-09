@@ -44,9 +44,9 @@ function RowData({ date }: { date: IProgrammeData[] }) {
       schedule.speakers.length > 0 ||
       schedule.panelists.length > 0 ||
       schedule.facilitators.length ? (
-        <tr className="bg-gray-200 " key={schedule.time} id={schedule.time}>
+        <tr className="bg-gray-200" key={schedule.time} id={schedule.time} >
           <td></td>
-          <td className="grid gap-2">
+          <td colSpan={2} className="gap-2" >
             {schedule.description.length > 0 ? (
               <div>
                 {schedule.description.map((data) => (
@@ -117,7 +117,6 @@ function RowData({ date }: { date: IProgrammeData[] }) {
               ""
             )}
           </td>
-          <td></td>
         </tr>
       ) : (
         <></>
