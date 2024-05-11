@@ -1,345 +1,329 @@
 {
-    "programmeSchedule06":[
-        {
-            "time": "08.30 - 09.00 AM",
-            "topic": "Registration and welcome refreshment",
-            "description":[],
-            "speakers": [],
-            "panelists": [],
-            "facilitators": [],
-            "group": "None",
-            "bgColor": false
-        },
-        {
-            "time": "09.00 - 09.30 AM",
-            "topic": "Opening ceremony",
-            "description": [ 
-                "Welcome remark by Director General of Department of European Affairs <i>(TBC)</i>", 
-                "Opening remark by Representative of PMU-B Director <i>(TBC)</i>" 
-            ],
-            "speakers": [],
-            "panelists": [],
-            "facilitators": [],
-            "group": "None",
-            "bgColor": false
-        },
-        {
-            "time": "09.30 - 09.45 AM",
-            "topic": "Carbon Neutrality Campus",
-            "description": [],
-            "speakers": [
-                "Asst. Prof. Dr. Chatchawan Chaichana, CMU and TCCA"
-            ],
-            "panelists": [],
-            "facilitators": [],
-            "group": "None",
-            "bgColor": false
-        },
-        {
-            "time": "09.45 - 10.05 AM",
-            "topic": "Science, Research, and Innovation Toward Net-Zero via CCUS",
-            "description": [],
-            "speakers": [
-                "Dr. Pongvipa Lohsomboon, TSRI and PMU-C"
-            ],
-            "panelists": [],
-            "facilitators": [],
-            "group": "A] Technical & Research Session",
-            "bgColor": false
-        },
-        {
-            "time": "10.05 - 10.25 AM",
-            "topic": "Introduction of Thailand CCUS Alliance (TCCA): Mission and Strategics ",
-            "description": [],
-            "speakers": [
-                "Dr. Kajornsak Faungnawakij, TCCA and NANOTEC"
-            ],
-            "panelists": [],
-            "facilitators": [],
-            "group": "A] Technical & Research Session",
-            "bgColor": false
-        },
-        {
-            "time": "10.25 - 10.45 AM",
-            "topic": "Bending the Tree: Lowering the CCS High-hanging Fruit",
-            "description": [],
-            "speakers": [
-                "Assoc. Prof. Dr. Suparit Tangparitkul, Director of Chiang Mai CCS (CMU) and TCCA"
-            ],
-            "panelists": [],
-            "facilitators": [],
-            "group": "A] Technical & Research Session",
-            "bgColor": false
-        },
-        {
-            "time": "10.45 - 11.00 AM",
-            "topic": "Break",
-            "description": [],
-            "speakers": [],
-            "panelists": [],
-            "facilitators": [],
-            "group": "None",
-            "bgColor": true
-        },
-        {
-            "time": "11.00 - 11.30 AM",
-            "topic": "Norway's CCS: Partnership between the State, Industries, Academia, and NGO's",
-            "description": [],
-            "speakers": [
-                "Dr. Cathrine Ringstad, Senior Advisor CCS, Bellona Environmental Foundation, Norway"
-            ],
-            "panelists": [],
-            "facilitators": [],
-            "group": "A] Technical & Research Session",
-            "bgColor": false
-        },
-        {
-            "time": "11.30 - 12.00 PM",
-            "topic": "Greensand Project: CO<sub>2</sub> Graveyard of Denmark",
-            "description": [],
-            "speakers": [
-                "Mr. Søren Poulsen, Project Director, Greensand Project, Denmark"
-            ],
-            "panelists": [],
-            "facilitators": [],
-            "group": "A] Technical & Research Session",
-            "bgColor": false
-        },
-        {
-            "time": "12.00 - 12.30 PM",
-            "topic": "Carbon Credit Methodology & Financial Incentive for CCS",
-            "description": [],
-            "speakers": [
-                "Assoc. Prof. Wongkot Wongsapai, CMU and TCCA"
-            ],
-            "panelists": [],
-            "facilitators": [],
-            "group": "A] Technical & Research Session",
-            "bgColor": false
-        },
-        {
-            "time": "12.30 - 13.30 PM",
-            "topic": "Lunch Break",
-            "description": [],
-            "speakers": [],
-            "panelists": [],
-            "facilitators": [],
-            "group": "None",
-            "bgColor": true
-        },
-        {
-            "time": "13.30 - 14.30 PM",
-            "topic": "CCS Industry’s Landscape and Its Ecosystem: Opportunities and Challenges",
-            "description": [],
-            "speakers": [],
-            "panelists": [
-                "Mr. Søren Poulsen, Project Director, Greensand Project, Denmark",
-                "Dr. Cathrine Ringstad, Senior Advisor CCS, Bellona Environmental Foundation, Norway",
-                "Mr. Surachai Vangrattanachai, CCUs Director, SCG CGS",
-                "Dr. Yanadet Sripanich, Energy Transition/CCS Business Lead, PTTEP"
-            ],
-            "facilitators": [
-                "Assoc. Prof. Dr. Suparit Tangparitkul"
-            ],
-            "group": "B] Industrial Panel Discussion",
-            "bgColor": false
-        },
-        {
-            "time": "14.30 - 14.45 PM",
-            "topic": "Break",
-            "description": [],
-            "speakers": [],
-            "panelists": [],
-            "facilitators": [],
-            "group": "None",
-            "bgColor": true
-        },
-        {
-            "time": "14.45 - 15.45 PM",
-            "topic": "Toward Tomorrow’s Challenges: What are Next for CCS?",
-            "description": [],
-            "speakers": [],
-            "panelists": [
-                "Prof. Dr. Nicolas von Solms, Technical University of Denmark (DTU), Denmark",
-                "Prof. Dr. Carl Fredrik Berg, Norwegian University of Science and Technology (NTNU), Norway",
-                "Prof. Dr.Nakorn Tippayawong, Chiang Mai University and TCCA",
-                "Prof. Dr. Hyundon Shin, Inha University, Korea",
-                "Prof. Dr. Bambang Widarsono, BRIN, Indonesia"
-            ],
-            "facilitators": [
-                "Asst. Prof. Dr. Natthanan Promsuk"
-            ],
-            "group": "C] Technical & Research Panel Discussion",
-            "bgColor": false
-        },
-        {
-            "time": "15.45 - 16.00 PM",
-            "topic": "Closing Remark",
-            "description": [],
-            "speakers": [],
-            "panelists": [],
-            "facilitators": [],
-            "group": "None",
-            "bgColor": false
-        }
-    ],
-    "programmeSchedule07":[
-        {
-            "time": "08.30 - 09.00 AM",
-            "topic": "ลงทะเบียน",
-            "description": [],
-            "speakers": [],
-            "panelists": [],
-            "facilitators": [],
-            "group": "None",
-            "bgColor": false
-        },
-        {
-            "time": "09.00 - 09.20 AM",
-            "topic": "กล่าวเปิดงาน",
-            "description": [],
-            "speakers": [],
-            "panelists": [],
-            "facilitators": [],
-            "group": "None",
-            "bgColor": false
-        },
-        {
-            "time": "09.20 - 09.50 AM",
-            "topic": "Lessons Learned in Translating Basic Science to Industrial Implementation for Carbon Capture Sorbents",
-            "description": [],
-            "speakers": [
-                "Prof. George Shimizu,  Department of Chemistry, University of Calgary, Calgary, Canada"
-            ],
-            "panelists": [],
-            "facilitators": [],
-            "group": "Knowledge sharing session",
-            "bgColor": false
-        },
-        {
-            "time": "09.50 - 10.10 AM",
-            "topic": "หัวข้อบรรยาย",
-            "description": [],
-            "speakers": [
-                "สถาบันวิจัยวิทยาศาสตร์และเทคโนโลยีแห่งประเทศไทย (วว.) <i>(TBC)</i>"
-            ],
-            "panelists": [],
-            "facilitators": [],
-            "group": "Knowledge sharing session",
-            "bgColor": false
-        },
-        {
-            "time": "10.10 - 10.30 AM",
-            "topic": "รับประทานอาหารว่าง",
-            "description": [],
-            "speakers": [],
-            "panelists": [],
-            "facilitators": [],
-            "group": "None",
-            "bgColor": true
-        },
-        {
-            "time": "10.30 - 10.50 AM",
-            "topic": "นโยบาย แผน และมาตรการ เกี่ยวกับการจัดการการเปลี่ยนแปลงสภาพภูมิอากาศของประเทศ และการลดก๊าซเรือนกระจก",
-            "description": [],
-            "speakers": [
-                "กรมการเปลี่ยนแปลงสภาพภูมิอากาศและสิ่งแวดล้อม <i>(TBC)</i>"
-            ],
-            "panelists": [],
-            "facilitators": [],
-            "group": "Knowledge sharing session",
-            "bgColor": false
-        },
-        {
-            "time": "10.50 - 11.10 AM",
-            "topic": "แนวทางการประเมินและการซื้อ-ขายคาร์บอนเครดิตของ CCU และ CCS  ในประเทศไทยและระดับสากล",
-            "description": [],
-            "speakers": [
-                "องค์การบริหารจัดการก๊าซเรือนกระจก (องค์การมหาชน)"
-            ],
-            "panelists": [],
-            "facilitators": [],
-            "group": "Knowledge sharing session",
-            "bgColor": false
-        },
-        {
-            "time": "11.10 - 11.30 AM",
-            "topic": "หัวข้อบรรยาย",
-            "description": [],
-            "speakers": [
-                "คุณจีรพันธ์ ปัญญานันท์, บริษัท พลังงานบริสุทธิ์ จํากัด (มหาชน)"
-            ],
-            "panelists": [],
-            "facilitators": [],
-            "group": "Knowledge sharing session",
-            "bgColor": false
-        },
-        {
-            "time": "11.30 - 11.50 AM",
-            "topic": "BLCP Decarbonization Projects",
-            "description": [],
-            "speakers": [
-                "คุณยุทธนา เจริญวงศ์, กรรมการผู้จัดการ บริษัท บีแอลซีพี เพาเวอร์ จำกัด"
-            ],
-            "panelists": [],
-            "facilitators": [],
-            "group": "Knowledge sharing session",
-            "bgColor": false
-        },
-        {
-            "time": "11.50 - 13.00 PM",
-            "topic": "พักรับประทานอาหารกลางวัน",
-            "description": [],
-            "speakers": [],
-            "panelists": [],
-            "facilitators": [],
-            "group": "None",
-            "bgColor": true
-        },
-        {
-            "time": "13.00 - 14.00 PM",
-            "topic": "เสวนา การขับเคลื่อน CCUS สู่อุตสาหกรรมในประเทศไทย",
-            "description": [],
-            "speakers": [],
-            "panelists": [
-                "คุณยุทธนา เจริญวงศ์  กรรมการผู้จัดการ บริษัท บีแอลซีพี เพาเวอร์ จำกัด",
-                "คุณชลธา ไกรวัตนุสสรณ์  Business Manager บริษัท จีเนียส อินทิเกรเต็ด โซลูชั่น จํากัด",
-                "(ผู้แทน) กรมการเปลี่ยนแปลงสภาพภูมิอากาศและสิ่งแวดล้อม <i>(TBC)</i>",
-                "(ผู้แทน) องค์การบริหารจัดการก๊าซเรือนกระจก (องค์การมหาชน)"
-            ],
-            "facilitators": [
-                "ดร. สัญชัย คูบูรณ์, ศูนย์นาโนเทคโนโลยีแห่งชาติ สวทช.",
-                "คุณยุทธนา เจริญวงศ์"
-            ],
-            "group": "Brainstorming session",
-            "bgColor": false
-        },
-        {
-            "time": "14.00 - 15.45 PM",
-            "topic": "แนะนำโครงการและแผนงานโครงการ TCCA",
-            "description": [
-                "เสนอแผนงาน TCCA Work Package และ ระดมความคิดเห็น",
-                "1. โครงสร้าง TCCA และแนวทางการดำเนินงาน </br> ผู้ดำเนินการกลุ่ม: ดร. ปองกานต์ จักรธรานนท์ / รศ.ดร. สุพฤทธิ์ ตั้งพฤทธิ์กุล ",
-                "2. แผนงานกรณีศึกษาสำหรับจัดทำ CCUS Policy Recommendation </br> ผู้ดำเนินการกลุ่ม: ดร. สุธี ผู้เจริญชนะชัย / ดร. สัญชัย คูบูรณ์",
-                "3. แผนงานจัดทำ CCUS Database ของประเทศไทย </br> ผู้ดำเนินการกลุ่ม: ดร. บุญรัตน์ รุ่งทวีวรนิตย์"
-            ],
-            "speakers": [
-                "ดร. ขจรศักดิ์ เฟื่องนวกิจ หัวหน้าโครงการ, ศูนย์นาโนเทคโนโลยีแห่งชาติ/สวทช."
-            ],
-            "panelists": [],
-            "facilitators": [],
-            "group": "Brainstorming session",
-            "bgColor": false
-        },
-        {
-            "time": "15.45 - 16.00 PM",
-            "topic": "สรุปความคิดเห็นจากการระดมสมอง และกล่าวปิดงาน",
-            "description": [],
-            "speakers": [],
-            "panelists": [],
-            "facilitators": [],
-            "group": "None",
-            "bgColor": false
-        }
-    ]
+  "programmeSchedule06": [
+    {
+      "time": "08.30 - 09.00 AM",
+      "topic": "Registration and welcome refreshment",
+      "description": [],
+      "speakers": [],
+      "panelists": [],
+      "facilitators": [],
+      "group": "None",
+      "bgColor": false
+    },
+    {
+      "time": "09.00 - 09.30 AM",
+      "topic": "Opening ceremony",
+      "description": [
+        "Welcome remark by Director General of Department of European Affairs <i>(TBC)</i>",
+        "Opening remark by Representative of PMU-B Director <i>(TBC)</i>"
+      ],
+      "speakers": [],
+      "panelists": [],
+      "facilitators": [],
+      "group": "None",
+      "bgColor": false
+    },
+    {
+      "time": "09.30 - 09.45 AM",
+      "topic": "Carbon Neutrality Campus",
+      "description": [],
+      "speakers": ["Asst. Prof. Dr. Chatchawan Chaichana, CMU and TCCA"],
+      "panelists": [],
+      "facilitators": [],
+      "group": "None",
+      "bgColor": false
+    },
+    {
+      "time": "09.45 - 10.05 AM",
+      "topic": "Science, Research, and Innovation Toward Net-Zero via CCUS",
+      "description": [],
+      "speakers": ["Dr. Pongvipa Lohsomboon, TSRI and PMU-C"],
+      "panelists": [],
+      "facilitators": [],
+      "group": "A] Technical & Research Session",
+      "bgColor": false
+    },
+    {
+      "time": "10.05 - 10.25 AM",
+      "topic": "Introduction of Thailand CCUS Alliance (TCCA): Mission and Strategics ",
+      "description": [],
+      "speakers": ["Dr. Kajornsak Faungnawakij, TCCA and NANOTEC"],
+      "panelists": [],
+      "facilitators": [],
+      "group": "A] Technical & Research Session",
+      "bgColor": false
+    },
+    {
+      "time": "10.25 - 10.45 AM",
+      "topic": "Bending the Tree: Lowering the CCS High-hanging Fruit",
+      "description": [],
+      "speakers": [
+        "Assoc. Prof. Dr. Suparit Tangparitkul, Director of Chiang Mai CCS (CMU) and TCCA"
+      ],
+      "panelists": [],
+      "facilitators": [],
+      "group": "A] Technical & Research Session",
+      "bgColor": false
+    },
+    {
+      "time": "10.45 - 11.00 AM",
+      "topic": "Break",
+      "description": [],
+      "speakers": [],
+      "panelists": [],
+      "facilitators": [],
+      "group": "None",
+      "bgColor": true
+    },
+    {
+      "time": "11.00 - 11.30 AM",
+      "topic": "Norway's CCS: Partnership between the State, Industries, Academia, and NGO's",
+      "description": [],
+      "speakers": [
+        "Dr. Cathrine Ringstad, Senior Advisor CCS, Bellona Environmental Foundation, Norway"
+      ],
+      "panelists": [],
+      "facilitators": [],
+      "group": "A] Technical & Research Session",
+      "bgColor": false
+    },
+    {
+      "time": "11.30 - 12.00 PM",
+      "topic": "Greensand Project: CO<sub>2</sub> Graveyard of Denmark",
+      "description": [],
+      "speakers": [
+        "Mr. Søren Poulsen, Project Director, Greensand Project, Denmark"
+      ],
+      "panelists": [],
+      "facilitators": [],
+      "group": "A] Technical & Research Session",
+      "bgColor": false
+    },
+    {
+      "time": "12.00 - 12.30 PM",
+      "topic": "Carbon Credit Methodology & Financial Incentive for CCS",
+      "description": [],
+      "speakers": ["Assoc. Prof. Wongkot Wongsapai, CMU and TCCA"],
+      "panelists": [],
+      "facilitators": [],
+      "group": "A] Technical & Research Session",
+      "bgColor": false
+    },
+    {
+      "time": "12.30 - 13.30 PM",
+      "topic": "Lunch Break",
+      "description": [],
+      "speakers": [],
+      "panelists": [],
+      "facilitators": [],
+      "group": "None",
+      "bgColor": true
+    },
+    {
+      "time": "13.30 - 14.30 PM",
+      "topic": "CCS Industry’s Landscape and Its Ecosystem: Opportunities and Challenges",
+      "description": [],
+      "speakers": [],
+      "panelists": [
+        "Mr. Søren Poulsen, Project Director, Greensand Project, Denmark",
+        "Dr. Cathrine Ringstad, Senior Advisor CCS, Bellona Environmental Foundation, Norway",
+        "Mr. Surachai Vangrattanachai, CCUs Director, SCG CGS",
+        "Dr. Yanadet Sripanich, Energy Transition/CCS Business Lead, PTTEP"
+      ],
+      "facilitators": ["Assoc. Prof. Dr. Suparit Tangparitkul"],
+      "group": "B] Industrial Panel Discussion",
+      "bgColor": false
+    },
+    {
+      "time": "14.30 - 14.45 PM",
+      "topic": "Break",
+      "description": [],
+      "speakers": [],
+      "panelists": [],
+      "facilitators": [],
+      "group": "None",
+      "bgColor": true
+    },
+    {
+      "time": "14.45 - 15.45 PM",
+      "topic": "Toward Tomorrow’s Challenges: What are Next for CCS?",
+      "description": [],
+      "speakers": [],
+      "panelists": [
+        "Prof. Dr. Nicolas von Solms, Technical University of Denmark (DTU), Denmark",
+        "Prof. Dr. Carl Fredrik Berg, Norwegian University of Science and Technology (NTNU), Norway",
+        "Prof. Dr. Nakorn Tippayawong, Chiang Mai University and TCCA",
+        "Prof. Dr. Hyundon Shin, Inha University, Korea",
+        "Prof. Dr. Bambang Widarsono, BRIN, Indonesia"
+      ],
+      "facilitators": ["Asst. Prof. Dr. Natthanan Promsuk"],
+      "group": "C] Technical & Research Panel Discussion",
+      "bgColor": false
+    },
+    {
+      "time": "15.45 - 16.00 PM",
+      "topic": "Closing Remark",
+      "description": [],
+      "speakers": [],
+      "panelists": [],
+      "facilitators": [],
+      "group": "None",
+      "bgColor": false
+    }
+  ],
+  "programmeSchedule07": [
+    {
+      "time": "08.30 - 09.00 AM",
+      "topic": "ลงทะเบียน",
+      "description": [],
+      "speakers": [],
+      "panelists": [],
+      "facilitators": [],
+      "group": "None",
+      "bgColor": false
+    },
+    {
+      "time": "09.00 - 09.20 AM",
+      "topic": "กล่าวเปิดงาน",
+      "description": [],
+      "speakers": [],
+      "panelists": [],
+      "facilitators": [],
+      "group": "None",
+      "bgColor": false
+    },
+    {
+      "time": "09.20 - 09.50 AM",
+      "topic": "Lessons Learned in Translating Basic Science to Industrial Implementation for Carbon Capture Sorbents",
+      "description": [],
+      "speakers": [
+        "Prof. George Shimizu,  Department of Chemistry, University of Calgary, Calgary, Canada"
+      ],
+      "panelists": [],
+      "facilitators": [],
+      "group": "Knowledge sharing session",
+      "bgColor": false
+    },
+    {
+      "time": "09.50 - 10.10 AM",
+      "topic": "หัวข้อบรรยาย",
+      "description": [],
+      "speakers": [
+        "สถาบันวิจัยวิทยาศาสตร์และเทคโนโลยีแห่งประเทศไทย (วว.) <i>(TBC)</i>"
+      ],
+      "panelists": [],
+      "facilitators": [],
+      "group": "Knowledge sharing session",
+      "bgColor": false
+    },
+    {
+      "time": "10.10 - 10.30 AM",
+      "topic": "รับประทานอาหารว่าง",
+      "description": [],
+      "speakers": [],
+      "panelists": [],
+      "facilitators": [],
+      "group": "None",
+      "bgColor": true
+    },
+    {
+      "time": "10.30 - 10.50 AM",
+      "topic": "นโยบาย แผน และมาตรการ เกี่ยวกับการจัดการการเปลี่ยนแปลงสภาพภูมิอากาศของประเทศ และการลดก๊าซเรือนกระจก",
+      "description": [],
+      "speakers": ["กรมการเปลี่ยนแปลงสภาพภูมิอากาศและสิ่งแวดล้อม <i>(TBC)</i>"],
+      "panelists": [],
+      "facilitators": [],
+      "group": "Knowledge sharing session",
+      "bgColor": false
+    },
+    {
+      "time": "10.50 - 11.10 AM",
+      "topic": "แนวทางการประเมินและการซื้อ-ขายคาร์บอนเครดิตของ CCU และ CCS  ในประเทศไทยและระดับสากล",
+      "description": [],
+      "speakers": ["องค์การบริหารจัดการก๊าซเรือนกระจก (องค์การมหาชน)"],
+      "panelists": [],
+      "facilitators": [],
+      "group": "Knowledge sharing session",
+      "bgColor": false
+    },
+    {
+      "time": "11.10 - 11.30 AM",
+      "topic": "หัวข้อบรรยาย",
+      "description": [],
+      "speakers": [
+        "คุณจีรพันธ์ ปัญญานันท์, บริษัท พลังงานบริสุทธิ์ จํากัด (มหาชน)"
+      ],
+      "panelists": [],
+      "facilitators": [],
+      "group": "Knowledge sharing session",
+      "bgColor": false
+    },
+    {
+      "time": "11.30 - 11.50 AM",
+      "topic": "BLCP Decarbonization Projects",
+      "description": [],
+      "speakers": [
+        "คุณยุทธนา เจริญวงศ์, กรรมการผู้จัดการ บริษัท บีแอลซีพี เพาเวอร์ จำกัด"
+      ],
+      "panelists": [],
+      "facilitators": [],
+      "group": "Knowledge sharing session",
+      "bgColor": false
+    },
+    {
+      "time": "11.50 - 13.00 PM",
+      "topic": "พักรับประทานอาหารกลางวัน",
+      "description": [],
+      "speakers": [],
+      "panelists": [],
+      "facilitators": [],
+      "group": "None",
+      "bgColor": true
+    },
+    {
+      "time": "13.00 - 14.00 PM",
+      "topic": "เสวนา การขับเคลื่อน CCUS สู่อุตสาหกรรมในประเทศไทย",
+      "description": [],
+      "speakers": [],
+      "panelists": [
+        "คุณยุทธนา เจริญวงศ์  กรรมการผู้จัดการ บริษัท บีแอลซีพี เพาเวอร์ จำกัด",
+        "คุณชลธา ไกรวัตนุสสรณ์  Business Manager บริษัท จีเนียส อินทิเกรเต็ด โซลูชั่น จํากัด",
+        "(ผู้แทน) กรมการเปลี่ยนแปลงสภาพภูมิอากาศและสิ่งแวดล้อม <i>(TBC)</i>",
+        "(ผู้แทน) องค์การบริหารจัดการก๊าซเรือนกระจก (องค์การมหาชน)"
+      ],
+      "facilitators": [
+        "ดร. สัญชัย คูบูรณ์, ศูนย์นาโนเทคโนโลยีแห่งชาติ สวทช.",
+        "คุณยุทธนา เจริญวงศ์"
+      ],
+      "group": "Brainstorming session",
+      "bgColor": false
+    },
+    {
+      "time": "14.00 - 15.45 PM",
+      "topic": "แนะนำโครงการและแผนงานโครงการ TCCA",
+      "description": [
+        "เสนอแผนงาน TCCA Work Package และ ระดมความคิดเห็น",
+        "1. โครงสร้าง TCCA และแนวทางการดำเนินงาน </br> ผู้ดำเนินการกลุ่ม: ดร. ปองกานต์ จักรธรานนท์ / รศ.ดร. สุพฤทธิ์ ตั้งพฤทธิ์กุล ",
+        "2. แผนงานกรณีศึกษาสำหรับจัดทำ CCUS Policy Recommendation </br> ผู้ดำเนินการกลุ่ม: ดร. สุธี ผู้เจริญชนะชัย / ดร. สัญชัย คูบูรณ์",
+        "3. แผนงานจัดทำ CCUS Database ของประเทศไทย </br> ผู้ดำเนินการกลุ่ม: ดร. บุญรัตน์ รุ่งทวีวรนิตย์"
+      ],
+      "speakers": [
+        "ดร. ขจรศักดิ์ เฟื่องนวกิจ หัวหน้าโครงการ, ศูนย์นาโนเทคโนโลยีแห่งชาติ/สวทช."
+      ],
+      "panelists": [],
+      "facilitators": [],
+      "group": "Brainstorming session",
+      "bgColor": false
+    },
+    {
+      "time": "15.45 - 16.00 PM",
+      "topic": "สรุปความคิดเห็นจากการระดมสมอง และกล่าวปิดงาน",
+      "description": [],
+      "speakers": [],
+      "panelists": [],
+      "facilitators": [],
+      "group": "None",
+      "bgColor": false
+    }
+  ]
 }
