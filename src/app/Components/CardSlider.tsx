@@ -32,7 +32,7 @@ const CardSlider = () => {
   // if we have 13 keynote speaker, we have 5 slide. each slide have 3 card, except last slide
   // next slide
   const clickNext = () => {
-    activeImage >= KeynoteSpeakerData.keynoteSpeaker.length - 2
+    activeImage >= KeynoteSpeakerData.keynoteSpeaker.length - cardPerSlide
       ? setActiveImage(0)
       : setActiveImage(activeImage + cardPerSlide);
     setTimeout(() => {
@@ -44,7 +44,7 @@ const CardSlider = () => {
   // previous slide
   const clickPrev = () => {
     activeImage <= 0
-      ? setActiveImage(KeynoteSpeakerData.keynoteSpeaker.length - 2)
+      ? setActiveImage(KeynoteSpeakerData.keynoteSpeaker.length - cardPerSlide)
       : setActiveImage(activeImage - cardPerSlide);
 
     setTimeout(() => {
