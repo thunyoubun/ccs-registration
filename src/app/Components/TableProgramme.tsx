@@ -38,9 +38,9 @@ function RowData({ date }: { date: IProgrammeData[] }) {
       schedule.speakers.length > 0 ||
       schedule.panelists.length > 0 ||
       schedule.facilitators.length ? (
-        <tr className="bg-gray-200" key={schedule.time} id={schedule.time} >
+        <tr className="bg-gray-200" key={schedule.time} id={schedule.time}>
           <td></td>
-          <td colSpan={2} className="gap-2" >
+          <td colSpan={2} className="gap-2">
             {schedule.speakers.length > 0 ? (
               <div>
                 <h2 className="font-semibold">Speaker:</h2>
@@ -127,7 +127,7 @@ function TableProgramme() {
 
   return (
     <div className=" grid-cols-1  shadow-lg md:m-16 m-4">
-      <div className="rounded-t-md bg-teal-500 p-3 grid gap-3 grid-cols-6 ">
+      <div className="rounded-t-md bg-teal-500 p-3 grid gap-3 ">
         <button
           className={`${
             !selectSecond
@@ -142,7 +142,7 @@ function TableProgramme() {
         >
           <h1 className="text-xl font-semibold">06 JUNE</h1>
         </button>
-        <button
+        {/* <button
           className={`${
             selectSecond
               ? "bg-white text-teal-500 rounded shadow-lg"
@@ -155,7 +155,7 @@ function TableProgramme() {
           }}
         >
           <h1 className="text-xl font-semibold">07 JUNE</h1>
-        </button>
+        </button> */}
       </div>
       <div className="flex bg-white w-full  overflow-auto rounded-b-md">
         <table className=" table-fixed w-full m-4">

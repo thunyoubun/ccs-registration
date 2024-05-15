@@ -46,13 +46,14 @@ export default function Schedule() {
                 handleTab();
                 setSelectData(ScheduleData.programmeSchedule06);
               }}
+              disabled
               className={` ${
                 activeTab ? "bg-white text-teal-500 shadow-lg" : "text-black"
-              }  rounded-lg h-16 w-1/2 flex justify-center items-center text-center `}
+              }  rounded-lg h-16 w-full flex justify-center items-center text-center `}
             >
               <h1 className="  text-xl font-semibold">6 June</h1>
             </button>
-            <button
+            {/* <button
               onClick={() => {
                 handleTab();
                 setSelectData(ScheduleData.programmeSchedule07);
@@ -62,7 +63,7 @@ export default function Schedule() {
               }  rounded-lg h-16 w-1/2 flex justify-center items-center text-center`}
             >
               <h1 className="  text-xl font-semibold">7 June</h1>
-            </button>
+            </button> */}
           </div>
         </div>
         <div className=" gap-4 bg-white shadow-lg  h-fit rounded-b-lg p-4 flex flex-col items-center  ">

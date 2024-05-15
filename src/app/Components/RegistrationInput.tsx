@@ -145,7 +145,7 @@ function RegistrationInput({ expired }: { expired: number }) {
               </label>
             </div>
           </div>
-          <div className="flex gap-5 mx-2 md:mx-4 lg:justify-center lg:mx-0">
+          {/* <div className="flex gap-5 mx-2 md:mx-4 lg:justify-center lg:mx-0">
             <div className="col-span-2">
               <label htmlFor="" className="font-medium">
                 7 June 2024:
@@ -177,7 +177,7 @@ function RegistrationInput({ expired }: { expired: number }) {
                 Afternoon
               </label>
             </div>
-          </div>
+          </div> */}
         </div>
         <button
           type="submit"
