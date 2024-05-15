@@ -80,9 +80,9 @@ export default function Direction() {
           <div className="w-full bg-white rounded-lg">
             <div className="text-center p-4">
               <h3 className="">
-                <span className=" font-semibold">6 -7 June</span>, at room
-                Nakorn Rangsit 1 - 2, Novotel Bangkok Future Park Rangsit,
-                Bangkok, Thailand
+                <span className=" font-semibold">6 June</span>, at room Nakorn
+                Rangsit 1 - 2, Novotel Bangkok Future Park Rangsit, Bangkok,
+                Thailand
               </h3>
             </div>
             <div className="mx-4 mb-4 md:h-fit h-72 relative ">

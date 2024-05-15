@@ -14,8 +14,8 @@ function RegistrationMap() {
           Location
         </h1>
         <h1 className="text-center p-2">
-          <span className="font-semibold">6 - 7 June</span>, at room Nakorn
-          Rangsit 1 - 2, Novotel Bangkok Future Park Rangsit, Bangkok, Thailand
+          <span className="font-semibold">6 June</span>, at room Nakorn Rangsit
+          1 - 2, Novotel Bangkok Future Park Rangsit, Bangkok, Thailand
         </h1>
       </div>
       <div className=" flex-grow justify-center relative">

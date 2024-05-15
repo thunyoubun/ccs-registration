@@ -28,7 +28,7 @@ export default function Main() {
             className=" bg-white rounded-3xl w-fit py-1 px-2 shadow-lg transition ease-in-out delay-150 hover:scale-105 "
           >
             <h1>
-              <span className="font-semibold">6 - 7 June</span>, at room Nakorn
+              <span className="font-semibold">6 June</span>, at room Nakorn
               Rangsit 1- 2, Novotel Bangkok Future Park Rangsit, Bangkok,
               Thailand
               <FaArrowRightLong className="mx-2 inline" />
