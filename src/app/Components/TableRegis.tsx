@@ -28,10 +28,10 @@ interface Applicant {
 const TableRegis = ({ data }: { data: IAPIRegister[] }) => {
   return (
     <div className="flex relative  overflow-auto shadow-md sm:rounded-lg">
-      <table className="w-full flex-grow text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+      <table className=" md:table-fixed w-full flex-grow text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
         <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
           <tr>
-            <th scope="col" className="px-6 py-3">
+            <th scope="col" className="px-6 w-[5%]  text-center py-3">
               No.
             </th>
             <th scope="col" className="px-6 py-3">
@@ -63,14 +63,21 @@ const TableRegis = ({ data }: { data: IAPIRegister[] }) => {
               key={index}
               className="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
             >
-              <th className="px-6 py-4">{index + 1}</th>
+              <th className="px-6 py-4 text-center">{index + 1}</th>
               <th
                 scope="row"
-                className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white overflow-auto"
               >
                 {applicant.firstname} {applicant.lastname}
               </th>
-              <th className="px-6 py-4">{applicant.email}</th>
+              <th className="px-6 py-4 overflow-auto">
+                <a
+                  className=" text-blue-500 hover:no-underline underline"
+                  href={`mailto:${applicant.email.toString()}`}
+                >
+                  {applicant.email}
+                </a>
+              </th>
               <th className="px-6 py-4">{applicant.affiliation}</th>
               <th className="px-6 py-4">{applicant.roles_duties}</th>
               <th className="px-6 py-4">

@@ -30,7 +30,7 @@ export async function POST(request: NextRequest) {
       { user_name: userIsExist.username },
       process.env.JWT_SECRET as string,
       {
-        expiresIn: "24hr",
+        expiresIn: "12h",
       }
     );
 
