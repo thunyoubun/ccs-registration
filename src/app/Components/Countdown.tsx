@@ -23,7 +23,7 @@ function Countdown({
         <h1 className="text-5xl font-medium content-center lg:text-6xl">
           RSVP Before <span className=" hidden sm:inline">-</span>
         </h1>
-        <h4 className="p-1">(3 June 2024)</h4>
+        <h4 className="p-1">(30 May 2024)</h4>
       </div>
       <div className="flex text-center gap-2 justify-center">
         <div>
