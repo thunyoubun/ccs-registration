@@ -41,6 +41,9 @@ function RegistrationInput({ expired }: { expired: number }) {
 
   return (
     <div className="md:w-1/2 w-full p-4 bg-white md:rounded-br-lg  md:rounded-b-none rounded-b-lg  lg:p-4 xl:p-8">
+      {/* <h1 className="text-red-500 text-center text-lg"><span className=" text-red-600">***</span>Registration has been close.<span className="text-red-600">***</span></h1>
+      <h2 className="text-red-500 text-center text-lg">Registration for this symposium has been closed as we have either reached the maximum number of registrations.</h2>
+      <h2 className="text-red-500 text-center text-lg">Your interest is truly appreciated.</h2> */}
       <h1 className="font-medium text-3xl lg:text-5xl text-center">RSVP</h1>
       <h2 className="text-red-500  p-2 text-center text-lg">
         <span className=" text-red-600">***</span>Confirmation Email Needed
@@ -145,39 +148,6 @@ function RegistrationInput({ expired }: { expired: number }) {
               </label>
             </div>
           </div>
-          {/* <div className="flex gap-5 mx-2 md:mx-4 lg:justify-center lg:mx-0">
-            <div className="col-span-2">
-              <label htmlFor="" className="font-medium">
-                7 June 2024:
-              </label>
-            </div>
-            <div className="flex items-center mb-4 col-span-2">
-              <input
-                className="w-4 h-4 border-teal-500 text-teal-500 focus:ring-blue-950"
-                type="checkbox"
-                value=""
-                id="07morning"
-                disabled={isSubmitting}
-                {...register("june07.morning")}
-              />
-              <label className="ms-2" htmlFor="07morning">
-                Morning
-              </label>
-            </div>
-            <div className="flex items-center mb-4">
-              <input
-                className="w-4 h-4 border-teal-500 text-teal-500 focus:ring-blue-950"
-                type="checkbox"
-                value=""
-                id="07afternoon"
-                disabled={isSubmitting}
-                {...register("june07.afternoon")}
-              />
-              <label className="ms-2" htmlFor="07afternoon">
-                Afternoon
-              </label>
-            </div>
-          </div> */}
         </div>
         <button
           type="submit"
