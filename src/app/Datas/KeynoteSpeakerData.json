@@ -67,12 +67,6 @@
       "srcImg": "/images/keynote-speaker/10.jpg"
     },
     {
-      "id": 13,
-      "fullname": "Prof. Dr.Nakorn Tippayawong",
-      "affiliation": "Chiang Mai University and TCCA",
-      "srcImg": "/images/keynote-speaker/Nakorn_Tippavawong.jpg"
-    },
-    {
       "id": 10,
       "fullname": "Prof. Dr. Hyundon Shin",
       "affiliation": "Inha University, Korea",
@@ -141,13 +135,6 @@
       "fullname": "Prof. Dr. Carl Fredrik Berg",
       "affiliation": "Norwegian University of Science and Technology (NTNU), Norway",
       "srcImg": "/images/keynote-speaker/10.jpg",
-      "topics": []
-    },
-    {
-      "id": 5,
-      "fullname": "Prof. Dr.Nakorn Tippayawong",
-      "affiliation": "Chiang Mai University and TCCA",
-      "srcImg": "/images/keynote-speaker/Nakorn_Tippavawong.jpg",
       "topics": []
     },
     {
