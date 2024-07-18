@@ -5,7 +5,7 @@ import RegistrationMap from "./RegistrationMap";
 
 function RegistrationBody() {
   const [day, hour, minute, second, expired] = useCountDown(
-    new Date(2024, 4, 30, 22, 0, 0)
+    new Date(2024, 8, 30, 22, 0, 0)
   );
   return (
     <div className=" md:mt-32 mt-28   w-auto lg:p-16 bg-gradient-to-r from-teal-500 to-blue-950 flex justify-center">
